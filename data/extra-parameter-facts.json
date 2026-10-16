@@ -1,0 +1,548 @@
+[
+  {
+    "repo": "thinkingmachines/Inkling",
+    "sha": "828496eeae4c243ff1a22f7f28ff83694f2f7bc9",
+    "facts": [
+      {
+        "field": "totalParamsB",
+        "value": 975,
+        "sourceUrl": "https://huggingface.co/thinkingmachines/Inkling/blob/828496eeae4c243ff1a22f7f28ff83694f2f7bc9/README.md#L57",
+        "location": "Model Properties > Parameters; cached README L57",
+        "status": "官方披露",
+        "boundary": "作者标称总参数；不要用专家比率推算激活参数，也不要用checkpoint张量统计替代。"
+      },
+      {
+        "field": "activeParamsB",
+        "value": 41,
+        "sourceUrl": "https://huggingface.co/thinkingmachines/Inkling/blob/828496eeae4c243ff1a22f7f28ff83694f2f7bc9/README.md#L57",
+        "location": "Model Properties > Parameters; cached README L57",
+        "status": "官方披露",
+        "boundary": "作者标称每token激活；多模态预处理/MTP附加计算没有在本段独立拆分。"
+      },
+      {
+        "field": "routedExperts",
+        "value": 256,
+        "sourceUrl": "https://huggingface.co/thinkingmachines/Inkling/blob/828496eeae4c243ff1a22f7f28ff83694f2f7bc9/README.md#L53",
+        "location": "Architecture type; cached README L53",
+        "status": "官方披露",
+        "boundary": "每个MoE层的路由专家数；共享专家另计。"
+      },
+      {
+        "field": "selectedExperts",
+        "value": 6,
+        "sourceUrl": "https://huggingface.co/thinkingmachines/Inkling/blob/828496eeae4c243ff1a22f7f28ff83694f2f7bc9/README.md#L53",
+        "location": "Architecture type; cached README L53",
+        "status": "官方披露",
+        "boundary": "每token选6个路由专家；不含2个常激活共享专家。"
+      },
+      {
+        "field": "sharedExperts",
+        "value": 2,
+        "sourceUrl": "https://huggingface.co/thinkingmachines/Inkling/blob/828496eeae4c243ff1a22f7f28ff83694f2f7bc9/README.md#L53",
+        "location": "Architecture type; cached README L53",
+        "status": "官方披露",
+        "boundary": "作者明确2个shared experts active on every token。"
+      },
+      {
+        "field": "layers",
+        "value": 66,
+        "sourceUrl": "https://huggingface.co/thinkingmachines/Inkling/blob/828496eeae4c243ff1a22f7f28ff83694f2f7bc9/config.json",
+        "location": "$.text_config.num_hidden_layers",
+        "status": "官方披露",
+        "boundary": "主解码器层数；不把附加MTP层混入。"
+      },
+      {
+        "field": "mtpLayers",
+        "value": 8,
+        "sourceUrl": "https://huggingface.co/thinkingmachines/Inkling/blob/828496eeae4c243ff1a22f7f28ff83694f2f7bc9/config.json",
+        "location": "$.mtp_config.num_nextn_predict_layers",
+        "status": "官方披露",
+        "boundary": "附加MTP配置为8层；不是从框架草稿token数猜出的层数。"
+      },
+      {
+        "field": "contextTokens",
+        "value": 1048576,
+        "sourceUrl": "https://huggingface.co/thinkingmachines/Inkling/blob/828496eeae4c243ff1a22f7f28ff83694f2f7bc9/config.json",
+        "location": "$.text_config.model_max_length",
+        "status": "官方披露",
+        "boundary": "模型配置上限，实际可服务窗口另受资源/后端约束。"
+      },
+      {
+        "field": "officialQuantization",
+        "value": "BF16 / NVFP4",
+        "sourceUrl": "https://huggingface.co/thinkingmachines/Inkling/blob/828496eeae4c243ff1a22f7f28ff83694f2f7bc9/README.md",
+        "location": "Model Properties > Numerics support; cached README L59–61",
+        "status": "官方披露",
+        "boundary": "表示作者提供的精度版本，不表示所有张量均采用同一种精度。"
+      }
+    ]
+  },
+  {
+    "repo": "thinkingmachines/Inkling-Small",
+    "sha": "8cc5877b44d343f88b92086aa1fb72897950f06a",
+    "facts": [
+      {
+        "field": "totalParamsB",
+        "value": 276,
+        "sourceUrl": "https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md#L57",
+        "location": "Model Properties > Parameters; cached README L57",
+        "status": "官方披露",
+        "boundary": "作者标称总参数；不要用专家比率推算激活参数，也不要用checkpoint张量统计替代。"
+      },
+      {
+        "field": "activeParamsB",
+        "value": 12,
+        "sourceUrl": "https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md#L57",
+        "location": "Model Properties > Parameters; cached README L57",
+        "status": "官方披露",
+        "boundary": "作者标称每token激活；多模态预处理/MTP附加计算没有在本段独立拆分。"
+      },
+      {
+        "field": "routedExperts",
+        "value": 256,
+        "sourceUrl": "https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md#L53",
+        "location": "Architecture type; cached README L53",
+        "status": "官方披露",
+        "boundary": "每个MoE层的路由专家数；共享专家另计。"
+      },
+      {
+        "field": "selectedExperts",
+        "value": 6,
+        "sourceUrl": "https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md#L53",
+        "location": "Architecture type; cached README L53",
+        "status": "官方披露",
+        "boundary": "每token选6个路由专家；不含2个常激活共享专家。"
+      },
+      {
+        "field": "sharedExperts",
+        "value": 2,
+        "sourceUrl": "https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md#L53",
+        "location": "Architecture type; cached README L53",
+        "status": "官方披露",
+        "boundary": "作者明确2个shared experts active on every token。"
+      },
+      {
+        "field": "layers",
+        "value": 42,
+        "sourceUrl": "https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/config.json",
+        "location": "$.text_config.num_hidden_layers",
+        "status": "官方披露",
+        "boundary": "主解码器层数；不把附加MTP层混入。"
+      },
+      {
+        "field": "mtpLayers",
+        "value": 8,
+        "sourceUrl": "https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/config.json",
+        "location": "$.mtp_config.num_nextn_predict_layers",
+        "status": "官方披露",
+        "boundary": "附加MTP配置为8层；不是从框架草稿token数猜出的层数。"
+      },
+      {
+        "field": "contextTokens",
+        "value": 1048576,
+        "sourceUrl": "https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/config.json",
+        "location": "$.text_config.model_max_length",
+        "status": "官方披露",
+        "boundary": "模型配置上限，实际可服务窗口另受资源/后端约束。"
+      },
+      {
+        "field": "officialQuantization",
+        "value": "BF16 / NVFP4",
+        "sourceUrl": "https://huggingface.co/thinkingmachines/Inkling-Small/blob/8cc5877b44d343f88b92086aa1fb72897950f06a/README.md",
+        "location": "Model Properties > Numerics support; cached README L59–61",
+        "status": "官方披露",
+        "boundary": "表示作者提供的精度版本，不表示所有张量均采用同一种精度。"
+      }
+    ]
+  },
+  {
+    "repo": "meituan-longcat/LongCat-2.0-FP8",
+    "sha": "d5f32b1aaee4682826d927ec25433da84b281fd0",
+    "facts": [
+      {
+        "field": "totalParamsB",
+        "value": 1600,
+        "sourceUrl": "https://huggingface.co/meituan-longcat/LongCat-2.0-FP8/blob/d5f32b1aaee4682826d927ec25433da84b281fd0/README.md#L51",
+        "location": "Introduction; cached README L51",
+        "status": "官方披露",
+        "boundary": "作者1.6T标称；README L75说明其中包含135B N-gram Embedding，不能全当MoE FFN。"
+      },
+      {
+        "field": "activeParamsB",
+        "value": 48,
+        "sourceUrl": "https://huggingface.co/meituan-longcat/LongCat-2.0-FP8/blob/d5f32b1aaee4682826d927ec25433da84b281fd0/README.md#L51",
+        "location": "Introduction; cached README L51",
+        "status": "官方披露",
+        "boundary": "作者使用约数 ~48B activated per token。"
+      },
+      {
+        "field": "routedExperts",
+        "value": 768,
+        "sourceUrl": "https://huggingface.co/meituan-longcat/LongCat-2.0-FP8/blob/d5f32b1aaee4682826d927ec25433da84b281fd0/config.json",
+        "location": "$.n_routed_experts",
+        "status": "官方披露",
+        "boundary": "保留配置原字段值。与zero_expert_num的集合关系未在本次代码核验，不自行加总为896。"
+      },
+      {
+        "field": "selectedExperts",
+        "value": 12,
+        "sourceUrl": "https://huggingface.co/meituan-longcat/LongCat-2.0-FP8/blob/d5f32b1aaee4682826d927ec25433da84b281fd0/config.json",
+        "location": "$.moe_topk",
+        "status": "官方披露",
+        "boundary": "路由top-k配置；存在identity zero experts，不应声称每token必激活12个带参数FFN专家。"
+      },
+      {
+        "field": "zeroExperts",
+        "value": 128,
+        "sourceUrl": "https://huggingface.co/meituan-longcat/LongCat-2.0-FP8/blob/d5f32b1aaee4682826d927ec25433da84b281fd0/config.json",
+        "location": "$.zero_expert_num + $.zero_expert_type",
+        "status": "官方披露",
+        "boundary": "zero_expert_type=identity，单独展示为128个identity zero experts；是否包含在768中留待作者实现核验。"
+      },
+      {
+        "field": "sharedExperts",
+        "value": null,
+        "sourceUrl": "https://huggingface.co/meituan-longcat/LongCat-2.0-FP8/blob/d5f32b1aaee4682826d927ec25433da84b281fd0/config.json",
+        "location": "config中未见n_shared_experts/shared_experts字段",
+        "status": "未披露",
+        "boundary": "未直接披露，不能把缺字段写成0。"
+      },
+      {
+        "field": "layers",
+        "value": 38,
+        "sourceUrl": "https://huggingface.co/meituan-longcat/LongCat-2.0-FP8/blob/d5f32b1aaee4682826d927ec25433da84b281fd0/config.json",
+        "location": "$.num_layers",
+        "status": "官方披露",
+        "boundary": "配置字段为num_layers=38；不自行按注意力子模块数量翻倍。"
+      },
+      {
+        "field": "mtpLayers",
+        "value": 3,
+        "sourceUrl": "https://huggingface.co/meituan-longcat/LongCat-2.0-FP8/blob/d5f32b1aaee4682826d927ec25433da84b281fd0/config.json",
+        "location": "$.mtp_num_layers",
+        "status": "官方披露",
+        "boundary": "README L72同时明确3-step MTP用于speculative decoding；层数来自config。"
+      },
+      {
+        "field": "speculation",
+        "value": "3-step MTP",
+        "sourceUrl": "https://huggingface.co/meituan-longcat/LongCat-2.0-FP8/blob/d5f32b1aaee4682826d927ec25433da84b281fd0/README.md#L72",
+        "location": "LongCat Sparse Attention; cached README L72",
+        "status": "官方披露",
+        "boundary": "官方介绍3个MTP草稿步共享索引；不是外部DSpark/EAGLE草稿模型关系。"
+      },
+      {
+        "field": "contextTokens",
+        "value": 262144,
+        "sourceUrl": "https://huggingface.co/meituan-longcat/LongCat-2.0-FP8/blob/d5f32b1aaee4682826d927ec25433da84b281fd0/config.json",
+        "location": "$.max_position_embeddings",
+        "status": "官方披露",
+        "boundary": "配置为262144，但README L53称训练中使用1M上下文数据；训练数据长度不等同本checkpoint配置服务上限。"
+      }
+    ]
+  },
+  {
+    "repo": "stepfun-ai/Step-3.7-Flash",
+    "sha": "5f6244077ac62e04eec3f320501ff8c2b293373a",
+    "facts": [
+      {
+        "field": "totalParamsB",
+        "value": 198,
+        "sourceUrl": "https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md#L17",
+        "location": "Introduction; cached README L17",
+        "status": "官方披露",
+        "boundary": "整个视觉语言模型约198B；作者拆分196B语言骨干+1.8B视觉编码器。"
+      },
+      {
+        "field": "activeParamsB",
+        "value": 11,
+        "sourceUrl": "https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md#L17",
+        "location": "Introduction; cached README L17",
+        "status": "官方披露",
+        "boundary": "作者写approximately 11B per token；不要写成198B全部激活。"
+      },
+      {
+        "field": "routedExperts",
+        "value": 288,
+        "sourceUrl": "https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/config.json",
+        "location": "$.text_config.moe_num_experts",
+        "status": "官方披露",
+        "boundary": "文本骨干MoE层路由专家数；不是整个模型全部层专家数之和。"
+      },
+      {
+        "field": "selectedExperts",
+        "value": 8,
+        "sourceUrl": "https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/config.json",
+        "location": "$.text_config.moe_top_k",
+        "status": "官方披露",
+        "boundary": "每token、每MoE层路由top-k。"
+      },
+      {
+        "field": "sharedExpertDim",
+        "value": 1280,
+        "sourceUrl": "https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/config.json",
+        "location": "$.text_config.share_expert_dim",
+        "status": "官方披露",
+        "boundary": "直接披露共享FFN维度，不是明确shared expert数量字段。"
+      },
+      {
+        "field": "moeIntermediateSize",
+        "value": 1280,
+        "sourceUrl": "https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/config.json",
+        "location": "$.text_config.moe_intermediate_size",
+        "status": "官方披露",
+        "boundary": "用于解释共享FFN的宽度，不能单靠维度比就标为官方明确专家个数。"
+      },
+      {
+        "field": "sharedExperts",
+        "value": null,
+        "sourceUrl": "https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/config.json",
+        "location": "无独立共享专家数量字段；share_expert_dim = moe_intermediate_size",
+        "status": "未直接披露",
+        "boundary": "可另标注“共享FFN宽度等于1个路由专家”；本次未读官方实现验证整数共享专家表示法，故数量留空。"
+      },
+      {
+        "field": "layers",
+        "value": 45,
+        "sourceUrl": "https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/config.json",
+        "location": "$.text_config.num_hidden_layers",
+        "status": "官方披露",
+        "boundary": "主语言解码器层数，不含3个nextn预测层，也不含视觉编码器47层。"
+      },
+      {
+        "field": "mtpLayers",
+        "value": 3,
+        "sourceUrl": "https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/config.json",
+        "location": "$.text_config.num_nextn_predict_layers",
+        "status": "官方披露",
+        "boundary": "附加MTP层数；README部署命令还展示vLLM mtp和SGLang multi-layer EAGLE路径。"
+      },
+      {
+        "field": "contextTokens",
+        "value": 262144,
+        "sourceUrl": "https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/config.json",
+        "location": "$.text_config.max_position_embeddings",
+        "status": "官方披露",
+        "boundary": "配置窗口；部署时可能因显存降低。"
+      },
+      {
+        "field": "languageBackboneParamsB",
+        "value": 196,
+        "sourceUrl": "https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md#L17",
+        "location": "Introduction; cached README L17",
+        "status": "官方披露",
+        "boundary": "语言骨干口径；与整体198B分开。"
+      },
+      {
+        "field": "visionEncoderParamsB",
+        "value": 1.8,
+        "sourceUrl": "https://huggingface.co/stepfun-ai/Step-3.7-Flash/blob/5f6244077ac62e04eec3f320501ff8c2b293373a/README.md#L17",
+        "location": "Introduction; cached README L17",
+        "status": "官方披露",
+        "boundary": "作者标称视觉编码器规模；加总为197.8B后约为198B。"
+      }
+    ]
+  },
+  {
+    "repo": "stepfun-ai/Step-5-Preview",
+    "sha": "364b3b03fed2477aa0953fe855a2c4c8c48ee3cc",
+    "facts": [
+      {
+        "field": "totalParamsB",
+        "value": 600,
+        "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview/blob/364b3b03fed2477aa0953fe855a2c4c8c48ee3cc/README.md#L74",
+        "location": "Model Specifications > Total Parameters; cached README L74",
+        "status": "官方披露",
+        "boundary": "作者标称600B；包含多模态模型口径，未在规格表拆出视觉/MTP。"
+      },
+      {
+        "field": "activeParamsB",
+        "value": 27,
+        "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview/blob/364b3b03fed2477aa0953fe855a2c4c8c48ee3cc/README.md#L75",
+        "location": "Model Specifications > Active Parameters; cached README L75",
+        "status": "官方披露",
+        "boundary": "作者标称27B激活；不以352/8比例近似。"
+      },
+      {
+        "field": "routedExperts",
+        "value": 352,
+        "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview/blob/364b3b03fed2477aa0953fe855a2c4c8c48ee3cc/config.json",
+        "location": "$.text_config.moe_num_experts",
+        "status": "官方披露",
+        "boundary": "文本骨干MoE层路由专家数；不是整个模型全部层专家数之和。"
+      },
+      {
+        "field": "selectedExperts",
+        "value": 8,
+        "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview/blob/364b3b03fed2477aa0953fe855a2c4c8c48ee3cc/config.json",
+        "location": "$.text_config.moe_top_k",
+        "status": "官方披露",
+        "boundary": "每token、每MoE层路由top-k。"
+      },
+      {
+        "field": "sharedExpertDim",
+        "value": 1536,
+        "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview/blob/364b3b03fed2477aa0953fe855a2c4c8c48ee3cc/config.json",
+        "location": "$.text_config.share_expert_dim",
+        "status": "官方披露",
+        "boundary": "直接披露共享FFN维度，不是明确shared expert数量字段。"
+      },
+      {
+        "field": "moeIntermediateSize",
+        "value": 1536,
+        "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview/blob/364b3b03fed2477aa0953fe855a2c4c8c48ee3cc/config.json",
+        "location": "$.text_config.moe_intermediate_size",
+        "status": "官方披露",
+        "boundary": "用于解释共享FFN的宽度，不能单靠维度比就标为官方明确专家个数。"
+      },
+      {
+        "field": "sharedExperts",
+        "value": null,
+        "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview/blob/364b3b03fed2477aa0953fe855a2c4c8c48ee3cc/config.json",
+        "location": "无独立共享专家数量字段；share_expert_dim = moe_intermediate_size",
+        "status": "未直接披露",
+        "boundary": "可另标注“共享FFN宽度等于1个路由专家”；本次未读官方实现验证整数共享专家表示法，故数量留空。"
+      },
+      {
+        "field": "layers",
+        "value": 92,
+        "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview/blob/364b3b03fed2477aa0953fe855a2c4c8c48ee3cc/config.json",
+        "location": "$.text_config.num_hidden_layers",
+        "status": "官方披露",
+        "boundary": "主语言解码器层数，不含3个nextn预测层，也不含视觉编码器47层。"
+      },
+      {
+        "field": "mtpLayers",
+        "value": 3,
+        "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview/blob/364b3b03fed2477aa0953fe855a2c4c8c48ee3cc/config.json",
+        "location": "$.text_config.num_nextn_predict_layers",
+        "status": "官方披露",
+        "boundary": "附加MTP层数；README部署命令还展示vLLM mtp和SGLang multi-layer EAGLE路径。"
+      },
+      {
+        "field": "contextTokens",
+        "value": 1048576,
+        "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview/blob/364b3b03fed2477aa0953fe855a2c4c8c48ee3cc/config.json",
+        "location": "$.text_config.max_position_embeddings",
+        "status": "官方披露",
+        "boundary": "配置窗口；部署时可能因显存降低。"
+      }
+    ]
+  },
+  {
+    "repo": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+    "access": "gated config/README未读取；以下仅采用公开Meta官网公告",
+    "facts": [
+      {
+        "field": "totalParamsB",
+        "value": 109,
+        "sourceUrl": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+        "location": "Post-training our new models; paragraph beginning Our smaller model, Llama 4 Scout (web lines87)",
+        "status": "官方披露",
+        "boundary": "Meta公开标称，精确checkpoint文件计数未核验。"
+      },
+      {
+        "field": "activeParamsB",
+        "value": 17,
+        "sourceUrl": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+        "location": "同一Scout段落 (web lines87)",
+        "status": "官方披露",
+        "boundary": "Meta每token标称激活参数。"
+      },
+      {
+        "field": "routedExperts",
+        "value": 16,
+        "sourceUrl": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+        "location": "Takeaways and Scout paragraph (web lines51/87)",
+        "status": "官方披露",
+        "boundary": "官网写16 experts；本次未读取gated配置，不再自动填shared/top-k。"
+      },
+      {
+        "field": "selectedExperts",
+        "value": null,
+        "sourceUrl": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+        "location": "Maverick路由说明只直接描述Maverick",
+        "status": "未在此公开来源独立披露",
+        "boundary": "不能把Maverick的top-1自动作为Scout已核验字段。"
+      },
+      {
+        "field": "sharedExperts",
+        "value": null,
+        "sourceUrl": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+        "location": "同上",
+        "status": "未在此公开来源独立披露",
+        "boundary": "本次公开公告未独立明确Scout共享专家数。"
+      },
+      {
+        "field": "isMoE",
+        "value": true,
+        "sourceUrl": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+        "location": "Introduction + Pre-training (web lines56/68)",
+        "status": "官方披露",
+        "boundary": "官方说明首批Scout/Maverick是MoE架构。"
+      },
+      {
+        "field": "contextTokens",
+        "value": 10000000,
+        "sourceUrl": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+        "location": "Scout paragraph (web lines87–88)",
+        "status": "官方披露",
+        "boundary": "公告为10M推理上下文，256K是预训练/后训练长度，不能混同。"
+      }
+    ]
+  },
+  {
+    "repo": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "access": "gated config/README未读取；以下仅采用公开Meta官网公告",
+    "facts": [
+      {
+        "field": "totalParamsB",
+        "value": 400,
+        "sourceUrl": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+        "location": "Pre-training; paragraph beginning As an example, Llama 4 Maverick (web line71); Post-training line84",
+        "status": "官方披露",
+        "boundary": "Meta公开标称，精确checkpoint文件计数未核验。"
+      },
+      {
+        "field": "activeParamsB",
+        "value": 17,
+        "sourceUrl": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+        "location": "同一Maverick架构段落 (web line71)",
+        "status": "官方披露",
+        "boundary": "每token激活参数。"
+      },
+      {
+        "field": "routedExperts",
+        "value": 128,
+        "sourceUrl": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+        "location": "Pre-training (web line71)",
+        "status": "官方披露",
+        "boundary": "128个routed experts，共享专家另计。"
+      },
+      {
+        "field": "selectedExperts",
+        "value": 1,
+        "sourceUrl": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+        "location": "Pre-training (web line71), 每token送至one of 128 routed experts",
+        "status": "官方披露",
+        "boundary": "top-1指路由专家；共享专家同时激活。"
+      },
+      {
+        "field": "sharedExperts",
+        "value": 1,
+        "sourceUrl": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+        "location": "Pre-training (web line71), a shared expert",
+        "status": "官方披露",
+        "boundary": "共享专家单独于128路由专家。"
+      },
+      {
+        "field": "isMoE",
+        "value": true,
+        "sourceUrl": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+        "location": "Pre-training (web line71)",
+        "status": "官方披露",
+        "boundary": "dense与MoE层交替；不意味着每个解码层都是MoE。"
+      }
+    ]
+  }
+]

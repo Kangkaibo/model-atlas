@@ -1,0 +1,51 @@
+name: Official source audit
+on:
+  schedule:
+    # Monday 09:00 Asia/Shanghai = 01:00 UTC; GitHub may delay scheduled runs.
+    - cron: '0 1 * * 1'
+  workflow_dispatch:
+    inputs:
+      publish_review:
+        description: 生成待审更新单；关闭则只检查并保存报告
+        type: boolean
+        default: true
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+concurrency:
+  group: official-source-audit
+  cancel-in-progress: false
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+          package-manager-cache: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - run: npm run build
+      - run: npm run check
+      - run: npm test
+      - name: Inspect official sources without modifying verified facts
+        run: npm run sources:check
+      - name: Save inspection report
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: official-source-audit
+          path: updates/
+          retention-days: 30
+          if-no-files-found: warn
+      - name: Propose a review
+        if: github.event_name == 'schedule' || inputs.publish_review
+        run: python scripts/publish_update_pr.py
+        env:
+          GH_TOKEN: ${{ github.token }}

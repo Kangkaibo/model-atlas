@@ -1,0 +1,3371 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-10-16T01:13:18Z",
+  "repos": {
+    "Cloudflare/clef": {
+      "sha": "0b331204bb13fbd2ca93a64df1956f5b55478ce5",
+      "config": {
+        "layers": {
+          "value": 64,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 0,
+          "locator": "text_config.mtp_num_hidden_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "Qwen3_5ForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "Cloudflare/clef-flash": {
+      "sha": "8b2e5fd17c09fd49bc2880b805d5323ec7ff4ff3",
+      "config": {
+        "layers": {
+          "value": 32,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 0,
+          "locator": "text_config.mtp_num_hidden_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "Qwen3_5ForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "FlashLabs/Chroma-4B": {
+      "sha": "cf4d2f87e7b14604b4942af134e7a826e5f4fb48",
+      "config_access": "HTTP 401; configuration not inspected"
+    },
+    "IFM/Jais-3-375B-A23B": {
+      "sha": "33a16f6738ce5e9a6e9a45848bc5d9e8fe682a37",
+      "config": {
+        "routed": {
+          "value": 192,
+          "locator": "num_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "num_shared_experts"
+        },
+        "layers": {
+          "value": 61,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 524288,
+          "locator": "max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "dtype"
+        },
+        "architectures": {
+          "value": [
+            "K2HorizonForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "IFM/K2-Horizon-375B-A23B": {
+      "sha": "78272deca7adc2f90d154288b5161172283c80b3",
+      "config": {
+        "routed": {
+          "value": 192,
+          "locator": "num_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "num_shared_experts"
+        },
+        "layers": {
+          "value": 61,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 524288,
+          "locator": "max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "dtype"
+        },
+        "architectures": {
+          "value": [
+            "K2HorizonForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "IQuestLab/IQuest-Q1": {
+      "sha": "5c21b0630586ef77d38cff1094b8cf37a417fcd8",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "num_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "layers": {
+          "value": 88,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 524288,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 0,
+          "locator": "num_mtp_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "dtype"
+        },
+        "architectures": {
+          "value": [
+            "IQuestQ1ForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "LiquidAI/LFM2.5-8B-A1B": {
+      "sha": "5dd22602c2e9f6a097b1de4c4efe0658b605015c",
+      "config": {
+        "routed": {
+          "value": 32,
+          "locator": "num_experts"
+        },
+        "selected": {
+          "value": 4,
+          "locator": "num_experts_per_tok"
+        },
+        "layers": {
+          "value": 24,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 128000,
+          "locator": "max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "dtype"
+        },
+        "architectures": {
+          "value": [
+            "Lfm2MoeForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "MiniMaxAI/MiniMax-M2": {
+      "sha": "757303d492a50514c312788b5247a4f696a4c6a3",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "num_local_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "layers": {
+          "value": 62,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 196608,
+          "locator": "max_position_embeddings"
+        },
+        "architectures": {
+          "value": [
+            "MiniMaxM2ForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "float8_e4m3fn",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "MiniMaxAI/MiniMax-M2.5": {
+      "sha": "f710177d938eff80b684d42c5aa84b382612f21f",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "num_local_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "layers": {
+          "value": 62,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 196608,
+          "locator": "max_position_embeddings"
+        },
+        "architectures": {
+          "value": [
+            "MiniMaxM2ForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "float8_e4m3fn",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "MiniMaxAI/MiniMax-M3": {
+      "sha": "f0e1c1e04d40177e4673a22097036854f536e9c0",
+      "config": {
+        "routed": {
+          "value": 128,
+          "locator": "text_config.num_local_experts"
+        },
+        "selected": {
+          "value": 4,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "text_config.n_shared_experts"
+        },
+        "layers": {
+          "value": 60,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 1048576,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "text_config.num_nextn_predict_layers"
+        },
+        "architectures": {
+          "value": [
+            "MiniMaxM3SparseForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "OpenGVLab/InternVL3_5-30B-A3B": {
+      "sha": "ba1762d830e2aeddb3272b66ba9e0abf7e69f626",
+      "config": {
+        "routed": {
+          "value": 128,
+          "locator": "llm_config.num_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "llm_config.num_experts_per_tok"
+        },
+        "layers": {
+          "value": 48,
+          "locator": "llm_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 40960,
+          "locator": "llm_config.max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "llm_config.torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "InternVLChatModel"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "Qwen/Qwen3-235B-A22B": {
+      "sha": "8efa61729e24bd65b1d152b5ab5409052aa80e65",
+      "config": {
+        "routed": {
+          "value": 128,
+          "locator": "num_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "layers": {
+          "value": 94,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 40960,
+          "locator": "max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "Qwen3MoeForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "Qwen/Qwen3-30B-A3B": {
+      "sha": "ad44e777bcd18fa416d9da3bd8f70d33ebb85d39",
+      "config": {
+        "routed": {
+          "value": 128,
+          "locator": "num_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "layers": {
+          "value": 48,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 40960,
+          "locator": "max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "Qwen3MoeForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "Qwen/Qwen3-32B": {
+      "sha": "9216db5781bf21249d130ec9da846c4624c16137",
+      "config": {
+        "layers": {
+          "value": 64,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 40960,
+          "locator": "max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "Qwen3ForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "Qwen/Qwen3-Next-80B-A3B-Instruct": {
+      "sha": "9c7f2fbe84465e40164a94cc16cd30b6999b0cc7",
+      "config": {
+        "routed": {
+          "value": 512,
+          "locator": "num_experts"
+        },
+        "selected": {
+          "value": 10,
+          "locator": "num_experts_per_tok"
+        },
+        "layers": {
+          "value": 48,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "Qwen3NextForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "Qwen/Qwen3.5-122B-A10B": {
+      "sha": "dc4d348443bc740c68e2d77492492c11606384d5",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "text_config.num_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "layers": {
+          "value": 48,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "text_config.mtp_num_hidden_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "Qwen3_5MoeForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "Qwen/Qwen3.5-27B": {
+      "sha": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+      "config": {
+        "layers": {
+          "value": 64,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "text_config.mtp_num_hidden_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "Qwen3_5ForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "Qwen/Qwen3.5-35B-A3B": {
+      "sha": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "text_config.num_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "layers": {
+          "value": 40,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "text_config.mtp_num_hidden_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "Qwen3_5MoeForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "Qwen/Qwen3.5-397B-A17B": {
+      "sha": "8472618112abcbd45acbcdc58436aff4233c23f7",
+      "config": {
+        "routed": {
+          "value": 512,
+          "locator": "text_config.num_experts"
+        },
+        "selected": {
+          "value": 10,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "layers": {
+          "value": 60,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "text_config.mtp_num_hidden_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "Qwen3_5MoeForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "Qwen/Qwen3.6-27B": {
+      "sha": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+      "config": {
+        "layers": {
+          "value": 64,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "text_config.mtp_num_hidden_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "Qwen3_5ForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "Qwen/Qwen3.6-35B-A3B": {
+      "sha": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "text_config.num_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "layers": {
+          "value": 40,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "text_config.mtp_num_hidden_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "Qwen3_5MoeForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "Qwen/Qwen3.8-2.4T-A95B": {
+      "sha": "207bd685a7e3696cfaff12ded7c6a7ea0f88c996",
+      "config": {
+        "routed": {
+          "value": 512,
+          "locator": "num_experts"
+        },
+        "selected": {
+          "value": 10,
+          "locator": "num_experts_per_tok"
+        },
+        "layers": {
+          "value": 92,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "mtp_num_hidden_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "dtype"
+        },
+        "architectures": {
+          "value": [
+            "Qwen3_5MoeForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "Qwen/Qwen3.8-Flash-NEXT": {
+      "sha": "de4b8e4d43b917e7706784d8bb445c9af86a3540",
+      "config": {
+        "routed": {
+          "value": 512,
+          "locator": "text_config.num_experts"
+        },
+        "selected": {
+          "value": 10,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "layers": {
+          "value": 48,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "text_config.mtp_num_hidden_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "Qwen4ExpForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "XiaomiMiMo/MiMo-V2.6-Flash-RL": {
+      "sha": "dcd3fd83fb181622fbc606fbb1709901982a62c2",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "layers": {
+          "value": 48,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 1048576,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 3,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "dtype"
+        },
+        "architectures": {
+          "value": [
+            "MiMoV2ForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "XiaomiMiMo/MiMo-V2.6-Pro-RL": {
+      "sha": "b61f21852680ee02a29e946e18cf8697f4844061",
+      "config": {
+        "routed": {
+          "value": 384,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "layers": {
+          "value": 70,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 1048576,
+          "locator": "max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "dtype"
+        },
+        "architectures": {
+          "value": [
+            "MiMoV2ForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "ai-sage/GigaChat3.5-432B-A28B": {
+      "sha": "d10dcaeccb04ca3186fdfa3bb3874b4474e6b41b",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 40,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 2,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "dtype"
+        },
+        "architectures": {
+          "value": [
+            "GigaChat35ForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "baidu/ERNIE-4.5-300B-A47B-PT": {
+      "sha": "47bbaf1c9e356313c3cb2ded9078a494fb152f0e",
+      "config": {
+        "routed": {
+          "value": 64,
+          "locator": "moe_num_experts"
+        },
+        "layers": {
+          "value": 54,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 131072,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "Ernie4_5_MoeForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "deepreinforce-ai/Ornith-1.0-397B": {
+      "sha": "5e3e761811e804c295c1d3c0ce68b21da6154209",
+      "config": {
+        "routed": {
+          "value": 512,
+          "locator": "text_config.num_experts"
+        },
+        "selected": {
+          "value": 10,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "layers": {
+          "value": 60,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "text_config.mtp_num_hidden_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "Qwen3_5MoeForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "deepseek-ai/DeepSeek-R1": {
+      "sha": "56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 61,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 163840,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "DeepseekV3ForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "deepseek-ai/DeepSeek-V3": {
+      "sha": "e815299b0bcbac849fa540c768ef21845365c9eb",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 61,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 163840,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "DeepseekV3ForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "deepseek-ai/DeepSeek-V3.2": {
+      "sha": "a7e62ac04ecb2c0a54d736dc46601c5606cf10a6",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 61,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 163840,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "DeepseekV32ForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "deepseek-ai/DeepSeek-V4-Flash": {
+      "sha": "60d8d70770c6776ff598c94bb586a859a38244f1",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 6,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 43,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 1048576,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "DeepseekV4ForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "deepseek-ai/DeepSeek-V4-Flash-0731": {
+      "sha": "7872f01b1d1fe23eabc4c98b48bffcef5a386062",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 6,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 43,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 1048576,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "DeepseekV4ForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "deepseek-ai/DeepSeek-V4-Flash-DSpark": {
+      "sha": "62af8fffb2f7030cac4de2f0169f5b8d1101b646",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 6,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 43,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 1048576,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "DeepseekV4ForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "deepseek-ai/DeepSeek-V4-Pro": {
+      "sha": "b5968e9190ef611bbf34a7229255be88a0e937c1",
+      "config": {
+        "routed": {
+          "value": 384,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 6,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 61,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 1048576,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "DeepseekV4ForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "deepseek-ai/DeepSeek-V4-Pro-0813": {
+      "sha": "72e1d3230f6c080a530b0a1d46f8eb4602340597",
+      "config": {
+        "routed": {
+          "value": 384,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 6,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 61,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 1048576,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "DeepseekV4ForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "deepseek-ai/DeepSeek-V4-Pro-DSpark": {
+      "sha": "7c09739fd136abfb70a49ec334157f65f45b52cd",
+      "config": {
+        "routed": {
+          "value": 384,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 6,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 61,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 1048576,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "DeepseekV4ForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "deepseek-ai/DeepSeek-V4.1-Flash": {
+      "sha": "5254448103b6254fc646dacbca1cbbf20e9216c1",
+      "config": {
+        "routed": {
+          "value": 384,
+          "locator": "text_config.n_routed_experts"
+        },
+        "selected": {
+          "value": 6,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "text_config.n_shared_experts"
+        },
+        "layers": {
+          "value": 40,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 1048576,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 3,
+          "locator": "text_config.num_nextn_predict_layers"
+        },
+        "architectures": {
+          "value": [
+            "DeepseekV41ForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              32,
+              32
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "dots-studio/dots3-note-prev": {
+      "sha": "1e1e7b0cd37a3a48a6c8d7fa55d5f9d14377006b",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 46,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 524288,
+          "locator": "max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "Dots3NoteForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "google/gemma-4-26B-A4B-it": {
+      "sha": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+      "config": {
+        "routed": {
+          "value": 128,
+          "locator": "text_config.num_experts"
+        },
+        "layers": {
+          "value": 30,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "Gemma4ForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "google/gemma-4-31B-it": {
+      "sha": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+      "config": {
+        "layers": {
+          "value": 60,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "Gemma4ForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "ibm-granite/granite-4.2-30b": {
+      "sha": "9e668ce1c538387ef24d3644e9b0606647762636",
+      "config": {
+        "layers": {
+          "value": 64,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 131072,
+          "locator": "max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "dtype"
+        },
+        "architectures": {
+          "value": [
+            "GraniteForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "inclusionAI/Ling-1T": {
+      "sha": "9fd8c406bbd60bdad34dcd8be6af6f1896d7e8da",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "num_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "num_shared_experts"
+        },
+        "layers": {
+          "value": 80,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 32768,
+          "locator": "max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "BailingMoeV2ForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "inclusionAI/Ling-3.1-flash": {
+      "sha": "a4ccd6b45c002ddb236f9cb77d52cc427482bf19",
+      "config": {
+        "routed": {
+          "value": 512,
+          "locator": "num_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "num_shared_experts"
+        },
+        "layers": {
+          "value": 72,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "BailingMoeV3ForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "internlm/Intern-S1": {
+      "sha": "4ecad381e28293c4825793f113327cc016cdcbda",
+      "config": {
+        "routed": {
+          "value": 128,
+          "locator": "text_config.num_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "layers": {
+          "value": 94,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 65536,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "InternS1ForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "internlm/Intern-S1-Pro": {
+      "sha": "054ef1ef4bb7eaf0543502954e34dfb082f4fad9",
+      "config": {
+        "routed": {
+          "value": 512,
+          "locator": "text_config.num_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "layers": {
+          "value": 94,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "InternS1ProForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "internlm/Intern-S2-Preview": {
+      "sha": "4f57cab513689b089019fce4ad24e26520df183c",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "text_config.num_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "layers": {
+          "value": 40,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "text_config.mtp_num_hidden_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "InternS2PreviewForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "internlm/internlm2_5-20b-chat": {
+      "sha": "13741228cfb01d3a69c8f83169a105de77286b8a",
+      "config": {
+        "layers": {
+          "value": 48,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 32768,
+          "locator": "max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "InternLM2ForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "internlm/internlm3-8b-instruct": {
+      "sha": "28c99415adaf61767bd1c619f4f99f308fdfd223",
+      "config": {
+        "layers": {
+          "value": 48,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 32768,
+          "locator": "max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "InternLM3ForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "meituan-longcat/LongCat-2.0-FP8": {
+      "sha": "d5f32b1aaee4682826d927ec25433da84b281fd0",
+      "config": {
+        "routed": {
+          "value": 768,
+          "locator": "n_routed_experts"
+        },
+        "layers": {
+          "value": 38,
+          "locator": "num_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 3,
+          "locator": "mtp_num_layers"
+        },
+        "architectures": {
+          "value": [
+            "LongcatCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "meta-llama/Llama-4-Maverick-17B-128E-Instruct": {
+      "sha": "73d14711bcc77c16df3470856949c3764056b617",
+      "config_access": "HTTP 401; configuration not inspected"
+    },
+    "meta-llama/Llama-4-Scout-17B-16E-Instruct": {
+      "sha": "92f3b1597a195b523d8d9e5700e57e4fbb8f20d3",
+      "config_access": "HTTP 401; configuration not inspected"
+    },
+    "meta-models/Muse-Glimmer-30B": {
+      "sha": "a4e59da52a7bc87ae7251dd5545c0dd437c44b68",
+      "config": {
+        "layers": {
+          "value": 52,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 131072,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "architectures": {
+          "value": [
+            "MuseGlimmerForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "mistralai/Mistral-Small-4-119B-2603": {
+      "sha": "a11f36bebf709121056b1dbcc943d1c6afbe494d",
+      "config": {
+        "routed": {
+          "value": 128,
+          "locator": "text_config.n_routed_experts"
+        },
+        "selected": {
+          "value": 4,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "text_config.n_shared_experts"
+        },
+        "layers": {
+          "value": 36,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 1048576,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "architectures": {
+          "value": [
+            "Mistral3ForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "activation_scheme": "static",
+            "weight_block_size": null
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "moonshotai/Kimi-K2.5": {
+      "sha": "4d01dfe0332d63057c186e0b262165819efb6611",
+      "config": {
+        "routed": {
+          "value": 384,
+          "locator": "text_config.n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "text_config.n_shared_experts"
+        },
+        "layers": {
+          "value": 61,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 0,
+          "locator": "text_config.num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "KimiK25ForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "compressed-tensors"
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "moonshotai/Kimi-K2.6": {
+      "sha": "7eb5002f6aadc958aed6a9177b7ed26bb94011bb",
+      "config": {
+        "routed": {
+          "value": 384,
+          "locator": "text_config.n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "text_config.n_shared_experts"
+        },
+        "layers": {
+          "value": 61,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 0,
+          "locator": "text_config.num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "KimiK25ForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "compressed-tensors"
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "moonshotai/Kimi-K3": {
+      "sha": "f831ab66814297da540d832a5235f8e904f29d06",
+      "config": {
+        "routed": {
+          "value": 896,
+          "locator": "text_config.num_experts"
+        },
+        "shared": {
+          "value": 2,
+          "locator": "text_config.num_shared_experts"
+        },
+        "layers": {
+          "value": 93,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 1048576,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 0,
+          "locator": "text_config.num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "KimiK3ForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "compressed-tensors"
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16": {
+      "sha": "a9904d24bcc1d289a1950fa9d2b978c47cf903b9",
+      "config": {
+        "routed": {
+          "value": 128,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 6,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 52,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "dtype"
+        },
+        "architectures": {
+          "value": [
+            "NemotronHForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "openai/gpt-oss-120b": {
+      "sha": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+      "config": {
+        "routed": {
+          "value": 128,
+          "locator": "num_local_experts"
+        },
+        "selected": {
+          "value": 4,
+          "locator": "num_experts_per_tok"
+        },
+        "layers": {
+          "value": 36,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 131072,
+          "locator": "max_position_embeddings"
+        },
+        "architectures": {
+          "value": [
+            "GptOssForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "mxfp4"
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "openai/gpt-oss-20b": {
+      "sha": "6cee5e81ee83917806bbde320786a8fb61efebee",
+      "config": {
+        "routed": {
+          "value": 32,
+          "locator": "num_local_experts"
+        },
+        "selected": {
+          "value": 4,
+          "locator": "num_experts_per_tok"
+        },
+        "layers": {
+          "value": 24,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 131072,
+          "locator": "max_position_embeddings"
+        },
+        "architectures": {
+          "value": [
+            "GptOssForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "mxfp4"
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "openbmb/MiniCPM5-2B": {
+      "sha": "f97400052a43d642bbc6e9975e2397e3ae6a6b52",
+      "config": {
+        "layers": {
+          "value": 42,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 131072,
+          "locator": "max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "LlamaForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "perplexity-ai/pplx-decider-v1.1-27b": {
+      "sha": "14c9d90137962d300f3de95633f7b6535e80c5ce",
+      "config": {
+        "layers": {
+          "value": 64,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "text_config.mtp_num_hidden_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "Qwen3_5Model"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "poolside/Laguna-XS.2": {
+      "sha": "a397bde04501591d0ac3d74a5d9d0a4ec298ffb8",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "num_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "layers": {
+          "value": 40,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "LagunaForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "stepfun-ai/Step-3.7-Flash": {
+      "sha": "5f6244077ac62e04eec3f320501ff8c2b293373a",
+      "config": {
+        "routed": {
+          "value": 288,
+          "locator": "text_config.moe_num_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "text_config.moe_top_k"
+        },
+        "layers": {
+          "value": 45,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 3,
+          "locator": "text_config.num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "Step3p7ForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "stepfun-ai/Step-5-Preview": {
+      "sha": "364b3b03fed2477aa0953fe855a2c4c8c48ee3cc",
+      "config": {
+        "routed": {
+          "value": 352,
+          "locator": "text_config.moe_num_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "layers": {
+          "value": 92,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 1048576,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 3,
+          "locator": "text_config.num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "Step5ForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "tencent/Hunyuan-A13B-Instruct": {
+      "sha": "290ddb9a56ed23c2c83a1c8081533e58925df952",
+      "config": {
+        "routed": {
+          "value": 64,
+          "locator": "num_experts"
+        },
+        "layers": {
+          "value": 32,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 32768,
+          "locator": "max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "HunYuanMoEV1ForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "tencent/Hy4-preview": {
+      "sha": "705d81ee51566a186d645b74c974d642ef2828fe",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 78,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 1048576,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "dtype"
+        },
+        "architectures": {
+          "value": [
+            "HYV4ForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "thinkingmachines/Inkling": {
+      "sha": "828496eeae4c243ff1a22f7f28ff83694f2f7bc9",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "text_config.n_routed_experts"
+        },
+        "selected": {
+          "value": 6,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "shared": {
+          "value": 2,
+          "locator": "text_config.n_shared_experts"
+        },
+        "layers": {
+          "value": 66,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 1048576,
+          "locator": "text_config.model_max_length"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "InklingForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "thinkingmachines/Inkling-Small": {
+      "sha": "8cc5877b44d343f88b92086aa1fb72897950f06a",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "text_config.n_routed_experts"
+        },
+        "selected": {
+          "value": 6,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "shared": {
+          "value": 2,
+          "locator": "text_config.n_shared_experts"
+        },
+        "layers": {
+          "value": 42,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 1048576,
+          "locator": "text_config.model_max_length"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "InklingForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "zai-org/GLM-4.5": {
+      "sha": "cbb2c7cfb52fa128a9660cb1a7a78e017899e115",
+      "config": {
+        "routed": {
+          "value": 160,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 92,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 131072,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "Glm4MoeForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "zai-org/GLM-4.5-Air": {
+      "sha": "a24ceef6ce4f3536971efe9b778bdaa1bab18daa",
+      "config": {
+        "routed": {
+          "value": 128,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 46,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 131072,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "Glm4MoeForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "zai-org/GLM-4.6": {
+      "sha": "be72194883d968d7923a07e2f61681ea9a2826d1",
+      "config": {
+        "routed": {
+          "value": 160,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 92,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 202752,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "Glm4MoeForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "zai-org/GLM-4.6V": {
+      "sha": "4e2d47eb0b41c5280d8294b17cef9e94fdcfff46",
+      "config": {
+        "routed": {
+          "value": 128,
+          "locator": "text_config.n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "text_config.n_shared_experts"
+        },
+        "layers": {
+          "value": 46,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 131072,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 0,
+          "locator": "text_config.num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "Glm4vMoeForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "zai-org/GLM-4.6V-Flash": {
+      "sha": "411bb4d77144a3f03accbf4b780f5acb8b7cde4e",
+      "config": {
+        "layers": {
+          "value": 40,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 131072,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "Glm4vForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "zai-org/GLM-4.7": {
+      "sha": "602d01efcdd332c5238ca4bcede555defbe83eb7",
+      "config": {
+        "routed": {
+          "value": 160,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 92,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 202752,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "Glm4MoeForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "zai-org/GLM-4.7-Flash": {
+      "sha": "7dd20894a642a0aa287e9827cb1a1f7f91386b67",
+      "config": {
+        "routed": {
+          "value": 64,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 4,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 47,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 202752,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "dtype"
+        },
+        "architectures": {
+          "value": [
+            "Glm4MoeLiteForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "zai-org/GLM-5": {
+      "sha": "c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 78,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 202752,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "dtype"
+        },
+        "architectures": {
+          "value": [
+            "GlmMoeDsaForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "zai-org/GLM-5.1": {
+      "sha": "26e1bd6e011feb778d25ae34b09b07074139d92d",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 78,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 202752,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "dtype"
+        },
+        "architectures": {
+          "value": [
+            "GlmMoeDsaForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "zai-org/GLM-5.2": {
+      "sha": "cf457fa734ab149ffef225f80893eb38c6ff5cdc",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 78,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 1048576,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "dtype"
+        },
+        "architectures": {
+          "value": [
+            "GlmMoeDsaForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "zai-org/GLM-5.3": {
+      "sha": "ba32f8c19c8738e2c57c71798c601d477a7bf844",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 78,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 1048576,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "dtype"
+        },
+        "architectures": {
+          "value": [
+            "GlmMoeDsaForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "zai-org/GLM-5.3-Flash": {
+      "sha": "46a050bec13002ad29ee795c16e61cf4fa3c4a9c",
+      "config": {
+        "routed": {
+          "value": 288,
+          "locator": "text_config.n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "text_config.n_shared_experts"
+        },
+        "layers": {
+          "value": 45,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 1048576,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "text_config.num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "Glm5NextForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    }
+  },
+  "documents": {
+    "https://docs.sglang.io/cookbook/autoregressive/Baidu/PaddleOCR-VL": {
+      "sha256": "c092fa05b5cfabbd541e17b9255f63ab04ece61c523458980c37eac5186b61ba"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Baidu/Unlimited-OCR": {
+      "sha256": "8bfa959330d6d1de8e277bdac7a79714f994cb569705f69c5335bbf223c076ae"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Cloudflare/clef": {
+      "sha256": "298205742caa030c54c5e9d605a99d937f6fdcf45a037ada4c710d37b66df883"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/DeepReinforce/Ornith-1.0": {
+      "sha256": "cb10b3e7d60faeace0fecd4cd2f6930f9e967d81f56ffe9f35b1eed4e1384f4a"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-Math-V2": {
+      "sha256": "1788d227c79df34fe2456ac6f3e841e5d9b9576c560388b86213c37b17a5fb0c"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-OCR": {
+      "sha256": "04db4cd337c43d2438cf27b236fe9e20330a39ebf08ee237f91f9bf91879d034"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-OCR-2": {
+      "sha256": "d67aacc0b2d858d961c3cfab03c44c56e36e661d83cbb03cbd54a78aeeb0f306"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-R1": {
+      "sha256": "dd6ce357f24c3784e6d1bcba8ffea39c989ef0541dc128bd4dbc11f15faa44ca"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V3": {
+      "sha256": "e1de1333e957163f75b1238f601353a0a8931f259629a2701063c5ae092c973a"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V3_1": {
+      "sha256": "1c36f1e1a7a9ecd93b8b2808b743aa3d9250a780c5df97c35a04760abdc8513d"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V3_2": {
+      "sha256": "d454052c8c804dd37146790615e00a67a89961b323067f02fccf3abe8bd389a3"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V4": {
+      "sha256": "06143a22576eb442492de5cce429da9e9252cb5400427587684b64f0f104bcbd"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V4_1": {
+      "sha256": "6de5aa19b013a02e581526441ced54a511b2e80b0491a18bfb5fa8bed89039b8"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Ernie/Ernie4.5": {
+      "sha256": "1cdadaa8722d395f62ff3258a9542bc705382582b91a83ba5153d9b5f59546dd"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Ernie/Ernie4.5-VL": {
+      "sha256": "962125159516416e46158d411a61f3ce6238b7bfc5ece3b55f6ab55e6fb9a3b4"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/FlashLabs/Chroma1.0": {
+      "sha256": "f318b34e848dee572ca0505e4cad6321e89db5bd989eaf5d2ae96a4736603cd0"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.5": {
+      "sha256": "19eeab20b177219959e6d61aa35379f8e9bafe83ced94e43241458a61c82fb01"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.5V": {
+      "sha256": "ed27ec11a3fcacdf99e4bdd14a660791cc1146b4238bf5e4e950eac9404eb14b"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.6": {
+      "sha256": "c5aff474001aaf3dad1b8e0da7210c7a5f7bd681638ef2c33bdd129635f4a45b"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.6V": {
+      "sha256": "84ff544fa4ddc7c77450670d8598def7915ef0227e532c9193f0617e71b0c7a5"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.7": {
+      "sha256": "b3f041a7dc0a6b9764fbabd2f3eeef2f11644abd1e1b4f8760fabe07e6fa5aee"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.7-Flash": {
+      "sha256": "1579af2dffc547f7ae0f841752a38f5667046d27a96e476dd64460e954799636"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5": {
+      "sha256": "7d091775c4df8d8024cc33b33d19befa0e0211dd7a98f8b77a4d144392236faa"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.1": {
+      "sha256": "b01e4782a3016268a5bfbfbc6adc99c369d55075bdddb1b93e052b30f19e7610"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.2": {
+      "sha256": "2912a4e763fd42cc6b6997d730ecc0d110fb15b0596a1fe1baacf620893a159c"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.3": {
+      "sha256": "3e19f185c2d25ccb511ecbe79ea85a26ba18656af7af4051b2e12269168d97a1"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.3-Flash": {
+      "sha256": "3af69409e358cb218b4654128a1ebec14e6490b8d2ca9e400ec7c8d50f5b6f5f"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-Glyph": {
+      "sha256": "7a74b03a52d493de9bcedbbe7d8387bd1f507eaed8e5d19d12cbf61b79fe0f48"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-OCR": {
+      "sha256": "78dd7faa4c89cd729e7c0f4d66650dec1f8ea5ec4301db213f72525fdbe5bb74"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/GigaChat/GigaChat3.5": {
+      "sha256": "ecc9df395deb2b216e58eb74ec56b7f93d277fe38e7071657cf51539f6671be0"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/GigaChat/GigaChat3.5-Reasoning": {
+      "sha256": "c9a23e2701da41e3e364a91d045d2b6c2cbb319558212f11f277658e865d2c77"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Google/DiffusionGemma": {
+      "sha256": "022283a91bddda75eaa577a31bb41c1d054b764606a2f3609f0416a209887d8f"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Google/EmbeddingGemma": {
+      "sha256": "8d8d4e9ef5c2f54e3783524047f26afbda76fd0f81f600fc34b4b37dab508b9a"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Google/EmbeddingGemma2": {
+      "sha256": "55211a4de95d57d07b4ac5d5a7c38be0f494506ae41ff4c089d8192509c92ddc"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Google/Gemma4": {
+      "sha256": "23348f9a7c942590bd5fb2db19afb99ed54d1b6fc4abca2691f5c52fe936525f"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/IBM/Granite-4.2": {
+      "sha256": "33f53e4d10f6e2d2b0b77f8b126e9fc49156c254aedfe5c5faf60d5f4b3b9528"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/IFM/Jais-3": {
+      "sha256": "814eda5471d616f9e7374b34a8375e4dfa64a9d764aff04cbf2953e8a305ac7e"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/IFM/K2-Horizon": {
+      "sha256": "063354c06a175d47b4d803bfa28c4a317adabe218f5c47c0e0e798f0524fc5f9"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/IQuestLab/IQuest-Q1": {
+      "sha256": "709ed1db8dab6583b8100676c42820fdc185bf867fe00a776a1814b34e3f9dbe"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/LLaDA-2.1": {
+      "sha256": "ed9d56d2ae07a9bc1c16aaa95aada5ef6d49c7b765817f7c7e8af6b7b1144bf6"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-2.5-1T": {
+      "sha256": "f250d5902891c932825dd5a659a666c1b24e8aded0e511e3585be9457b358725"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-2.6": {
+      "sha256": "7029dc7802272e70e69754f19edafaa5d59766a7b84471d0e92997d6fe11f888"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.0-flash": {
+      "sha256": "fe40066fd3fcaab13a2d07d2705fabf835a3433062ba3cbef17fbf84ed4dac54"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.0-flash-VL": {
+      "sha256": "14ac21126f85e1e31a94583862b6b4497d96aefdfbb22643e56f18e1c534bafa"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.0-tiny": {
+      "sha256": "1c2fb4bc2361bf5c5e6d6e4a66246860a65857908d9d988de201bf2954d650bb"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.1-flash": {
+      "sha256": "ae1bf27c16ccf2b55410b2a6c9051d0efdab13263abc950f65b4727a78b4da31"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ring-2.5-1T": {
+      "sha256": "a70646b68802e66d778c160a436b7b0bac5ab6f19551bedc005a4e29ec4cb414"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ring-2.6-1T": {
+      "sha256": "8c7339149c6aca3755cb03d4e8447742c5e0bca332ba4cbb80fa3f5b13c5c7a0"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/InternLM/Intern-S1": {
+      "sha256": "5834e69e07089c464c98d0b9c618f54a0388f74f2fd79a4e80fa6a5bb7e15ffd"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/InternLM/Intern-S2-Mobius": {
+      "sha256": "23c8f059575c5916c60ed722b6c0adbf5f50b6d2110c0bad0a6ebdab03642b52"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/InternLM/Intern-S2-Preview": {
+      "sha256": "986223b59dc6428dfcf7d91ca114a57c5ed126d7f8610d2bc084b9738c1ec0a3"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/InternVL/InternVL3.5": {
+      "sha256": "1d7de1fc8232af5feac86f8ee54b6a68ba0d79c57ef563b448d95baa8891252d"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Jina/Jina-reranker-m0": {
+      "sha256": "a650ca847d30889bbe90584f14724b72c95ede223db34500ca6696b72a361faf"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/LiquidAI/LFM2.5": {
+      "sha256": "915c291befcfed66c323312fea529469a4073b5523aa1d9e496c7ee815dbd72a"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Meituan/LongCat-2.0": {
+      "sha256": "5c4ffb5763b1492fbfbb2746ffaeff47cf112f7cc35bd437c91f9348d60d9bd9"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Meta/Llama3.1": {
+      "sha256": "e060b261ff6a7ebc26b695c8f3cb53e6e63248c8c05791ff4059adb43f5e9157"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Meta/Llama3.3-70B": {
+      "sha256": "b7e6cc747ed9648866953ca01fbf99948eae859a3e81b88b6df23e709dc3bdec"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Meta/Llama4": {
+      "sha256": "a6c250b0c23f1549561f5ed4d8ee1874482e303a1394039cdd37531b8d41a03c"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Meta/MuseGlimmer": {
+      "sha256": "ad8ed80d5c6acfd78fe5b4a9871504a0c6b03573094f26458d33a51337b10671"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M2": {
+      "sha256": "d2ce1b2f98a735a9332840978032192390722b694d8f2f210f474843f5cc440b"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M2.5": {
+      "sha256": "c212e0fc57047938329e3156c275b4165e5496501873b7a75dec6cf5695a28ef"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M2.7": {
+      "sha256": "c8aa057c8bcfa377951bec2c6c3686f7c75ebc936ac92731f62509da8e827a23"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M3": {
+      "sha256": "9cc1e69ccea11021c3a6f3d515a9492c81373f0b9feae812ee5dab58f3377b32"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Mistral/Devstral-2": {
+      "sha256": "390b38ad7da571fa9a94d6b5d60c51a63ffb2b64438317626ab78bba9cd88c89"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Mistral/Ministral-3": {
+      "sha256": "b73cae83b7a8c67d1d5e226244737e7ae8f1211f13d7a492942b9736cf7897f0"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Mistral/Mistral-Medium-3.5": {
+      "sha256": "4aa01404fc3346767bb88d3df4426ce3e4312c6d21ab27b6501122ab673ca675"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Mistral/Mistral-Small-4": {
+      "sha256": "1b63d4e4c706d582b719579f90f8e49bf28743478959e4351f9dbf28fdc9698a"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K2": {
+      "sha256": "63255b28fd3f00b13572559e2d1aefbd7f1aa28f97cb291783720c728a890ed9"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K2.5": {
+      "sha256": "935ee2220e7f0571b57c323c38ed19f4937e6432e852c8a0d47f1ed877e7f597"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K2.6": {
+      "sha256": "f1fd35356149135694a1a48dd7197a35732919772574255d311b7058b22a47cc"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K2.7-Code": {
+      "sha256": "3ebe81d6c0bb8ca5a720d9cc7a01f11c0a5b95e84222a34ed760926d6c3ecd48"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K3": {
+      "sha256": "68bc68d310ef276c97af32aead2d68783d93f883f9b12311a08f94138fb6d0b4"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-Linear": {
+      "sha256": "137f606cd5e87f55ec647495086d54fab17c33d56ca816e2c12d19ba478ccc0d"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3-Nano": {
+      "sha256": "56bbeab6427637a55081d94f17c9608c8003130d1633afb548099311c260029f"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3-Nano-Omni": {
+      "sha256": "2c1952a3e1feb7b583dadad0eb4d63826faa6cf7f32e8a76e8d3dbaa3d704ba2"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3-Super": {
+      "sha256": "d77508326983f12fa1e8ab4387cfc8eea752c781d33d33e3e7cc887ba8525e90"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3-Ultra": {
+      "sha256": "c31aa8d4abee9c426988169a4b787cb15aafbf149413aaeb11ce442067a11491"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3.5-Lightning": {
+      "sha256": "1eee47def99f52dd1c91e91a8bf08311de20279daa2e937db02e52e40a5b6795"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/OpenAI/GPT-OSS": {
+      "sha256": "5df1a7fcffb853c116430490a1b31814488141e659611016aca78ab4670db76f"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/OpenBMB/MiniCPM-V-4_6": {
+      "sha256": "ba36cfd4cd521ab6b3ab2b3c92d39cbd0c0c17c02f21493a7d19832e2c2dcaaf"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/OpenBMB/MiniCPM-V-4_7": {
+      "sha256": "22b7029eb470914a0d1259460f59b1738a7b63ff52c5df30cd27c8ad3d841c97"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/OpenBMB/MiniCPM5-2B": {
+      "sha256": "33cc5c70848c96f4cd18c7d724bc5410d88a490dde7121117917a60594c2cff5"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Perplexity/PPLX-Decider-v1-27B": {
+      "sha256": "e1133da2ccb315e2bd076a269c129cad91741f803300bc1acb456f8d4df39807"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Perplexity/PPLX-Decider-v1.1-27B": {
+      "sha256": "6c1857b43604cb0e65835e48e8d958dbaedebca71e8ee6c2457989a31337ed7f"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Poolside/Laguna-M.1": {
+      "sha256": "ad878e20a07c0c12e0c39da713ec1a37f5f4ef45a7c77f394e5b6d2fcce5aebb"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Poolside/Laguna-S-2.1": {
+      "sha256": "141772bd87ac268f9a6195617696338418d144e69148fb28fe5d9ce1613cf5c8"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Poolside/Laguna-XS-2.1": {
+      "sha256": "98c1349c0ea45948a5e53c2a0547b7cea90527f2b4a71b51d2e1f652b1ae9071"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Poolside/Laguna-XS.2": {
+      "sha256": "499c334bcd4e9b62715ebc785e0346ff46475fb073822f2d1b6a96feb0fab9df"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen2.5-VL": {
+      "sha256": "d616327b4c521d843af20cf4aeb6e8a34779c6afd51e2f2bf66afb9fb3750007"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3": {
+      "sha256": "36ee2b23ef174ce742b479edb627144f19db7cc19a827eee32f5a5f0876e150c"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3-Coder": {
+      "sha256": "94a70313c9ed6103d27a68640482a896198c082dd3b0ffe4d16b03c7403fd95e"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3-Coder-Next": {
+      "sha256": "40b93b31d2cd535ec6101670668eaad2fc7c5e4b215376249c6e1e986a6ca5ca"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3-Next": {
+      "sha256": "9a781b638e301763b1928ff1bcc2b012f39313eeb3386a23879bef8881b4d741"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3-VL": {
+      "sha256": "83b8b928028be1041e54ac2394bb33e5b65a58bfc5808a5c13cf4971191a6e3e"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.5": {
+      "sha256": "509b22575c31435160d121eeee645d437acfb1feea244a477e904f91fd5a0f27"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.6": {
+      "sha256": "a2757983de71ad815f0aab0f44d9ab36446758bb027ad8c5335a507eb7677e0e"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8": {
+      "sha256": "10d177ac5670db1ed266328be1ea5368a1ca8e23e386c0c4659967ee7669fb93"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-27B": {
+      "sha256": "0c07ddd3e988b838e28b8200a30e4503a925ccc8c5a6b818162a725e9f23dedd"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-Flash-Next": {
+      "sha256": "814645e780dbc0d652907b0e412dd3a4556f5f49f77b44bab52f601f07134151"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/RedNote/Dots3-Note": {
+      "sha256": "941df6b8b07ed12ae462aa499f61d1084493c1330724ebab0e05e6b78a07d5c3"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/StepFun/Step-3.7-Flash": {
+      "sha256": "bb7e93f1fae5f81e40db45e0908f3a84eda8e267892e0a6f652b86a2e7382011"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/StepFun/Step-5-Preview": {
+      "sha256": "5379f6fb82abfec07eed440426a9a8ce6454e232fb41ed2d807ce90c096ebd2a"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/StepFun/Step3-VL-10B": {
+      "sha256": "15a9315bbe753cfe306b775d506babb9c2e4476c1fcc03c0638d6cbf17714166"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/StepFun/Step3.5": {
+      "sha256": "e95d9f4c5d46a6b40f198dfd55e932dc38429714f088bccc04977623e17a3781"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Tencent/Hunyuan3-Preview": {
+      "sha256": "f58c6118d3d4b1b102365386a09890c7044e82f6c3aec8a30a70d7a6dbd93db3"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Tencent/Hy3": {
+      "sha256": "b023db358adac1f8d3cd924b85c06990f172dce013643583cbb0cb580d0261af"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Tencent/Hy4-Preview": {
+      "sha256": "d39355ddb28085e21c63f528b86a0dc49cbf44deb39e7985411eeeb5f969c6a6"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/ThinkingMachines/Inkling": {
+      "sha256": "7a7f2c927c8ec85e3511084996715f4e43184fb1ddcd9d2488c09758c482c312"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/ThinkingMachines/Inkling-Small": {
+      "sha256": "6190ce428b6e5fc67ddbcffd9871bd6594c773b25b7df10d9f679a6c56d9bb9e"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Xiaomi/MiMo-V2-Flash": {
+      "sha256": "cfdb99318cf44f6755ced525867151c95e676d456802731b8880a461ae600081"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Xiaomi/MiMo-V2.5": {
+      "sha256": "1ecc9699169ed64de8051c5c1b3782b3d6cea0a0f1f49119eff030ca132f65a2"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Xiaomi/MiMo-V2.6": {
+      "sha256": "c895e342d89a37be40f66c2c9ecf7d80862dd83f837cc3db41afed8395c65650"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/intro": {
+      "sha256": "734f0e08b82144bf503b6586f30686d4da93c3907b691ffef22c862ef63a8d67"
+    },
+    "https://docs.sglang.io/llms.txt": {
+      "sha256": "c1f0ee084fb38517ab2d2672ce00488d8f2f1449909b34c5d78bfbcdd1bf4d39",
+      "recipePages": [
+        "https://docs.sglang.io/cookbook/autoregressive/Baidu/PaddleOCR-VL",
+        "https://docs.sglang.io/cookbook/autoregressive/Baidu/Unlimited-OCR",
+        "https://docs.sglang.io/cookbook/autoregressive/Cloudflare/clef",
+        "https://docs.sglang.io/cookbook/autoregressive/DeepReinforce/Ornith-1.0",
+        "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-Math-V2",
+        "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-OCR",
+        "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-OCR-2",
+        "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-R1",
+        "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V3",
+        "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V3_1",
+        "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V3_2",
+        "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V4",
+        "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V4_1",
+        "https://docs.sglang.io/cookbook/autoregressive/Ernie/Ernie4.5",
+        "https://docs.sglang.io/cookbook/autoregressive/Ernie/Ernie4.5-VL",
+        "https://docs.sglang.io/cookbook/autoregressive/FlashLabs/Chroma1.0",
+        "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.5",
+        "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.5V",
+        "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.6",
+        "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.6V",
+        "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.7",
+        "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.7-Flash",
+        "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5",
+        "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.1",
+        "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.2",
+        "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.3",
+        "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.3-Flash",
+        "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-Glyph",
+        "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-OCR",
+        "https://docs.sglang.io/cookbook/autoregressive/GigaChat/GigaChat3.5",
+        "https://docs.sglang.io/cookbook/autoregressive/GigaChat/GigaChat3.5-Reasoning",
+        "https://docs.sglang.io/cookbook/autoregressive/Google/DiffusionGemma",
+        "https://docs.sglang.io/cookbook/autoregressive/Google/EmbeddingGemma",
+        "https://docs.sglang.io/cookbook/autoregressive/Google/EmbeddingGemma2",
+        "https://docs.sglang.io/cookbook/autoregressive/Google/Gemma4",
+        "https://docs.sglang.io/cookbook/autoregressive/IBM/Granite-4.2",
+        "https://docs.sglang.io/cookbook/autoregressive/IFM/Jais-3",
+        "https://docs.sglang.io/cookbook/autoregressive/IFM/K2-Horizon",
+        "https://docs.sglang.io/cookbook/autoregressive/IQuestLab/IQuest-Q1",
+        "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/LLaDA-2.1",
+        "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-2.5-1T",
+        "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-2.6",
+        "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.0-flash",
+        "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.0-flash-VL",
+        "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.0-tiny",
+        "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.1-flash",
+        "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ring-2.5-1T",
+        "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ring-2.6-1T",
+        "https://docs.sglang.io/cookbook/autoregressive/InternLM/Intern-S1",
+        "https://docs.sglang.io/cookbook/autoregressive/InternLM/Intern-S2-Mobius",
+        "https://docs.sglang.io/cookbook/autoregressive/InternLM/Intern-S2-Preview",
+        "https://docs.sglang.io/cookbook/autoregressive/InternVL/InternVL3.5",
+        "https://docs.sglang.io/cookbook/autoregressive/Jina/Jina-reranker-m0",
+        "https://docs.sglang.io/cookbook/autoregressive/LiquidAI/LFM2.5",
+        "https://docs.sglang.io/cookbook/autoregressive/Meituan/LongCat-2.0",
+        "https://docs.sglang.io/cookbook/autoregressive/Meta/Llama3.1",
+        "https://docs.sglang.io/cookbook/autoregressive/Meta/Llama3.3-70B",
+        "https://docs.sglang.io/cookbook/autoregressive/Meta/Llama4",
+        "https://docs.sglang.io/cookbook/autoregressive/Meta/MuseGlimmer",
+        "https://docs.sglang.io/cookbook/autoregressive/Meta/MuseSparkOpen",
+        "https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M2",
+        "https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M2.5",
+        "https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M2.7",
+        "https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M3",
+        "https://docs.sglang.io/cookbook/autoregressive/Mistral/Devstral-2",
+        "https://docs.sglang.io/cookbook/autoregressive/Mistral/Ministral-3",
+        "https://docs.sglang.io/cookbook/autoregressive/Mistral/Mistral-Medium-3.5",
+        "https://docs.sglang.io/cookbook/autoregressive/Mistral/Mistral-Small-4",
+        "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K2",
+        "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K2.5",
+        "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K2.6",
+        "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K2.7-Code",
+        "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K3",
+        "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-Linear",
+        "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3-Nano",
+        "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3-Nano-Omni",
+        "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3-Super",
+        "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3-Ultra",
+        "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3.5-Lightning",
+        "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3.5-Super",
+        "https://docs.sglang.io/cookbook/autoregressive/OpenAI/GPT-OSS",
+        "https://docs.sglang.io/cookbook/autoregressive/OpenBMB/MiniCPM-V-4_6",
+        "https://docs.sglang.io/cookbook/autoregressive/OpenBMB/MiniCPM-V-4_7",
+        "https://docs.sglang.io/cookbook/autoregressive/OpenBMB/MiniCPM5-2B",
+        "https://docs.sglang.io/cookbook/autoregressive/Perplexity/PPLX-Decider-v1-27B",
+        "https://docs.sglang.io/cookbook/autoregressive/Perplexity/PPLX-Decider-v1.1-27B",
+        "https://docs.sglang.io/cookbook/autoregressive/Poolside/Laguna-M.1",
+        "https://docs.sglang.io/cookbook/autoregressive/Poolside/Laguna-S-2.1",
+        "https://docs.sglang.io/cookbook/autoregressive/Poolside/Laguna-XS-2.1",
+        "https://docs.sglang.io/cookbook/autoregressive/Poolside/Laguna-XS.2",
+        "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen2.5-VL",
+        "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3",
+        "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3-Coder",
+        "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3-Coder-Next",
+        "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3-Next",
+        "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3-VL",
+        "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.5",
+        "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.6",
+        "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8",
+        "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-27B",
+        "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-Flash-Next",
+        "https://docs.sglang.io/cookbook/autoregressive/RedNote/Dots3-Note",
+        "https://docs.sglang.io/cookbook/autoregressive/StepFun/Step-3.7-Flash",
+        "https://docs.sglang.io/cookbook/autoregressive/StepFun/Step-5-Preview",
+        "https://docs.sglang.io/cookbook/autoregressive/StepFun/Step3-VL-10B",
+        "https://docs.sglang.io/cookbook/autoregressive/StepFun/Step3.5",
+        "https://docs.sglang.io/cookbook/autoregressive/Tencent/Hunyuan3-Preview",
+        "https://docs.sglang.io/cookbook/autoregressive/Tencent/Hy3",
+        "https://docs.sglang.io/cookbook/autoregressive/Tencent/Hy4-Preview",
+        "https://docs.sglang.io/cookbook/autoregressive/ThinkingMachines/Inkling",
+        "https://docs.sglang.io/cookbook/autoregressive/ThinkingMachines/Inkling-Small",
+        "https://docs.sglang.io/cookbook/autoregressive/Xiaomi/MiMo-V2-Flash",
+        "https://docs.sglang.io/cookbook/autoregressive/Xiaomi/MiMo-V2.5",
+        "https://docs.sglang.io/cookbook/autoregressive/Xiaomi/MiMo-V2.6",
+        "https://docs.sglang.io/cookbook/autoregressive/intro"
+      ]
+    },
+    "https://docs.vllm.ai/en/latest/models/supported_models/": {
+      "sha256": "003db2ec649813dfaaf5cde5af6db6c4731595a755739e12d3a568ffbbb5a2ce"
+    },
+    "https://docs.z.ai/guides/vlm/glm-5.3-flash": {
+      "sha256": "e89e4766d8a80df88141eff88ee2ef9f98b692a1aa9a672cb57b0abf2aa4998f"
+    },
+    "https://recipes.vllm.ai/zai-org/GLM-5.2": {
+      "sha256": "5281812ffc7a34f6a9f86c71114be16362c71b18f893a7db37aa00500d7ee649"
+    }
+  }
+}

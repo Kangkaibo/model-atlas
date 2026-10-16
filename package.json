@@ -1,0 +1,19 @@
+{
+  "name": "model-atlas",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Source-linked LLM specifications and inference framework support catalog",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build-data.mjs",
+    "check": "node scripts/check.mjs && node scripts/check-project.mjs",
+    "test": "node --test tests/reviewed-updates.test.mjs && python -m unittest discover -s tests -p test_*.py",
+    "start": "node scripts/serve.mjs",
+    "sources:check": "python scripts/check_sources.py",
+    "package": "python scripts/package_release.py"
+  }
+}

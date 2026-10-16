@@ -1,0 +1,951 @@
+[
+  {
+    "name": "GLM-5.2",
+    "kind": "open-weights",
+    "revision": "cf457fa734ab149ffef225f80893eb38c6ff5cdc",
+    "fields": {
+      "architecture": {
+        "value": "GlmMoeDsaForCausalLM / glm_moe_dsa; IndexShare DSA",
+        "source": "https://huggingface.co/zai-org/GLM-5.2/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "isMoE": {
+        "value": true,
+        "source": "https://huggingface.co/zai-org/GLM-5.2/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "routedExperts": {
+        "value": 256,
+        "source": "https://huggingface.co/zai-org/GLM-5.2/blob/main/config.json",
+        "status": "官方披露",
+        "note": "每个 MoE 层的路由专家数"
+      },
+      "selectedExperts": {
+        "value": 8,
+        "source": "https://huggingface.co/zai-org/GLM-5.2/blob/main/config.json",
+        "status": "官方披露",
+        "note": "每个 token、每个 MoE 层路由选中；共享专家另计"
+      },
+      "sharedExperts": {
+        "value": 1,
+        "source": "https://huggingface.co/zai-org/GLM-5.2/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "contextTokens": {
+        "value": 1048576,
+        "source": "https://huggingface.co/zai-org/GLM-5.2/blob/main/config.json",
+        "status": "官方披露",
+        "note": "max_position_embeddings 配置上限；部署时受后端与资源限制"
+      },
+      "layers": {
+        "value": 78,
+        "source": "https://huggingface.co/zai-org/GLM-5.2/blob/main/config.json",
+        "status": "官方披露",
+        "note": "主模型层数，不含 nextn 预测层"
+      },
+      "mtpLayers": {
+        "value": 1,
+        "source": "https://huggingface.co/zai-org/GLM-5.2/blob/main/config.json",
+        "status": "官方披露",
+        "note": "num_nextn_predict_layers；预测层数不等于每轮草稿 token 数"
+      },
+      "weightDtype": {
+        "value": "BF16",
+        "source": "https://huggingface.co/zai-org/GLM-5.2/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "checkpointTensorCount": {
+        "value": 753329940480,
+        "source": "https://huggingface.co/api/models/zai-org/GLM-5.2",
+        "status": "官方仓库张量统计",
+        "note": "HF 官方仓库 safetensors.total；包括 checkpoint 内附加预测模块等张量。不能当作作者宣布的主模型参数量"
+      },
+      "totalParamsB": {
+        "value": 743,
+        "source": "https://recipes.vllm.ai/zai-org/GLM-5.2",
+        "status": "框架官方资料",
+        "note": "vLLM 项目 recipe 称约 743B；不以 checkpoint 自动张量统计替代；作者 README 未直接给出数字"
+      },
+      "activeParamsB": {
+        "value": 39,
+        "source": "https://recipes.vllm.ai/zai-org/GLM-5.2",
+        "status": "框架官方资料",
+        "note": "vLLM 项目 recipe 称39B active；作者 README 未直接给出数字"
+      },
+      "speculation": {
+        "value": "MTP",
+        "source": "https://huggingface.co/zai-org/GLM-5.2/blob/main/README.md",
+        "status": "官方披露",
+        "note": "作者 README 明确改进 MTP 用于 speculative decoding。vLLM recipe 演示5个 draft tokens；不得把5写成 MTP层数"
+      },
+      "officialQuantization": {
+        "value": "BF16 / 官方 FP8 变体",
+        "source": "https://huggingface.co/zai-org/GLM-5.2-FP8",
+        "status": "官方披露"
+      }
+    },
+    "frameworks": {
+      "sglang": {
+        "value": "作者明确支持；v0.5.13.post1+",
+        "source": "https://huggingface.co/zai-org/GLM-5.2/blob/main/README.md",
+        "status": "官方披露"
+      },
+      "vllm": {
+        "value": "作者写v0.23.0+；当前框架recipe要求v0.24.0+，tool calling+MTP 建议最新main",
+        "source": "https://recipes.vllm.ai/zai-org/GLM-5.2",
+        "status": "官方披露"
+      }
+    }
+  },
+  {
+    "name": "GLM-5.3",
+    "kind": "open-weights",
+    "revision": "ba32f8c19c8738e2c57c71798c601d477a7bf844",
+    "fields": {
+      "architecture": {
+        "value": "GlmMoeDsaForCausalLM / glm_moe_dsa; IndexShare DSA",
+        "source": "https://huggingface.co/zai-org/GLM-5.3/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "isMoE": {
+        "value": true,
+        "source": "https://huggingface.co/zai-org/GLM-5.3/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "routedExperts": {
+        "value": 256,
+        "source": "https://huggingface.co/zai-org/GLM-5.3/blob/main/config.json",
+        "status": "官方披露",
+        "note": "每个 MoE 层的路由专家数"
+      },
+      "selectedExperts": {
+        "value": 8,
+        "source": "https://huggingface.co/zai-org/GLM-5.3/blob/main/config.json",
+        "status": "官方披露",
+        "note": "每个 token、每个 MoE 层路由选中；共享专家另计"
+      },
+      "sharedExperts": {
+        "value": 1,
+        "source": "https://huggingface.co/zai-org/GLM-5.3/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "contextTokens": {
+        "value": 1048576,
+        "source": "https://huggingface.co/zai-org/GLM-5.3/blob/main/config.json",
+        "status": "官方披露",
+        "note": "max_position_embeddings 配置上限；部署时受后端与资源限制"
+      },
+      "layers": {
+        "value": 78,
+        "source": "https://huggingface.co/zai-org/GLM-5.3/blob/main/config.json",
+        "status": "官方披露",
+        "note": "主模型层数，不含 nextn 预测层"
+      },
+      "mtpLayers": {
+        "value": 1,
+        "source": "https://huggingface.co/zai-org/GLM-5.3/blob/main/config.json",
+        "status": "官方披露",
+        "note": "num_nextn_predict_layers；预测层数不等于每轮草稿 token 数"
+      },
+      "weightDtype": {
+        "value": "原仓库为 FP8 e4m3；未转模块保留BF16",
+        "source": "https://huggingface.co/zai-org/GLM-5.3/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "totalParamsB": {
+        "value": 743,
+        "source": "https://huggingface.co/zai-org/GLM-5.3/blob/main/README.md",
+        "status": "官方关系推导",
+        "note": "作者明示与GLM-5.2同base，结合vLLM 5.2 recipe约743B；不是GLM-5作者744B数字的直接披露。所需完整来源链：GLM-5.3 README + vLLM GLM-5.2 recipe"
+      },
+      "activeParamsB": {
+        "value": 39,
+        "source": "https://huggingface.co/zai-org/GLM-5.3/blob/main/README.md",
+        "status": "官方关系推导",
+        "note": "同上；来源链含 https://recipes.vllm.ai/zai-org/GLM-5.2"
+      },
+      "speculation": {
+        "value": "MTP；1个 nextn 预测层",
+        "source": "https://huggingface.co/zai-org/GLM-5.3/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "officialQuantization": {
+        "value": "FP8 e4m3、128×128 block、动态activation；官方BF16单列仓库",
+        "source": "https://huggingface.co/zai-org/GLM-5.3/blob/main/config.json",
+        "status": "官方披露",
+        "note": "BF16: https://huggingface.co/zai-org/GLM-5.3-BF16"
+      }
+    },
+    "frameworks": {
+      "sglang": {
+        "value": "作者明确支持",
+        "source": "https://huggingface.co/zai-org/GLM-5.3/blob/main/README.md",
+        "status": "官方披露"
+      },
+      "vllm": {
+        "value": "作者明确支持",
+        "source": "https://huggingface.co/zai-org/GLM-5.3/blob/main/README.md",
+        "status": "官方披露"
+      }
+    }
+  },
+  {
+    "name": "GLM-5.3-Flash",
+    "kind": "open-weights",
+    "configRevision": "c54b8d14c81437589ce7db2bece34f157bd90203",
+    "fields": {
+      "architecture": {
+        "value": "Glm5NextForConditionalGeneration / glm5_next；线性+稀疏混合注意力、mHC、原生多模态",
+        "source": "https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "isMoE": {
+        "value": true,
+        "source": "https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "routedExperts": {
+        "value": 288,
+        "source": "https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/config.json",
+        "status": "官方披露",
+        "note": "每个 MoE 层的路由专家数"
+      },
+      "selectedExperts": {
+        "value": 8,
+        "source": "https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/config.json",
+        "status": "官方披露",
+        "note": "每个 token、每个 MoE 层路由选中；共享专家另计"
+      },
+      "sharedExperts": {
+        "value": 1,
+        "source": "https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "contextTokens": {
+        "value": 1048576,
+        "source": "https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/config.json",
+        "status": "官方披露",
+        "note": "max_position_embeddings 配置上限；部署时受后端与资源限制"
+      },
+      "layers": {
+        "value": 45,
+        "source": "https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/config.json",
+        "status": "官方披露",
+        "note": "主模型层数，不含 nextn 预测层"
+      },
+      "mtpLayers": {
+        "value": 1,
+        "source": "https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/config.json",
+        "status": "官方披露",
+        "note": "num_nextn_predict_layers；预测层数不等于每轮草稿 token 数"
+      },
+      "weightDtype": {
+        "value": "原仓库 FP8 e4m3，未转模块BF16",
+        "source": "https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "totalParamsB": {
+        "value": 320,
+        "source": "https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/README.md",
+        "status": "官方披露"
+      },
+      "activeParamsB": {
+        "value": 18,
+        "source": "https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/README.md",
+        "status": "官方披露"
+      },
+      "speculation": {
+        "value": "配置附1个MTP预测层",
+        "source": "https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "officialQuantization": {
+        "value": "FP8 e4m3、128×128 block、动态activation；官方BF16变体",
+        "source": "https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/config.json",
+        "status": "官方披露",
+        "note": "BF16: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16"
+      }
+    },
+    "frameworks": {
+      "sglang": {
+        "value": "作者明确支持",
+        "source": "https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/README.md",
+        "status": "官方披露"
+      },
+      "vllm": {
+        "value": "作者明确支持",
+        "source": "https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/README.md",
+        "status": "官方披露"
+      }
+    },
+    "revision": "c54b8d14c81437589ce7db2bece34f157bd90203"
+  },
+  {
+    "name": "GLM-5.3-FlashX",
+    "aliases": [
+      "GLM-5.3-Flash-X",
+      "glm-5.3-flashx"
+    ],
+    "kind": "official-api-variant",
+    "fields": {
+      "officialName": {
+        "value": "GLM-5.3-FlashX",
+        "source": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+        "status": "官方披露",
+        "note": "准确拼写没有Flash与X之间的连字符；API code glm-5.3-flashx"
+      },
+      "contextTokens": {
+        "value": 1000000,
+        "source": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+        "status": "官方披露",
+        "note": "官网写1M，不把API1M自动精确化成配置1048576"
+      },
+      "maxOutputTokens": {
+        "value": 131072,
+        "source": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+        "status": "官方披露",
+        "note": "官网写128K"
+      },
+      "variant": {
+        "value": "FlashX 是200 tokens/s高速API版本",
+        "source": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+        "status": "官方披露"
+      },
+      "totalParamsB": {
+        "value": null,
+        "source": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+        "status": "未独立披露",
+        "note": "同一官方页面以Flash/FlashX介绍系列，但320B/18B句子明确主语为Flash；未独立披露FlashX参数/权重。可给系列参考320B/18B并标注推导，不应当成独立权重配置"
+      },
+      "isMoE": {
+        "value": null,
+        "source": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+        "status": "未独立披露",
+        "note": "未找到独立开源checkpoint/config；不直接继承Flash专家、MTP、量化"
+      }
+    },
+    "frameworks": {
+      "sglang": {
+        "value": "不适用/未找到独立checkpoint",
+        "source": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+        "status": "范围说明",
+        "note": "FlashX是API变体；不能凭Flash的框架适配认定FlashX权重可本地部署"
+      },
+      "vllm": {
+        "value": "不适用/未找到独立checkpoint",
+        "source": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+        "status": "范围说明",
+        "note": "同上"
+      }
+    },
+    "revision": null
+  },
+  {
+    "name": "GLM-5.1",
+    "kind": "open-weights",
+    "revision": "26e1bd6e011feb778d25ae34b09b07074139d92d",
+    "fields": {
+      "architecture": {
+        "value": "GlmMoeDsaForCausalLM / glm_moe_dsa; DSA",
+        "source": "https://huggingface.co/zai-org/GLM-5.1/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "isMoE": {
+        "value": true,
+        "source": "https://huggingface.co/zai-org/GLM-5.1/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "routedExperts": {
+        "value": 256,
+        "source": "https://huggingface.co/zai-org/GLM-5.1/blob/main/config.json",
+        "status": "官方披露",
+        "note": "每个 MoE 层的路由专家数"
+      },
+      "selectedExperts": {
+        "value": 8,
+        "source": "https://huggingface.co/zai-org/GLM-5.1/blob/main/config.json",
+        "status": "官方披露",
+        "note": "每个 token、每个 MoE 层路由选中；共享专家另计"
+      },
+      "sharedExperts": {
+        "value": 1,
+        "source": "https://huggingface.co/zai-org/GLM-5.1/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "contextTokens": {
+        "value": 202752,
+        "source": "https://huggingface.co/zai-org/GLM-5.1/blob/main/config.json",
+        "status": "官方披露",
+        "note": "max_position_embeddings 配置上限；部署时受后端与资源限制"
+      },
+      "layers": {
+        "value": 78,
+        "source": "https://huggingface.co/zai-org/GLM-5.1/blob/main/config.json",
+        "status": "官方披露",
+        "note": "主模型层数，不含 nextn 预测层"
+      },
+      "mtpLayers": {
+        "value": 1,
+        "source": "https://huggingface.co/zai-org/GLM-5.1/blob/main/config.json",
+        "status": "官方披露",
+        "note": "num_nextn_predict_layers；预测层数不等于每轮草稿 token 数"
+      },
+      "weightDtype": {
+        "value": "BF16",
+        "source": "https://huggingface.co/zai-org/GLM-5.1/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "checkpointTensorCount": {
+        "value": 753864139008,
+        "source": "https://huggingface.co/api/models/zai-org/GLM-5.1",
+        "status": "官方仓库张量统计",
+        "note": "HF safetensors.total；checkpoint含附加模块的张量统计"
+      },
+      "totalParamsB": {
+        "value": null,
+        "source": "https://huggingface.co/zai-org/GLM-5.1/blob/main/README.md",
+        "status": "未披露",
+        "note": "作者README未直接披露；不能仅凭版本相近自动继承GLM-5的744B/40B"
+      },
+      "speculation": {
+        "value": "配置1个MTP预测层",
+        "source": "https://huggingface.co/zai-org/GLM-5.1/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "officialQuantization": {
+        "value": "BF16，官方FP8变体",
+        "source": "https://huggingface.co/zai-org/GLM-5.1-FP8",
+        "status": "官方披露"
+      }
+    },
+    "frameworks": {
+      "sglang": {
+        "value": "作者明确v0.5.10+",
+        "source": "https://huggingface.co/zai-org/GLM-5.1/blob/main/README.md",
+        "status": "官方披露"
+      },
+      "vllm": {
+        "value": "作者明确v0.19.0+",
+        "source": "https://huggingface.co/zai-org/GLM-5.1/blob/main/README.md",
+        "status": "官方披露"
+      }
+    }
+  },
+  {
+    "name": "GLM-4.7",
+    "kind": "open-weights",
+    "revision": "602d01efcdd332c5238ca4bcede555defbe83eb7",
+    "fields": {
+      "architecture": {
+        "value": "Glm4MoeForCausalLM / glm4_moe",
+        "source": "https://huggingface.co/zai-org/GLM-4.7/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "isMoE": {
+        "value": true,
+        "source": "https://huggingface.co/zai-org/GLM-4.7/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "routedExperts": {
+        "value": 160,
+        "source": "https://huggingface.co/zai-org/GLM-4.7/blob/main/config.json",
+        "status": "官方披露",
+        "note": "每个 MoE 层的路由专家数"
+      },
+      "selectedExperts": {
+        "value": 8,
+        "source": "https://huggingface.co/zai-org/GLM-4.7/blob/main/config.json",
+        "status": "官方披露",
+        "note": "每个 token、每个 MoE 层路由选中；共享专家另计"
+      },
+      "sharedExperts": {
+        "value": 1,
+        "source": "https://huggingface.co/zai-org/GLM-4.7/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "contextTokens": {
+        "value": 202752,
+        "source": "https://huggingface.co/zai-org/GLM-4.7/blob/main/config.json",
+        "status": "官方披露",
+        "note": "max_position_embeddings 配置上限；部署时受后端与资源限制"
+      },
+      "layers": {
+        "value": 92,
+        "source": "https://huggingface.co/zai-org/GLM-4.7/blob/main/config.json",
+        "status": "官方披露",
+        "note": "主模型层数，不含 nextn 预测层"
+      },
+      "mtpLayers": {
+        "value": 1,
+        "source": "https://huggingface.co/zai-org/GLM-4.7/blob/main/config.json",
+        "status": "官方披露",
+        "note": "num_nextn_predict_layers；预测层数不等于每轮草稿 token 数"
+      },
+      "weightDtype": {
+        "value": "BF16",
+        "source": "https://huggingface.co/zai-org/GLM-4.7/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "checkpointTensorCount": {
+        "value": 358337791296,
+        "source": "https://huggingface.co/api/models/zai-org/GLM-4.7",
+        "status": "官方仓库张量统计",
+        "note": "HF safetensors.total，checkpoint张量统计"
+      },
+      "totalParamsB": {
+        "value": null,
+        "source": "https://huggingface.co/zai-org/GLM-4.7/blob/main/README.md",
+        "status": "未披露",
+        "note": "作者README未直接写总/激活参数；不自动把GLM-4.5的355B/32B当成4.7作者披露"
+      },
+      "speculation": {
+        "value": "MTP；vLLM method mtp / SGLang EAGLE 路径",
+        "source": "https://huggingface.co/zai-org/GLM-4.7/blob/main/README.md",
+        "status": "官方披露"
+      },
+      "officialQuantization": {
+        "value": "BF16，官方FP8变体",
+        "source": "https://huggingface.co/zai-org/GLM-4.7-FP8",
+        "status": "官方披露"
+      }
+    },
+    "frameworks": {
+      "sglang": {
+        "value": "作者明确支持；发布时main分支",
+        "source": "https://huggingface.co/zai-org/GLM-4.7/blob/main/README.md",
+        "status": "官方披露"
+      },
+      "vllm": {
+        "value": "作者明确支持；发布时main分支",
+        "source": "https://huggingface.co/zai-org/GLM-4.7/blob/main/README.md",
+        "status": "官方披露"
+      }
+    }
+  },
+  {
+    "name": "GLM-4.7-Flash",
+    "kind": "open-weights",
+    "configRevision": "75fce703a93da3705c4cf8d3caadbac1d1072c78",
+    "fields": {
+      "architecture": {
+        "value": "Glm4MoeLiteForCausalLM / glm4_moe_lite",
+        "source": "https://huggingface.co/zai-org/GLM-4.7-Flash/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "isMoE": {
+        "value": true,
+        "source": "https://huggingface.co/zai-org/GLM-4.7-Flash/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "routedExperts": {
+        "value": 64,
+        "source": "https://huggingface.co/zai-org/GLM-4.7-Flash/blob/main/config.json",
+        "status": "官方披露",
+        "note": "每个 MoE 层的路由专家数"
+      },
+      "selectedExperts": {
+        "value": 4,
+        "source": "https://huggingface.co/zai-org/GLM-4.7-Flash/blob/main/config.json",
+        "status": "官方披露",
+        "note": "每个 token、每个 MoE 层路由选中；共享专家另计"
+      },
+      "sharedExperts": {
+        "value": 1,
+        "source": "https://huggingface.co/zai-org/GLM-4.7-Flash/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "contextTokens": {
+        "value": 202752,
+        "source": "https://huggingface.co/zai-org/GLM-4.7-Flash/blob/main/config.json",
+        "status": "官方披露",
+        "note": "max_position_embeddings 配置上限；部署时受后端与资源限制"
+      },
+      "layers": {
+        "value": 47,
+        "source": "https://huggingface.co/zai-org/GLM-4.7-Flash/blob/main/config.json",
+        "status": "官方披露",
+        "note": "主模型层数，不含 nextn 预测层"
+      },
+      "mtpLayers": {
+        "value": 1,
+        "source": "https://huggingface.co/zai-org/GLM-4.7-Flash/blob/main/config.json",
+        "status": "官方披露",
+        "note": "num_nextn_predict_layers；预测层数不等于每轮草稿 token 数"
+      },
+      "weightDtype": {
+        "value": "BF16",
+        "source": "https://huggingface.co/zai-org/GLM-4.7-Flash/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "totalParamsB": {
+        "value": 30,
+        "source": "https://huggingface.co/zai-org/GLM-4.7-Flash/blob/main/README.md",
+        "status": "官方披露",
+        "note": "作者标称30B-A3B；不要和HF checkpoint约31B混同"
+      },
+      "activeParamsB": {
+        "value": 3,
+        "source": "https://huggingface.co/zai-org/GLM-4.7-Flash/blob/main/README.md",
+        "status": "官方披露"
+      },
+      "speculation": {
+        "value": "MTP；vLLM method mtp / SGLang EAGLE 路径",
+        "source": "https://huggingface.co/zai-org/GLM-4.7-Flash/blob/main/README.md",
+        "status": "官方披露"
+      },
+      "officialQuantization": {
+        "value": "BF16",
+        "source": "https://huggingface.co/zai-org/GLM-4.7-Flash/blob/main/config.json",
+        "status": "官方披露"
+      }
+    },
+    "frameworks": {
+      "sglang": {
+        "value": "作者明确支持；发布时dev/指定PR轮子",
+        "source": "https://huggingface.co/zai-org/GLM-4.7-Flash/blob/main/README.md",
+        "status": "官方披露"
+      },
+      "vllm": {
+        "value": "作者明确支持；发布时main",
+        "source": "https://huggingface.co/zai-org/GLM-4.7-Flash/blob/main/README.md",
+        "status": "官方披露"
+      }
+    },
+    "revision": "75fce703a93da3705c4cf8d3caadbac1d1072c78"
+  },
+  {
+    "name": "GLM-4.6",
+    "kind": "open-weights",
+    "revision": "be72194883d968d7923a07e2f61681ea9a2826d1",
+    "fields": {
+      "architecture": {
+        "value": "Glm4MoeForCausalLM / glm4_moe",
+        "source": "https://huggingface.co/zai-org/GLM-4.6/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "isMoE": {
+        "value": true,
+        "source": "https://huggingface.co/zai-org/GLM-4.6/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "routedExperts": {
+        "value": 160,
+        "source": "https://huggingface.co/zai-org/GLM-4.6/blob/main/config.json",
+        "status": "官方披露",
+        "note": "每个 MoE 层的路由专家数"
+      },
+      "selectedExperts": {
+        "value": 8,
+        "source": "https://huggingface.co/zai-org/GLM-4.6/blob/main/config.json",
+        "status": "官方披露",
+        "note": "每个 token、每个 MoE 层路由选中；共享专家另计"
+      },
+      "sharedExperts": {
+        "value": 1,
+        "source": "https://huggingface.co/zai-org/GLM-4.6/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "contextTokens": {
+        "value": 202752,
+        "source": "https://huggingface.co/zai-org/GLM-4.6/blob/main/config.json",
+        "status": "官方披露",
+        "note": "max_position_embeddings 配置上限；部署时受后端与资源限制"
+      },
+      "layers": {
+        "value": 92,
+        "source": "https://huggingface.co/zai-org/GLM-4.6/blob/main/config.json",
+        "status": "官方披露",
+        "note": "主模型层数，不含 nextn 预测层"
+      },
+      "mtpLayers": {
+        "value": 1,
+        "source": "https://huggingface.co/zai-org/GLM-4.6/blob/main/config.json",
+        "status": "官方披露",
+        "note": "num_nextn_predict_layers；预测层数不等于每轮草稿 token 数"
+      },
+      "weightDtype": {
+        "value": "BF16",
+        "source": "https://huggingface.co/zai-org/GLM-4.6/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "checkpointTensorCount": {
+        "value": 356785898816,
+        "source": "https://huggingface.co/api/models/zai-org/GLM-4.6",
+        "status": "官方仓库张量统计",
+        "note": "HF safetensors.total，checkpoint张量统计"
+      },
+      "totalParamsB": {
+        "value": null,
+        "source": "https://huggingface.co/zai-org/GLM-4.6/blob/main/README.md",
+        "status": "未披露",
+        "note": "本次作者README未找到总/激活参数直述"
+      },
+      "speculation": {
+        "value": "配置1个MTP预测层",
+        "source": "https://huggingface.co/zai-org/GLM-4.6/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "officialQuantization": {
+        "value": "BF16",
+        "source": "https://huggingface.co/zai-org/GLM-4.6/blob/main/config.json",
+        "status": "官方披露"
+      }
+    }
+  },
+  {
+    "name": "GLM-4.6V",
+    "kind": "open-weights",
+    "revision": "4e2d47eb0b41c5280d8294b17cef9e94fdcfff46",
+    "configRevision": "e5323a8bb5ab4d02635a0bb17a24a2a8453e90c2",
+    "fields": {
+      "architecture": {
+        "value": "Glm4vMoeForConditionalGeneration / glm4v_moe",
+        "source": "https://huggingface.co/zai-org/GLM-4.6V/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "isMoE": {
+        "value": true,
+        "source": "https://huggingface.co/zai-org/GLM-4.6V/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "routedExperts": {
+        "value": 128,
+        "source": "https://huggingface.co/zai-org/GLM-4.6V/blob/main/config.json",
+        "status": "官方披露",
+        "note": "每个 MoE 层的路由专家数"
+      },
+      "selectedExperts": {
+        "value": 8,
+        "source": "https://huggingface.co/zai-org/GLM-4.6V/blob/main/config.json",
+        "status": "官方披露",
+        "note": "每个 token、每个 MoE 层路由选中；共享专家另计"
+      },
+      "sharedExperts": {
+        "value": 1,
+        "source": "https://huggingface.co/zai-org/GLM-4.6V/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "contextTokens": {
+        "value": 131072,
+        "source": "https://huggingface.co/zai-org/GLM-4.6V/blob/main/config.json",
+        "status": "官方披露",
+        "note": "max_position_embeddings 配置上限；部署时受后端与资源限制"
+      },
+      "layers": {
+        "value": 46,
+        "source": "https://huggingface.co/zai-org/GLM-4.6V/blob/main/config.json",
+        "status": "官方披露",
+        "note": "主模型层数，不含 nextn 预测层"
+      },
+      "mtpLayers": {
+        "value": 0,
+        "source": "https://huggingface.co/zai-org/GLM-4.6V/blob/main/config.json",
+        "status": "官方披露",
+        "note": "num_nextn_predict_layers；预测层数不等于每轮草稿 token 数"
+      },
+      "weightDtype": {
+        "value": "BF16",
+        "source": "https://huggingface.co/zai-org/GLM-4.6V/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "totalParamsB": {
+        "value": 106,
+        "source": "https://huggingface.co/zai-org/GLM-4.6V/blob/main/README.md",
+        "status": "官方披露",
+        "note": "作者标称106B；HF整个多模态checkpoint统计107.711B，口径不同"
+      },
+      "activeParamsB": {
+        "value": null,
+        "source": "https://huggingface.co/zai-org/GLM-4.6V/blob/main/README.md",
+        "status": "未披露",
+        "note": "未直接披露；不能拿GLM-4.5-Air的12B自动套用多模态版本"
+      },
+      "checkpointTensorCount": {
+        "value": 107710933120,
+        "source": "https://huggingface.co/api/models/zai-org/GLM-4.6V",
+        "status": "官方仓库张量统计",
+        "note": "HF safetensors.total，整个checkpoint"
+      },
+      "speculation": {
+        "value": "未附nextn预测层；其他草稿模型方法未在本次来源核实",
+        "source": "https://huggingface.co/zai-org/GLM-4.6V/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "officialQuantization": {
+        "value": "BF16；官方FP8变体",
+        "source": "https://huggingface.co/zai-org/GLM-4.6V-FP8",
+        "status": "官方披露"
+      }
+    },
+    "frameworks": {
+      "sglang": {
+        "value": "作者明确>=0.5.6.post1",
+        "source": "https://huggingface.co/zai-org/GLM-4.6V/blob/main/README.md",
+        "status": "官方披露"
+      },
+      "vllm": {
+        "value": "作者明确>=0.12.0",
+        "source": "https://huggingface.co/zai-org/GLM-4.6V/blob/main/README.md",
+        "status": "官方披露"
+      }
+    }
+  },
+  {
+    "name": "GLM-4.6V-Flash",
+    "kind": "open-weights",
+    "configRevision": "929496d04e4667eda3f8f5867de07a6786f77ce3",
+    "fields": {
+      "architecture": {
+        "value": "Glm4vForConditionalGeneration / glm4v",
+        "source": "https://huggingface.co/zai-org/GLM-4.6V-Flash/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "isMoE": {
+        "value": false,
+        "source": "https://huggingface.co/zai-org/GLM-4.6V-Flash/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "routedExperts": {
+        "value": 0,
+        "source": "https://huggingface.co/zai-org/GLM-4.6V-Flash/blob/main/config.json",
+        "status": "官方披露",
+        "note": "每个 MoE 层的路由专家数"
+      },
+      "selectedExperts": {
+        "value": 0,
+        "source": "https://huggingface.co/zai-org/GLM-4.6V-Flash/blob/main/config.json",
+        "status": "官方披露",
+        "note": "每个 token、每个 MoE 层路由选中；共享专家另计"
+      },
+      "sharedExperts": {
+        "value": 0,
+        "source": "https://huggingface.co/zai-org/GLM-4.6V-Flash/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "contextTokens": {
+        "value": 131072,
+        "source": "https://huggingface.co/zai-org/GLM-4.6V-Flash/blob/main/config.json",
+        "status": "官方披露",
+        "note": "max_position_embeddings 配置上限；部署时受后端与资源限制"
+      },
+      "layers": {
+        "value": 40,
+        "source": "https://huggingface.co/zai-org/GLM-4.6V-Flash/blob/main/config.json",
+        "status": "官方披露",
+        "note": "主模型层数，不含 nextn 预测层"
+      },
+      "mtpLayers": {
+        "value": null,
+        "source": "https://huggingface.co/zai-org/GLM-4.6V-Flash/blob/main/config.json",
+        "status": "官方披露",
+        "note": "num_nextn_predict_layers；预测层数不等于每轮草稿 token 数"
+      },
+      "weightDtype": {
+        "value": "BF16",
+        "source": "https://huggingface.co/zai-org/GLM-4.6V-Flash/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "totalParamsB": {
+        "value": 9,
+        "source": "https://huggingface.co/zai-org/GLM-4.6V/blob/main/README.md",
+        "status": "官方披露",
+        "note": "GLM-4.6V系列作者介绍Flash为9B；不要和HF约10B含视觉统计混同"
+      },
+      "activeParamsB": {
+        "value": null,
+        "source": "https://huggingface.co/zai-org/GLM-4.6V-Flash/blob/main/config.json",
+        "status": "未披露",
+        "note": "Dense：逐token激活量未直接披露，受视觉输入和计数范围影响"
+      },
+      "speculation": {
+        "value": "未在config发现MTP配置；其他推测解码方式未核实",
+        "source": "https://huggingface.co/zai-org/GLM-4.6V-Flash/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "officialQuantization": {
+        "value": "BF16",
+        "source": "https://huggingface.co/zai-org/GLM-4.6V-Flash/blob/main/config.json",
+        "status": "官方披露"
+      }
+    },
+    "revision": "929496d04e4667eda3f8f5867de07a6786f77ce3"
+  },
+  {
+    "name": "GLM-4.5-Air",
+    "kind": "open-weights",
+    "configRevision": "89b4764b528d44f34d4c7b73ecef7e781eb905ef",
+    "fields": {
+      "architecture": {
+        "value": "Glm4MoeForCausalLM / glm4_moe",
+        "source": "https://huggingface.co/zai-org/GLM-4.5-Air/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "isMoE": {
+        "value": true,
+        "source": "https://huggingface.co/zai-org/GLM-4.5-Air/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "routedExperts": {
+        "value": 128,
+        "source": "https://huggingface.co/zai-org/GLM-4.5-Air/blob/main/config.json",
+        "status": "官方披露",
+        "note": "每个 MoE 层的路由专家数"
+      },
+      "selectedExperts": {
+        "value": 8,
+        "source": "https://huggingface.co/zai-org/GLM-4.5-Air/blob/main/config.json",
+        "status": "官方披露",
+        "note": "每个 token、每个 MoE 层路由选中；共享专家另计"
+      },
+      "sharedExperts": {
+        "value": 1,
+        "source": "https://huggingface.co/zai-org/GLM-4.5-Air/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "contextTokens": {
+        "value": 131072,
+        "source": "https://huggingface.co/zai-org/GLM-4.5-Air/blob/main/config.json",
+        "status": "官方披露",
+        "note": "max_position_embeddings 配置上限；部署时受后端与资源限制"
+      },
+      "layers": {
+        "value": 46,
+        "source": "https://huggingface.co/zai-org/GLM-4.5-Air/blob/main/config.json",
+        "status": "官方披露",
+        "note": "主模型层数，不含 nextn 预测层"
+      },
+      "mtpLayers": {
+        "value": 1,
+        "source": "https://huggingface.co/zai-org/GLM-4.5-Air/blob/main/config.json",
+        "status": "官方披露",
+        "note": "num_nextn_predict_layers；预测层数不等于每轮草稿 token 数"
+      },
+      "weightDtype": {
+        "value": "BF16",
+        "source": "https://huggingface.co/zai-org/GLM-4.5-Air/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "totalParamsB": {
+        "value": 106,
+        "source": "https://huggingface.co/zai-org/GLM-4.5-Air/blob/main/README.md",
+        "status": "官方披露"
+      },
+      "activeParamsB": {
+        "value": 12,
+        "source": "https://huggingface.co/zai-org/GLM-4.5-Air/blob/main/README.md",
+        "status": "官方披露"
+      },
+      "speculation": {
+        "value": "配置1个MTP预测层",
+        "source": "https://huggingface.co/zai-org/GLM-4.5-Air/blob/main/config.json",
+        "status": "官方披露"
+      },
+      "officialQuantization": {
+        "value": "BF16，作者明确发布官方FP8",
+        "source": "https://huggingface.co/zai-org/GLM-4.5-Air/blob/main/README.md",
+        "status": "官方披露"
+      }
+    },
+    "revision": "89b4764b528d44f34d4c7b73ecef7e781eb905ef"
+  }
+]

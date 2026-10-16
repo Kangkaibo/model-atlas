@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: Model Atlas
+message: Please cite the repository and the original model sources when using this catalog.
+type: software
+authors:
+  - family-names: Model Atlas contributors
+version: 0.1.0
+date-released: 2026-10-16
+license: MIT

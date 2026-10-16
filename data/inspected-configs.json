@@ -1,0 +1,507 @@
+[
+  {
+    "repo": "deepseek-ai/DeepSeek-V4-Flash",
+    "sha": "60d8d70770c6776ff598c94bb586a859a38244f1",
+    "architectures": [
+      "DeepseekV4ForCausalLM"
+    ]
+  },
+  {
+    "repo": "deepseek-ai/DeepSeek-V4-Pro",
+    "sha": "b5968e9190ef611bbf34a7229255be88a0e937c1",
+    "architectures": [
+      "DeepseekV4ForCausalLM"
+    ]
+  },
+  {
+    "repo": "deepseek-ai/DeepSeek-V4-Flash-0731",
+    "sha": "7872f01b1d1fe23eabc4c98b48bffcef5a386062",
+    "architectures": [
+      "DeepseekV4ForCausalLM"
+    ]
+  },
+  {
+    "repo": "deepseek-ai/DeepSeek-V3",
+    "sha": "e815299b0bcbac849fa540c768ef21845365c9eb",
+    "architectures": [
+      "DeepseekV3ForCausalLM"
+    ]
+  },
+  {
+    "repo": "deepseek-ai/DeepSeek-V3.2",
+    "sha": "a7e62ac04ecb2c0a54d736dc46601c5606cf10a6",
+    "architectures": [
+      "DeepseekV32ForCausalLM"
+    ]
+  },
+  {
+    "repo": "deepseek-ai/DeepSeek-R1",
+    "sha": "56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad",
+    "architectures": [
+      "DeepseekV3ForCausalLM"
+    ]
+  },
+  {
+    "repo": "moonshotai/Kimi-K2.6",
+    "sha": "7eb5002f6aadc958aed6a9177b7ed26bb94011bb",
+    "architectures": [
+      "KimiK25ForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "moonshotai/Kimi-K2.5",
+    "sha": "4d01dfe0332d63057c186e0b262165819efb6611",
+    "architectures": [
+      "KimiK25ForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "openai/gpt-oss-120b",
+    "sha": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+    "architectures": [
+      "GptOssForCausalLM"
+    ]
+  },
+  {
+    "repo": "openai/gpt-oss-20b",
+    "sha": "6cee5e81ee83917806bbde320786a8fb61efebee",
+    "architectures": [
+      "GptOssForCausalLM"
+    ]
+  },
+  {
+    "repo": "Qwen/Qwen3-235B-A22B",
+    "sha": "8efa61729e24bd65b1d152b5ab5409052aa80e65",
+    "architectures": [
+      "Qwen3MoeForCausalLM"
+    ]
+  },
+  {
+    "repo": "Qwen/Qwen3-30B-A3B",
+    "sha": "ad44e777bcd18fa416d9da3bd8f70d33ebb85d39",
+    "architectures": [
+      "Qwen3MoeForCausalLM"
+    ]
+  },
+  {
+    "repo": "Qwen/Qwen3-32B",
+    "sha": "9216db5781bf21249d130ec9da846c4624c16137",
+    "architectures": [
+      "Qwen3ForCausalLM"
+    ]
+  },
+  {
+    "repo": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+    "sha": "9c7f2fbe84465e40164a94cc16cd30b6999b0cc7",
+    "architectures": [
+      "Qwen3NextForCausalLM"
+    ]
+  },
+  {
+    "repo": "Qwen/Qwen3.5-35B-A3B",
+    "sha": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+    "architectures": [
+      "Qwen3_5MoeForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "zai-org/GLM-5",
+    "sha": "c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2",
+    "architectures": [
+      "GlmMoeDsaForCausalLM"
+    ]
+  },
+  {
+    "repo": "zai-org/GLM-4.5",
+    "sha": "cbb2c7cfb52fa128a9660cb1a7a78e017899e115",
+    "architectures": [
+      "Glm4MoeForCausalLM"
+    ]
+  },
+  {
+    "repo": "zai-org/GLM-4.5-Air",
+    "sha": "a24ceef6ce4f3536971efe9b778bdaa1bab18daa",
+    "architectures": [
+      "Glm4MoeForCausalLM"
+    ]
+  },
+  {
+    "repo": "MiniMaxAI/MiniMax-M2",
+    "sha": "757303d492a50514c312788b5247a4f696a4c6a3",
+    "architectures": [
+      "MiniMaxM2ForCausalLM"
+    ]
+  },
+  {
+    "repo": "MiniMaxAI/MiniMax-M2.5",
+    "sha": "f710177d938eff80b684d42c5aa84b382612f21f",
+    "architectures": [
+      "MiniMaxM2ForCausalLM"
+    ]
+  },
+  {
+    "repo": "deepseek-ai/DeepSeek-V4-Flash-DSpark",
+    "sha": "62af8fffb2f7030cac4de2f0169f5b8d1101b646",
+    "architectures": [
+      "DeepseekV4ForCausalLM"
+    ]
+  },
+  {
+    "repo": "deepseek-ai/DeepSeek-V4-Pro-DSpark",
+    "sha": "7c09739fd136abfb70a49ec334157f65f45b52cd",
+    "architectures": [
+      "DeepseekV4ForCausalLM"
+    ]
+  },
+  {
+    "repo": "deepseek-ai/DeepSeek-V4-Pro-0813",
+    "sha": "72e1d3230f6c080a530b0a1d46f8eb4602340597",
+    "architectures": [
+      "DeepseekV4ForCausalLM"
+    ]
+  },
+  {
+    "repo": "Qwen/Qwen3.5-397B-A17B",
+    "sha": "8472618112abcbd45acbcdc58436aff4233c23f7",
+    "architectures": [
+      "Qwen3_5MoeForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "Qwen/Qwen3.5-122B-A10B",
+    "sha": "dc4d348443bc740c68e2d77492492c11606384d5",
+    "architectures": [
+      "Qwen3_5MoeForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "Qwen/Qwen3.5-27B",
+    "sha": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+    "architectures": [
+      "Qwen3_5ForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "Qwen/Qwen3.6-35B-A3B",
+    "sha": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+    "architectures": [
+      "Qwen3_5MoeForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "Qwen/Qwen3.6-27B",
+    "sha": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+    "architectures": [
+      "Qwen3_5ForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "Qwen/Qwen3.8-Flash-NEXT",
+    "sha": "de4b8e4d43b917e7706784d8bb445c9af86a3540",
+    "architectures": [
+      "Qwen4ExpForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "internlm/Intern-S1-Pro",
+    "sha": "054ef1ef4bb7eaf0543502954e34dfb082f4fad9",
+    "architectures": [
+      "InternS1ProForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "internlm/Intern-S1",
+    "sha": "4ecad381e28293c4825793f113327cc016cdcbda",
+    "architectures": [
+      "InternS1ForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "internlm/internlm3-8b-instruct",
+    "sha": "28c99415adaf61767bd1c619f4f99f308fdfd223",
+    "architectures": [
+      "InternLM3ForCausalLM"
+    ]
+  },
+  {
+    "repo": "internlm/internlm2_5-20b-chat",
+    "sha": "13741228cfb01d3a69c8f83169a105de77286b8a",
+    "architectures": [
+      "InternLM2ForCausalLM"
+    ]
+  },
+  {
+    "repo": "OpenGVLab/InternVL3_5-30B-A3B",
+    "sha": "ba1762d830e2aeddb3272b66ba9e0abf7e69f626",
+    "architectures": [
+      "InternVLChatModel"
+    ]
+  },
+  {
+    "repo": "baidu/ERNIE-4.5-300B-A47B-PT",
+    "sha": "47bbaf1c9e356313c3cb2ded9078a494fb152f0e",
+    "architectures": [
+      "Ernie4_5_MoeForCausalLM"
+    ]
+  },
+  {
+    "repo": "tencent/Hunyuan-A13B-Instruct",
+    "sha": "290ddb9a56ed23c2c83a1c8081533e58925df952",
+    "architectures": [
+      "HunYuanMoEV1ForCausalLM"
+    ]
+  },
+  {
+    "repo": "inclusionAI/Ling-1T",
+    "sha": "9fd8c406bbd60bdad34dcd8be6af6f1896d7e8da",
+    "architectures": [
+      "BailingMoeV2ForCausalLM"
+    ]
+  },
+  {
+    "repo": "zai-org/GLM-5.3-Flash",
+    "sha": "46a050bec13002ad29ee795c16e61cf4fa3c4a9c",
+    "architectures": [
+      "Glm5NextForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "MiniMaxAI/MiniMax-M3",
+    "sha": "f0e1c1e04d40177e4673a22097036854f536e9c0",
+    "architectures": [
+      "MiniMaxM3SparseForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "moonshotai/Kimi-K3",
+    "sha": "f831ab66814297da540d832a5235f8e904f29d06",
+    "architectures": [
+      "KimiK3ForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "sha": "5254448103b6254fc646dacbca1cbbf20e9216c1",
+    "architectures": [
+      "DeepseekV41ForCausalLM"
+    ]
+  },
+  {
+    "repo": "google/gemma-4-31B-it",
+    "sha": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+    "architectures": [
+      "Gemma4ForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "google/gemma-4-26B-A4B-it",
+    "sha": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+    "architectures": [
+      "Gemma4ForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "IQuestLab/IQuest-Q1",
+    "sha": "5c21b0630586ef77d38cff1094b8cf37a417fcd8",
+    "architectures": [
+      "IQuestQ1ForCausalLM"
+    ]
+  },
+  {
+    "repo": "IFM/Jais-3-375B-A23B",
+    "sha": "c83c3d0255e0228d10e675d25d07ee8baf432910",
+    "architectures": [
+      "K2HorizonForCausalLM"
+    ]
+  },
+  {
+    "repo": "IFM/K2-Horizon-375B-A23B",
+    "sha": "78272deca7adc2f90d154288b5161172283c80b3",
+    "architectures": [
+      "K2HorizonForCausalLM"
+    ]
+  },
+  {
+    "repo": "thinkingmachines/Inkling",
+    "sha": "828496eeae4c243ff1a22f7f28ff83694f2f7bc9",
+    "architectures": [
+      "InklingForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "thinkingmachines/Inkling-Small",
+    "sha": "8cc5877b44d343f88b92086aa1fb72897950f06a",
+    "architectures": [
+      "InklingForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "ai-sage/GigaChat3.5-432B-A28B",
+    "sha": "d10dcaeccb04ca3186fdfa3bb3874b4474e6b41b",
+    "architectures": [
+      "GigaChat35ForCausalLM"
+    ]
+  },
+  {
+    "repo": "Qwen/Qwen3.8-2.4T-A95B",
+    "sha": "207bd685a7e3696cfaff12ded7c6a7ea0f88c996",
+    "architectures": [
+      "Qwen3_5MoeForCausalLM"
+    ]
+  },
+  {
+    "repo": "deepreinforce-ai/Ornith-1.0-397B",
+    "sha": "5e3e761811e804c295c1d3c0ce68b21da6154209",
+    "architectures": [
+      "Qwen3_5MoeForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "meta-models/Muse-Glimmer-30B",
+    "sha": "a4e59da52a7bc87ae7251dd5545c0dd437c44b68",
+    "architectures": [
+      "MuseGlimmerForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "meituan-longcat/LongCat-2.0-FP8",
+    "sha": "d5f32b1aaee4682826d927ec25433da84b281fd0",
+    "architectures": [
+      "LongcatCausalLM"
+    ]
+  },
+  {
+    "repo": "dots-studio/dots3-note-prev",
+    "sha": "1e1e7b0cd37a3a48a6c8d7fa55d5f9d14377006b",
+    "architectures": [
+      "Dots3NoteForCausalLM"
+    ]
+  },
+  {
+    "repo": "ibm-granite/granite-4.2-30b",
+    "sha": "9e668ce1c538387ef24d3644e9b0606647762636",
+    "architectures": [
+      "GraniteForCausalLM"
+    ]
+  },
+  {
+    "repo": "LiquidAI/LFM2.5-8B-A1B",
+    "sha": "5dd22602c2e9f6a097b1de4c4efe0658b605015c",
+    "architectures": [
+      "Lfm2MoeForCausalLM"
+    ]
+  },
+  {
+    "repo": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "sha": "a9904d24bcc1d289a1950fa9d2b978c47cf903b9",
+    "architectures": [
+      "NemotronHForCausalLM"
+    ]
+  },
+  {
+    "repo": "stepfun-ai/Step-3.7-Flash",
+    "sha": "5f6244077ac62e04eec3f320501ff8c2b293373a",
+    "architectures": [
+      "Step3p7ForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "stepfun-ai/Step-5-Preview",
+    "sha": "364b3b03fed2477aa0953fe855a2c4c8c48ee3cc",
+    "architectures": [
+      "Step5ForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "inclusionAI/Ling-3.1-flash",
+    "sha": "a4ccd6b45c002ddb236f9cb77d52cc427482bf19",
+    "architectures": [
+      "BailingMoeV3ForCausalLM"
+    ]
+  },
+  {
+    "repo": "internlm/Intern-S2-Preview",
+    "sha": "4f57cab513689b089019fce4ad24e26520df183c",
+    "architectures": [
+      "InternS2PreviewForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "openbmb/MiniCPM5-2B",
+    "sha": "f97400052a43d642bbc6e9975e2397e3ae6a6b52",
+    "architectures": [
+      "LlamaForCausalLM"
+    ]
+  },
+  {
+    "repo": "mistralai/Mistral-Small-4-119B-2603",
+    "sha": "a11f36bebf709121056b1dbcc943d1c6afbe494d",
+    "architectures": [
+      "Mistral3ForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
+    "sha": "dcd3fd83fb181622fbc606fbb1709901982a62c2",
+    "architectures": [
+      "MiMoV2ForCausalLM"
+    ]
+  },
+  {
+    "repo": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
+    "sha": "b61f21852680ee02a29e946e18cf8697f4844061",
+    "architectures": [
+      "MiMoV2ForCausalLM"
+    ]
+  },
+  {
+    "repo": "FlashLabs/Chroma-4B",
+    "sha": "cf4d2f87e7b14604b4942af134e7a826e5f4fb48",
+    "architectures": []
+  },
+  {
+    "repo": "tencent/Hy4-preview",
+    "sha": "705d81ee51566a186d645b74c974d642ef2828fe",
+    "architectures": [
+      "HYV4ForCausalLM"
+    ]
+  },
+  {
+    "repo": "poolside/Laguna-XS.2",
+    "sha": "a397bde04501591d0ac3d74a5d9d0a4ec298ffb8",
+    "architectures": [
+      "LagunaForCausalLM"
+    ]
+  },
+  {
+    "repo": "perplexity-ai/pplx-decider-v1.1-27b",
+    "sha": "14c9d90137962d300f3de95633f7b6535e80c5ce",
+    "architectures": [
+      "Qwen3_5Model"
+    ]
+  },
+  {
+    "repo": "Cloudflare/clef",
+    "sha": "0b331204bb13fbd2ca93a64df1956f5b55478ce5",
+    "architectures": [
+      "Qwen3_5ForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "Cloudflare/clef-flash",
+    "sha": "8b2e5fd17c09fd49bc2880b805d5323ec7ff4ff3",
+    "architectures": [
+      "Qwen3_5ForConditionalGeneration"
+    ]
+  },
+  {
+    "repo": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+    "sha": "92f3b1597a195b523d8d9e5700e57e4fbb8f20d3",
+    "architectures": []
+  },
+  {
+    "repo": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "sha": "73d14711bcc77c16df3470856949c3764056b617",
+    "architectures": []
+  }
+]

@@ -1,0 +1,1631 @@
+[
+  {
+    "repo": "IQuestLab/IQuest-Q1",
+    "sha": "5c21b0630586ef77d38cff1094b8cf37a417fcd8",
+    "configAvailable": true,
+    "fields": {
+      "total": {
+        "value": 320,
+        "locator": "README / Model architecture / Parameters",
+        "note": "作者近似值；主模型，不把独立或递归 MTP 模块计入。",
+        "status": "verified"
+      },
+      "active": {
+        "value": 15,
+        "locator": "README / active parameters",
+        "note": "作者近似值；主模型，不把独立或递归 MTP 模块计入。",
+        "status": "verified"
+      },
+      "arch": {
+        "value": "MoE",
+        "locator": "num_experts",
+        "note": "",
+        "status": "config"
+      },
+      "routed": {
+        "value": 256,
+        "locator": "num_experts",
+        "note": "",
+        "status": "config"
+      },
+      "selected": {
+        "value": 8,
+        "locator": "num_experts_per_tok",
+        "note": "",
+        "status": "config"
+      },
+      "layers": {
+        "value": 88,
+        "locator": "num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": 524288,
+        "locator": "max_position_embeddings",
+        "note": "配置上限，单位token；不保证所有部署均可使用该长度。",
+        "status": "config"
+      },
+      "weight": {
+        "value": "BF16",
+        "locator": "quantization_config / dtype",
+        "note": "dtype配置声明，非逐张量检查。",
+        "status": "config"
+      },
+      "speculative": {
+        "value": "MTP · 独立/递归推测模块",
+        "locator": "README / Multi-Token Prediction",
+        "note": "作者提供独立MTP说明；主config的num_mtp_layers=0不代表没有外部模块。",
+        "status": "verified"
+      }
+    },
+    "architectures": [
+      "IQuestQ1ForCausalLM"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "IFM/Jais-3-375B-A23B",
+    "sha": "c83c3d0255e0228d10e675d25d07ee8baf432910",
+    "configAvailable": true,
+    "fields": {
+      "total": {
+        "value": 375,
+        "locator": "README / Model architecture / Parameters",
+        "note": "",
+        "status": "verified"
+      },
+      "active": {
+        "value": 23,
+        "locator": "README / active parameters",
+        "note": "",
+        "status": "verified"
+      },
+      "arch": {
+        "value": "MoE",
+        "locator": "num_experts",
+        "note": "",
+        "status": "config"
+      },
+      "routed": {
+        "value": 192,
+        "locator": "num_experts",
+        "note": "",
+        "status": "config"
+      },
+      "selected": {
+        "value": 8,
+        "locator": "num_experts_per_tok",
+        "note": "",
+        "status": "config"
+      },
+      "shared": {
+        "value": 1,
+        "locator": "num_shared_experts",
+        "note": "",
+        "status": "config"
+      },
+      "layers": {
+        "value": 61,
+        "locator": "num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": 524288,
+        "locator": "max_position_embeddings",
+        "note": "配置上限，单位token；不保证所有部署均可使用该长度。",
+        "status": "config"
+      },
+      "weight": {
+        "value": "BF16",
+        "locator": "quantization_config / dtype",
+        "note": "dtype配置声明，非逐张量检查。",
+        "status": "config"
+      }
+    },
+    "architectures": [
+      "K2HorizonForCausalLM"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "IFM/K2-Horizon-375B-A23B",
+    "sha": "78272deca7adc2f90d154288b5161172283c80b3",
+    "configAvailable": true,
+    "fields": {
+      "total": {
+        "value": 375,
+        "locator": "README / Model architecture / Parameters",
+        "note": "",
+        "status": "verified"
+      },
+      "active": {
+        "value": 23,
+        "locator": "README / active parameters",
+        "note": "",
+        "status": "verified"
+      },
+      "arch": {
+        "value": "MoE",
+        "locator": "num_experts",
+        "note": "",
+        "status": "config"
+      },
+      "routed": {
+        "value": 192,
+        "locator": "num_experts",
+        "note": "",
+        "status": "config"
+      },
+      "selected": {
+        "value": 8,
+        "locator": "num_experts_per_tok",
+        "note": "",
+        "status": "config"
+      },
+      "shared": {
+        "value": 1,
+        "locator": "num_shared_experts",
+        "note": "",
+        "status": "config"
+      },
+      "layers": {
+        "value": 61,
+        "locator": "num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": 524288,
+        "locator": "max_position_embeddings",
+        "note": "配置上限，单位token；不保证所有部署均可使用该长度。",
+        "status": "config"
+      },
+      "weight": {
+        "value": "BF16",
+        "locator": "quantization_config / dtype",
+        "note": "dtype配置声明，非逐张量检查。",
+        "status": "config"
+      }
+    },
+    "architectures": [
+      "K2HorizonForCausalLM"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "thinkingmachines/Inkling",
+    "sha": "828496eeae4c243ff1a22f7f28ff83694f2f7bc9",
+    "configAvailable": true,
+    "fields": {
+      "arch": {
+        "value": "MoE",
+        "locator": "n_routed_experts",
+        "note": "",
+        "status": "config"
+      },
+      "routed": {
+        "value": 256,
+        "locator": "n_routed_experts",
+        "note": "",
+        "status": "config"
+      },
+      "selected": {
+        "value": 6,
+        "locator": "text_config.num_experts_per_tok",
+        "note": "",
+        "status": "config"
+      },
+      "shared": {
+        "value": 2,
+        "locator": "text_config.n_shared_experts",
+        "note": "",
+        "status": "config"
+      },
+      "layers": {
+        "value": 66,
+        "locator": "text_config.num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "weight": {
+        "value": "BF16",
+        "locator": "quantization_config / dtype",
+        "note": "dtype配置声明，非逐张量检查。",
+        "status": "config"
+      }
+    },
+    "architectures": [
+      "InklingForConditionalGeneration"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "thinkingmachines/Inkling-Small",
+    "sha": "8cc5877b44d343f88b92086aa1fb72897950f06a",
+    "configAvailable": true,
+    "fields": {
+      "arch": {
+        "value": "MoE",
+        "locator": "n_routed_experts",
+        "note": "",
+        "status": "config"
+      },
+      "routed": {
+        "value": 256,
+        "locator": "n_routed_experts",
+        "note": "",
+        "status": "config"
+      },
+      "selected": {
+        "value": 6,
+        "locator": "text_config.num_experts_per_tok",
+        "note": "",
+        "status": "config"
+      },
+      "shared": {
+        "value": 2,
+        "locator": "text_config.n_shared_experts",
+        "note": "",
+        "status": "config"
+      },
+      "layers": {
+        "value": 42,
+        "locator": "text_config.num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "weight": {
+        "value": "BF16",
+        "locator": "quantization_config / dtype",
+        "note": "dtype配置声明，非逐张量检查。",
+        "status": "config"
+      }
+    },
+    "architectures": [
+      "InklingForConditionalGeneration"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "ai-sage/GigaChat3.5-432B-A28B",
+    "sha": "d10dcaeccb04ca3186fdfa3bb3874b4474e6b41b",
+    "configAvailable": true,
+    "fields": {
+      "total": {
+        "value": 432,
+        "locator": "README / Model architecture / Parameters",
+        "note": "",
+        "status": "verified"
+      },
+      "active": {
+        "value": 28,
+        "locator": "README / active parameters",
+        "note": "",
+        "status": "verified"
+      },
+      "arch": {
+        "value": "MoE",
+        "locator": "n_routed_experts",
+        "note": "",
+        "status": "config"
+      },
+      "routed": {
+        "value": 256,
+        "locator": "n_routed_experts",
+        "note": "",
+        "status": "config"
+      },
+      "selected": {
+        "value": 8,
+        "locator": "num_experts_per_tok",
+        "note": "",
+        "status": "config"
+      },
+      "shared": {
+        "value": 1,
+        "locator": "n_shared_experts",
+        "note": "",
+        "status": "config"
+      },
+      "layers": {
+        "value": 40,
+        "locator": "num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": 262144,
+        "locator": "max_position_embeddings",
+        "note": "配置上限，单位token；不保证所有部署均可使用该长度。",
+        "status": "config"
+      },
+      "weight": {
+        "value": "FP8 混合",
+        "locator": "quantization_config / dtype",
+        "note": "量化配置优先于dtype；未量化模块和scale可使用其他精度。",
+        "status": "config"
+      },
+      "quantization": {
+        "value": "fp8；e4m3",
+        "locator": "quantization_config",
+        "note": "仅描述当前仓库，更多独立量化版本尚未穷举。",
+        "status": "config"
+      },
+      "speculative": {
+        "value": "MTP · 配置 2 层",
+        "locator": "num_nextn_predict_layers",
+        "note": "配置层数不等于每轮草稿token数；不代表外部草稿方法是否支持。",
+        "status": "config"
+      }
+    },
+    "architectures": [
+      "GigaChat35ForCausalLM"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "Qwen/Qwen3.8-2.4T-A95B",
+    "sha": "207bd685a7e3696cfaff12ded7c6a7ea0f88c996",
+    "configAvailable": true,
+    "fields": {
+      "total": {
+        "value": 2400,
+        "locator": "README / Model architecture / Parameters",
+        "note": "",
+        "status": "verified"
+      },
+      "active": {
+        "value": 95,
+        "locator": "README / active parameters",
+        "note": "",
+        "status": "verified"
+      },
+      "arch": {
+        "value": "MoE",
+        "locator": "num_experts",
+        "note": "",
+        "status": "config"
+      },
+      "routed": {
+        "value": 512,
+        "locator": "num_experts",
+        "note": "",
+        "status": "config"
+      },
+      "selected": {
+        "value": 10,
+        "locator": "num_experts_per_tok",
+        "note": "",
+        "status": "config"
+      },
+      "layers": {
+        "value": 92,
+        "locator": "num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": 262144,
+        "locator": "max_position_embeddings",
+        "note": "配置上限，单位token；不保证所有部署均可使用该长度。",
+        "status": "config"
+      },
+      "weight": {
+        "value": "BF16",
+        "locator": "quantization_config / dtype",
+        "note": "dtype配置声明，非逐张量检查。",
+        "status": "config"
+      },
+      "speculative": {
+        "value": "MTP · 配置 1 层",
+        "locator": "mtp_num_hidden_layers",
+        "note": "配置层数不等于每轮草稿token数；不代表外部草稿方法是否支持。",
+        "status": "config"
+      }
+    },
+    "architectures": [
+      "Qwen3_5MoeForCausalLM"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "deepreinforce-ai/Ornith-1.0-397B",
+    "sha": "5e3e761811e804c295c1d3c0ce68b21da6154209",
+    "configAvailable": true,
+    "fields": {
+      "arch": {
+        "value": "MoE",
+        "locator": "num_experts",
+        "note": "",
+        "status": "config"
+      },
+      "routed": {
+        "value": 512,
+        "locator": "num_experts",
+        "note": "",
+        "status": "config"
+      },
+      "selected": {
+        "value": 10,
+        "locator": "text_config.num_experts_per_tok",
+        "note": "",
+        "status": "config"
+      },
+      "layers": {
+        "value": 60,
+        "locator": "text_config.num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": 262144,
+        "locator": "text_config.max_position_embeddings",
+        "note": "配置上限，单位token；不保证所有部署均可使用该长度。",
+        "status": "config"
+      },
+      "weight": {
+        "value": "BF16",
+        "locator": "quantization_config / dtype",
+        "note": "dtype配置声明，非逐张量检查。",
+        "status": "config"
+      },
+      "speculative": {
+        "value": "MTP · 配置 1 层",
+        "locator": "mtp_num_hidden_layers",
+        "note": "配置层数不等于每轮草稿token数；不代表外部草稿方法是否支持。",
+        "status": "config"
+      }
+    },
+    "architectures": [
+      "Qwen3_5MoeForConditionalGeneration"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "meta-models/Muse-Glimmer-30B",
+    "sha": "a4e59da52a7bc87ae7251dd5545c0dd437c44b68",
+    "configAvailable": true,
+    "fields": {
+      "total": {
+        "value": 29.6,
+        "locator": "README / Model architecture / Parameters",
+        "note": "作者约29.6B，包含约1.8B感知编码器。",
+        "status": "verified"
+      },
+      "arch": {
+        "value": "Dense",
+        "locator": "config / model_type；README architecture",
+        "note": "语言主干架构；不把视觉组件另作路由专家。",
+        "status": "config"
+      },
+      "layers": {
+        "value": 52,
+        "locator": "text_config.num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": 131072,
+        "locator": "text_config.max_position_embeddings",
+        "note": "配置上限，单位token；不保证所有部署均可使用该长度。",
+        "status": "config"
+      },
+      "weight": {
+        "value": "BF16",
+        "locator": "quantization_config / dtype",
+        "note": "dtype配置声明，非逐张量检查。",
+        "status": "config"
+      }
+    },
+    "architectures": [
+      "MuseGlimmerForConditionalGeneration"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "meituan-longcat/LongCat-2.0-FP8",
+    "sha": "d5f32b1aaee4682826d927ec25433da84b281fd0",
+    "configAvailable": true,
+    "fields": {
+      "total": {
+        "value": 1600,
+        "locator": "README / Model architecture / Parameters",
+        "note": "作者约1.6T总量，含约135B N-gram条件记忆；约48B平均激活。",
+        "status": "verified"
+      },
+      "active": {
+        "value": 48,
+        "locator": "README / active parameters",
+        "note": "作者约1.6T总量，含约135B N-gram条件记忆；约48B平均激活。",
+        "status": "verified"
+      },
+      "arch": {
+        "value": "MoE",
+        "locator": "n_routed_experts",
+        "note": "",
+        "status": "config"
+      },
+      "routed": {
+        "value": 768,
+        "locator": "n_routed_experts",
+        "note": "",
+        "status": "config"
+      },
+      "layers": {
+        "value": 38,
+        "locator": "num_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": "作者1M训练；配置262,144",
+        "locator": "README Context；max_position_embeddings",
+        "note": "训练扩展长度与当前仓库配置上限分别保留。",
+        "status": "verified"
+      },
+      "weight": {
+        "value": "FP8 混合",
+        "locator": "quantization_config / dtype",
+        "note": "量化配置优先于dtype；未量化模块和scale可使用其他精度。",
+        "status": "config"
+      },
+      "quantization": {
+        "value": "fp8；e4m3",
+        "locator": "quantization_config",
+        "note": "仅描述当前仓库，更多独立量化版本尚未穷举。",
+        "status": "config"
+      },
+      "speculative": {
+        "value": "MTP · 配置 3 层",
+        "locator": "mtp_num_layers",
+        "note": "配置层数不等于每轮草稿token数；不代表外部草稿方法是否支持。",
+        "status": "config"
+      }
+    },
+    "architectures": [
+      "LongcatCausalLM"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "dots-studio/dots3-note-prev",
+    "sha": "1e1e7b0cd37a3a48a6c8d7fa55d5f9d14377006b",
+    "configAvailable": true,
+    "fields": {
+      "total": {
+        "value": 280,
+        "locator": "README / Model architecture / Parameters",
+        "note": "",
+        "status": "verified"
+      },
+      "active": {
+        "value": 16,
+        "locator": "README / active parameters",
+        "note": "",
+        "status": "verified"
+      },
+      "arch": {
+        "value": "MoE",
+        "locator": "n_routed_experts",
+        "note": "",
+        "status": "config"
+      },
+      "routed": {
+        "value": 256,
+        "locator": "n_routed_experts",
+        "note": "",
+        "status": "config"
+      },
+      "selected": {
+        "value": 8,
+        "locator": "num_experts_per_tok",
+        "note": "",
+        "status": "config"
+      },
+      "shared": {
+        "value": 1,
+        "locator": "n_shared_experts",
+        "note": "",
+        "status": "config"
+      },
+      "layers": {
+        "value": 46,
+        "locator": "num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": 524288,
+        "locator": "max_position_embeddings",
+        "note": "配置上限，单位token；不保证所有部署均可使用该长度。",
+        "status": "config"
+      },
+      "weight": {
+        "value": "BF16",
+        "locator": "quantization_config / dtype",
+        "note": "dtype配置声明，非逐张量检查。",
+        "status": "config"
+      },
+      "auxiliary": {
+        "value": "共享MTP层约1.13B",
+        "locator": "README / MTP",
+        "note": "与主模型计数范围分开阅读。",
+        "status": "verified"
+      }
+    },
+    "architectures": [
+      "Dots3NoteForCausalLM"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "ibm-granite/granite-4.2-30b",
+    "sha": "9e668ce1c538387ef24d3644e9b0606647762636",
+    "configAvailable": true,
+    "fields": {
+      "total": {
+        "value": 30,
+        "locator": "README / Model architecture / Parameters",
+        "note": "",
+        "status": "verified"
+      },
+      "arch": {
+        "value": "Dense",
+        "locator": "config / model_type；README architecture",
+        "note": "语言主干架构；不把视觉组件另作路由专家。",
+        "status": "config"
+      },
+      "layers": {
+        "value": 64,
+        "locator": "num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": 131072,
+        "locator": "max_position_embeddings",
+        "note": "配置上限，单位token；不保证所有部署均可使用该长度。",
+        "status": "config"
+      },
+      "weight": {
+        "value": "BF16",
+        "locator": "quantization_config / dtype",
+        "note": "dtype配置声明，非逐张量检查。",
+        "status": "config"
+      }
+    },
+    "architectures": [
+      "GraniteForCausalLM"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "LiquidAI/LFM2.5-8B-A1B",
+    "sha": "5dd22602c2e9f6a097b1de4c4efe0658b605015c",
+    "configAvailable": true,
+    "fields": {
+      "total": {
+        "value": 8.3,
+        "locator": "README / Model architecture / Parameters",
+        "note": "采用模型卡实际公布8.3B / 1.5B，非名称取整8B / 1B。",
+        "status": "verified"
+      },
+      "active": {
+        "value": 1.5,
+        "locator": "README / active parameters",
+        "note": "采用模型卡实际公布8.3B / 1.5B，非名称取整8B / 1B。",
+        "status": "verified"
+      },
+      "arch": {
+        "value": "MoE",
+        "locator": "num_experts",
+        "note": "",
+        "status": "config"
+      },
+      "routed": {
+        "value": 32,
+        "locator": "num_experts",
+        "note": "",
+        "status": "config"
+      },
+      "selected": {
+        "value": 4,
+        "locator": "num_experts_per_tok",
+        "note": "",
+        "status": "config"
+      },
+      "layers": {
+        "value": 24,
+        "locator": "num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": 128000,
+        "locator": "max_position_embeddings",
+        "note": "配置上限，单位token；不保证所有部署均可使用该长度。",
+        "status": "config"
+      },
+      "weight": {
+        "value": "BF16",
+        "locator": "quantization_config / dtype",
+        "note": "dtype配置声明，非逐张量检查。",
+        "status": "config"
+      }
+    },
+    "architectures": [
+      "Lfm2MoeForCausalLM"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "sha": "a9904d24bcc1d289a1950fa9d2b978c47cf903b9",
+    "configAvailable": true,
+    "fields": {
+      "total": {
+        "value": 30,
+        "locator": "README / Model architecture / Parameters",
+        "note": "",
+        "status": "verified"
+      },
+      "active": {
+        "value": 3,
+        "locator": "README / active parameters",
+        "note": "",
+        "status": "verified"
+      },
+      "arch": {
+        "value": "MoE",
+        "locator": "n_routed_experts",
+        "note": "",
+        "status": "config"
+      },
+      "routed": {
+        "value": 128,
+        "locator": "n_routed_experts",
+        "note": "",
+        "status": "config"
+      },
+      "selected": {
+        "value": 6,
+        "locator": "num_experts_per_tok",
+        "note": "",
+        "status": "config"
+      },
+      "shared": {
+        "value": 1,
+        "locator": "n_shared_experts",
+        "note": "",
+        "status": "config"
+      },
+      "layers": {
+        "value": 52,
+        "locator": "num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": 262144,
+        "locator": "max_position_embeddings",
+        "note": "配置上限，单位token；不保证所有部署均可使用该长度。",
+        "status": "config"
+      },
+      "weight": {
+        "value": "BF16",
+        "locator": "quantization_config / dtype",
+        "note": "dtype配置声明，非逐张量检查。",
+        "status": "config"
+      },
+      "speculative": {
+        "value": "MTP · 配置 1 层",
+        "locator": "num_nextn_predict_layers",
+        "note": "配置层数不等于每轮草稿token数；不代表外部草稿方法是否支持。",
+        "status": "config"
+      }
+    },
+    "architectures": [
+      "NemotronHForCausalLM"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "stepfun-ai/Step-3.7-Flash",
+    "sha": "5f6244077ac62e04eec3f320501ff8c2b293373a",
+    "configAvailable": true,
+    "fields": {
+      "arch": {
+        "value": "MoE",
+        "locator": "moe_num_experts",
+        "note": "",
+        "status": "config"
+      },
+      "routed": {
+        "value": 288,
+        "locator": "moe_num_experts",
+        "note": "",
+        "status": "config"
+      },
+      "selected": {
+        "value": 8,
+        "locator": "text_config.moe_top_k",
+        "note": "",
+        "status": "config"
+      },
+      "layers": {
+        "value": 45,
+        "locator": "text_config.num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": 262144,
+        "locator": "text_config.max_position_embeddings",
+        "note": "配置上限，单位token；不保证所有部署均可使用该长度。",
+        "status": "config"
+      },
+      "weight": {
+        "value": "BF16",
+        "locator": "quantization_config / dtype",
+        "note": "dtype配置声明，非逐张量检查。",
+        "status": "config"
+      },
+      "speculative": {
+        "value": "MTP · 配置 3 层",
+        "locator": "num_nextn_predict_layers",
+        "note": "配置层数不等于每轮草稿token数；不代表外部草稿方法是否支持。",
+        "status": "config"
+      }
+    },
+    "architectures": [
+      "Step3p7ForConditionalGeneration"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "stepfun-ai/Step-5-Preview",
+    "sha": "364b3b03fed2477aa0953fe855a2c4c8c48ee3cc",
+    "configAvailable": true,
+    "fields": {
+      "total": {
+        "value": 600,
+        "locator": "README / Model architecture / Parameters",
+        "note": "",
+        "status": "verified"
+      },
+      "active": {
+        "value": 27,
+        "locator": "README / active parameters",
+        "note": "",
+        "status": "verified"
+      },
+      "arch": {
+        "value": "MoE",
+        "locator": "moe_num_experts",
+        "note": "",
+        "status": "config"
+      },
+      "routed": {
+        "value": 352,
+        "locator": "moe_num_experts",
+        "note": "",
+        "status": "config"
+      },
+      "selected": {
+        "value": 8,
+        "locator": "text_config.num_experts_per_tok",
+        "note": "",
+        "status": "config"
+      },
+      "layers": {
+        "value": 92,
+        "locator": "text_config.num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": 1048576,
+        "locator": "text_config.max_position_embeddings",
+        "note": "配置上限，单位token；不保证所有部署均可使用该长度。",
+        "status": "config"
+      },
+      "weight": {
+        "value": "FP8 混合",
+        "locator": "quantization_config / dtype",
+        "note": "量化配置优先于dtype；未量化模块和scale可使用其他精度。",
+        "status": "config"
+      },
+      "quantization": {
+        "value": "fp8；e4m3",
+        "locator": "quantization_config",
+        "note": "仅描述当前仓库，更多独立量化版本尚未穷举。",
+        "status": "config"
+      },
+      "speculative": {
+        "value": "MTP · 配置 3 层",
+        "locator": "num_nextn_predict_layers",
+        "note": "配置层数不等于每轮草稿token数；不代表外部草稿方法是否支持。",
+        "status": "config"
+      }
+    },
+    "architectures": [
+      "Step5ForConditionalGeneration"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "inclusionAI/Ling-3.1-flash",
+    "sha": "a4ccd6b45c002ddb236f9cb77d52cc427482bf19",
+    "configAvailable": true,
+    "fields": {
+      "total": {
+        "value": 560,
+        "locator": "README / Model architecture / Parameters",
+        "note": "",
+        "status": "verified"
+      },
+      "active": {
+        "value": 25,
+        "locator": "README / active parameters",
+        "note": "",
+        "status": "verified"
+      },
+      "arch": {
+        "value": "MoE",
+        "locator": "num_experts",
+        "note": "",
+        "status": "config"
+      },
+      "routed": {
+        "value": 512,
+        "locator": "num_experts",
+        "note": "",
+        "status": "config"
+      },
+      "selected": {
+        "value": 8,
+        "locator": "num_experts_per_tok",
+        "note": "",
+        "status": "config"
+      },
+      "shared": {
+        "value": 1,
+        "locator": "num_shared_experts",
+        "note": "",
+        "status": "config"
+      },
+      "layers": {
+        "value": 72,
+        "locator": "num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": 262144,
+        "locator": "max_position_embeddings",
+        "note": "配置上限，单位token；不保证所有部署均可使用该长度。",
+        "status": "config"
+      },
+      "weight": {
+        "value": "FP8 混合",
+        "locator": "quantization_config / dtype",
+        "note": "量化配置优先于dtype；未量化模块和scale可使用其他精度。",
+        "status": "config"
+      },
+      "quantization": {
+        "value": "fp8；e4m3",
+        "locator": "quantization_config",
+        "note": "仅描述当前仓库，更多独立量化版本尚未穷举。",
+        "status": "config"
+      },
+      "speculative": {
+        "value": "MTP · 配置 1 层",
+        "locator": "num_nextn_predict_layers",
+        "note": "配置层数不等于每轮草稿token数；不代表外部草稿方法是否支持。",
+        "status": "config"
+      }
+    },
+    "architectures": [
+      "BailingMoeV3ForCausalLM"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "internlm/Intern-S2-Preview",
+    "sha": "4f57cab513689b089019fce4ad24e26520df183c",
+    "configAvailable": true,
+    "fields": {
+      "total": {
+        "value": 35,
+        "locator": "README / Model architecture / Parameters",
+        "note": "模型卡写35B级；逐token激活量未单独给出。",
+        "status": "verified"
+      },
+      "arch": {
+        "value": "MoE",
+        "locator": "num_experts",
+        "note": "",
+        "status": "config"
+      },
+      "routed": {
+        "value": 256,
+        "locator": "num_experts",
+        "note": "",
+        "status": "config"
+      },
+      "selected": {
+        "value": 8,
+        "locator": "text_config.num_experts_per_tok",
+        "note": "",
+        "status": "config"
+      },
+      "layers": {
+        "value": 40,
+        "locator": "text_config.num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": 262144,
+        "locator": "text_config.max_position_embeddings",
+        "note": "配置上限，单位token；不保证所有部署均可使用该长度。",
+        "status": "config"
+      },
+      "weight": {
+        "value": "BF16",
+        "locator": "quantization_config / dtype",
+        "note": "dtype配置声明，非逐张量检查。",
+        "status": "config"
+      },
+      "speculative": {
+        "value": "MTP · 配置 1 层",
+        "locator": "mtp_num_hidden_layers",
+        "note": "配置层数不等于每轮草稿token数；不代表外部草稿方法是否支持。",
+        "status": "config"
+      }
+    },
+    "architectures": [
+      "InternS2PreviewForConditionalGeneration"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "openbmb/MiniCPM5-2B",
+    "sha": "f97400052a43d642bbc6e9975e2397e3ae6a6b52",
+    "configAvailable": true,
+    "fields": {
+      "total": {
+        "value": 2,
+        "locator": "README / Model architecture / Parameters",
+        "note": "",
+        "status": "verified"
+      },
+      "arch": {
+        "value": "Dense",
+        "locator": "config / model_type；README architecture",
+        "note": "语言主干架构；不把视觉组件另作路由专家。",
+        "status": "config"
+      },
+      "layers": {
+        "value": 42,
+        "locator": "num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": 131072,
+        "locator": "max_position_embeddings",
+        "note": "配置上限，单位token；不保证所有部署均可使用该长度。",
+        "status": "config"
+      },
+      "weight": {
+        "value": "BF16",
+        "locator": "quantization_config / dtype",
+        "note": "dtype配置声明，非逐张量检查。",
+        "status": "config"
+      }
+    },
+    "architectures": [
+      "LlamaForCausalLM"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "mistralai/Mistral-Small-4-119B-2603",
+    "sha": "a11f36bebf709121056b1dbcc943d1c6afbe494d",
+    "configAvailable": true,
+    "fields": {
+      "total": {
+        "value": 119,
+        "locator": "README / Model architecture / Parameters",
+        "note": "",
+        "status": "verified"
+      },
+      "active": {
+        "value": 6.5,
+        "locator": "README / active parameters",
+        "note": "",
+        "status": "verified"
+      },
+      "arch": {
+        "value": "MoE",
+        "locator": "n_routed_experts",
+        "note": "",
+        "status": "config"
+      },
+      "routed": {
+        "value": 128,
+        "locator": "n_routed_experts",
+        "note": "",
+        "status": "config"
+      },
+      "selected": {
+        "value": 4,
+        "locator": "text_config.num_experts_per_tok",
+        "note": "",
+        "status": "config"
+      },
+      "shared": {
+        "value": 1,
+        "locator": "text_config.n_shared_experts",
+        "note": "",
+        "status": "config"
+      },
+      "layers": {
+        "value": 36,
+        "locator": "text_config.num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": "作者256K；配置1,048,576",
+        "locator": "README Context Length；max_position_embeddings",
+        "note": "保留发布说明与配置上限的区别。",
+        "status": "verified"
+      },
+      "weight": {
+        "value": "FP8 混合",
+        "locator": "quantization_config / dtype",
+        "note": "量化配置优先于dtype；未量化模块和scale可使用其他精度。",
+        "status": "config"
+      },
+      "quantization": {
+        "value": "fp8；",
+        "locator": "quantization_config",
+        "note": "仅描述当前仓库，更多独立量化版本尚未穷举。",
+        "status": "config"
+      }
+    },
+    "architectures": [
+      "Mistral3ForConditionalGeneration"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
+    "sha": "dcd3fd83fb181622fbc606fbb1709901982a62c2",
+    "configAvailable": true,
+    "fields": {
+      "total": {
+        "value": 309,
+        "locator": "README / Model architecture / Parameters",
+        "note": "语言主模型口径，另有视觉编码器和推测解码模块。",
+        "status": "verified"
+      },
+      "active": {
+        "value": 15,
+        "locator": "README / active parameters",
+        "note": "语言主模型口径，另有视觉编码器和推测解码模块。",
+        "status": "verified"
+      },
+      "arch": {
+        "value": "MoE",
+        "locator": "n_routed_experts",
+        "note": "",
+        "status": "config"
+      },
+      "routed": {
+        "value": 256,
+        "locator": "n_routed_experts",
+        "note": "",
+        "status": "config"
+      },
+      "selected": {
+        "value": 8,
+        "locator": "num_experts_per_tok",
+        "note": "",
+        "status": "config"
+      },
+      "layers": {
+        "value": 48,
+        "locator": "num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": 1048576,
+        "locator": "max_position_embeddings",
+        "note": "配置上限，单位token；不保证所有部署均可使用该长度。",
+        "status": "config"
+      },
+      "weight": {
+        "value": "FP8 混合",
+        "locator": "quantization_config / dtype",
+        "note": "量化配置优先于dtype；未量化模块和scale可使用其他精度。",
+        "status": "config"
+      },
+      "quantization": {
+        "value": "fp8；e4m3",
+        "locator": "quantization_config",
+        "note": "仅描述当前仓库，更多独立量化版本尚未穷举。",
+        "status": "config"
+      },
+      "speculative": {
+        "value": "5层推测解码器；nextn配置3层",
+        "locator": "README / Architecture；config num_nextn_predict_layers",
+        "note": "作者描述5层speculative decoder，配置nextn=3；两个字段口径不同，保留差异。",
+        "status": "verified"
+      }
+    },
+    "architectures": [
+      "MiMoV2ForCausalLM"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
+    "sha": "b61f21852680ee02a29e946e18cf8697f4844061",
+    "configAvailable": true,
+    "fields": {
+      "total": {
+        "value": 1020,
+        "locator": "README / Model architecture / Parameters",
+        "note": "语言主模型口径；附加模块另查。",
+        "status": "verified"
+      },
+      "active": {
+        "value": 42,
+        "locator": "README / active parameters",
+        "note": "语言主模型口径；附加模块另查。",
+        "status": "verified"
+      },
+      "arch": {
+        "value": "MoE",
+        "locator": "n_routed_experts",
+        "note": "",
+        "status": "config"
+      },
+      "routed": {
+        "value": 384,
+        "locator": "n_routed_experts",
+        "note": "",
+        "status": "config"
+      },
+      "selected": {
+        "value": 8,
+        "locator": "num_experts_per_tok",
+        "note": "",
+        "status": "config"
+      },
+      "layers": {
+        "value": 70,
+        "locator": "num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": 1048576,
+        "locator": "max_position_embeddings",
+        "note": "配置上限，单位token；不保证所有部署均可使用该长度。",
+        "status": "config"
+      },
+      "weight": {
+        "value": "FP8 混合",
+        "locator": "quantization_config / dtype",
+        "note": "量化配置优先于dtype；未量化模块和scale可使用其他精度。",
+        "status": "config"
+      },
+      "quantization": {
+        "value": "fp8；e4m3",
+        "locator": "quantization_config",
+        "note": "仅描述当前仓库，更多独立量化版本尚未穷举。",
+        "status": "config"
+      },
+      "speculative": {
+        "value": "5层推测解码器",
+        "locator": "README / Architecture",
+        "note": "作者披露层数；未由此推断每轮草稿token数量。",
+        "status": "verified"
+      }
+    },
+    "architectures": [
+      "MiMoV2ForCausalLM"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "FlashLabs/Chroma-4B",
+    "sha": "cf4d2f87e7b14604b4942af134e7a826e5f4fb48",
+    "configAvailable": false,
+    "fields": {},
+    "architectures": [],
+    "description": "从框架官方目录发现；公开配置读取需要访问权限，本次不凭名称补填参数。"
+  },
+  {
+    "repo": "tencent/Hy4-preview",
+    "sha": "705d81ee51566a186d645b74c974d642ef2828fe",
+    "configAvailable": true,
+    "fields": {
+      "total": {
+        "value": 770,
+        "locator": "README / Model architecture / Parameters",
+        "note": "作者主干参数口径，不含MTP；MTP另约10B总量、0.7B激活。",
+        "status": "verified"
+      },
+      "active": {
+        "value": 49,
+        "locator": "README / active parameters",
+        "note": "作者主干参数口径，不含MTP；MTP另约10B总量、0.7B激活。",
+        "status": "verified"
+      },
+      "arch": {
+        "value": "MoE",
+        "locator": "n_routed_experts",
+        "note": "",
+        "status": "config"
+      },
+      "routed": {
+        "value": 256,
+        "locator": "n_routed_experts",
+        "note": "",
+        "status": "config"
+      },
+      "selected": {
+        "value": 8,
+        "locator": "num_experts_per_tok",
+        "note": "",
+        "status": "config"
+      },
+      "shared": {
+        "value": 1,
+        "locator": "n_shared_experts",
+        "note": "",
+        "status": "config"
+      },
+      "layers": {
+        "value": 78,
+        "locator": "num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": 1048576,
+        "locator": "max_position_embeddings",
+        "note": "配置上限，单位token；不保证所有部署均可使用该长度。",
+        "status": "config"
+      },
+      "weight": {
+        "value": "BF16",
+        "locator": "quantization_config / dtype",
+        "note": "dtype配置声明，非逐张量检查。",
+        "status": "config"
+      },
+      "speculative": {
+        "value": "MTP · 配置 1 层",
+        "locator": "num_nextn_predict_layers",
+        "note": "配置层数不等于每轮草稿token数；不代表外部草稿方法是否支持。",
+        "status": "config"
+      },
+      "auxiliary": {
+        "value": "MTP约10B总参数 / 0.7B激活",
+        "locator": "README / Model Architecture",
+        "note": "主干770B /49B不包含MTP；不能直接把主干值当完整checkpoint。",
+        "status": "verified"
+      }
+    },
+    "architectures": [
+      "HYV4ForCausalLM"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "poolside/Laguna-XS.2",
+    "sha": "a397bde04501591d0ac3d74a5d9d0a4ec298ffb8",
+    "configAvailable": true,
+    "fields": {
+      "total": {
+        "value": 33,
+        "locator": "README / Model architecture / Parameters",
+        "note": "",
+        "status": "verified"
+      },
+      "active": {
+        "value": 3,
+        "locator": "README / active parameters",
+        "note": "",
+        "status": "verified"
+      },
+      "arch": {
+        "value": "MoE",
+        "locator": "num_experts",
+        "note": "",
+        "status": "config"
+      },
+      "routed": {
+        "value": 256,
+        "locator": "num_experts",
+        "note": "",
+        "status": "config"
+      },
+      "selected": {
+        "value": 8,
+        "locator": "num_experts_per_tok",
+        "note": "",
+        "status": "config"
+      },
+      "layers": {
+        "value": 40,
+        "locator": "num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": 262144,
+        "locator": "max_position_embeddings",
+        "note": "配置上限，单位token；不保证所有部署均可使用该长度。",
+        "status": "config"
+      },
+      "weight": {
+        "value": "BF16",
+        "locator": "quantization_config / dtype",
+        "note": "dtype配置声明，非逐张量检查。",
+        "status": "config"
+      }
+    },
+    "architectures": [
+      "LagunaForCausalLM"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "perplexity-ai/pplx-decider-v1.1-27b",
+    "sha": "14c9d90137962d300f3de95633f7b6535e80c5ce",
+    "configAvailable": true,
+    "fields": {
+      "arch": {
+        "value": "Dense",
+        "locator": "config / model_type；README architecture",
+        "note": "语言主干架构；不把视觉组件另作路由专家。",
+        "status": "config"
+      },
+      "layers": {
+        "value": 64,
+        "locator": "text_config.num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": 262144,
+        "locator": "text_config.max_position_embeddings",
+        "note": "配置上限，单位token；不保证所有部署均可使用该长度。",
+        "status": "config"
+      },
+      "weight": {
+        "value": "BF16",
+        "locator": "quantization_config / dtype",
+        "note": "dtype配置声明，非逐张量检查。",
+        "status": "config"
+      },
+      "speculative": {
+        "value": "MTP · 配置 1 层",
+        "locator": "mtp_num_hidden_layers",
+        "note": "配置层数不等于每轮草稿token数；不代表外部草稿方法是否支持。",
+        "status": "config"
+      }
+    },
+    "architectures": [
+      "Qwen3_5Model"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "Cloudflare/clef",
+    "sha": "0b331204bb13fbd2ca93a64df1956f5b55478ce5",
+    "configAvailable": true,
+    "fields": {
+      "arch": {
+        "value": "Dense",
+        "locator": "config / model_type；README architecture",
+        "note": "语言主干架构；不把视觉组件另作路由专家。",
+        "status": "config"
+      },
+      "layers": {
+        "value": 64,
+        "locator": "text_config.num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": 262144,
+        "locator": "text_config.max_position_embeddings",
+        "note": "配置上限，单位token；不保证所有部署均可使用该长度。",
+        "status": "config"
+      },
+      "weight": {
+        "value": "BF16",
+        "locator": "quantization_config / dtype",
+        "note": "dtype配置声明，非逐张量检查。",
+        "status": "config"
+      },
+      "speculative": {
+        "value": "原生 MTP 层数 0",
+        "locator": "mtp_num_hidden_layers",
+        "note": "配置层数不等于每轮草稿token数；不代表外部草稿方法是否支持。",
+        "status": "config"
+      }
+    },
+    "architectures": [
+      "Qwen3_5ForConditionalGeneration"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "Cloudflare/clef-flash",
+    "sha": "8b2e5fd17c09fd49bc2880b805d5323ec7ff4ff3",
+    "configAvailable": true,
+    "fields": {
+      "arch": {
+        "value": "Dense",
+        "locator": "config / model_type；README architecture",
+        "note": "语言主干架构；不把视觉组件另作路由专家。",
+        "status": "config"
+      },
+      "layers": {
+        "value": 32,
+        "locator": "text_config.num_hidden_layers",
+        "note": "",
+        "status": "config"
+      },
+      "context": {
+        "value": 262144,
+        "locator": "text_config.max_position_embeddings",
+        "note": "配置上限，单位token；不保证所有部署均可使用该长度。",
+        "status": "config"
+      },
+      "weight": {
+        "value": "BF16",
+        "locator": "quantization_config / dtype",
+        "note": "dtype配置声明，非逐张量检查。",
+        "status": "config"
+      },
+      "speculative": {
+        "value": "原生 MTP 层数 0",
+        "locator": "mtp_num_hidden_layers",
+        "note": "配置层数不等于每轮草稿token数；不代表外部草稿方法是否支持。",
+        "status": "config"
+      }
+    },
+    "architectures": [
+      "Qwen3_5ForConditionalGeneration"
+    ],
+    "description": "从框架官方目录发现，已查阅作者模型卡和公开配置；未披露的规格保持待核验。"
+  },
+  {
+    "repo": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+    "sha": "92f3b1597a195b523d8d9e5700e57e4fbb8f20d3",
+    "configAvailable": false,
+    "fields": {},
+    "architectures": [],
+    "description": "从框架官方目录发现；公开配置读取需要访问权限，本次不凭名称补填参数。"
+  },
+  {
+    "repo": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "sha": "73d14711bcc77c16df3470856949c3764056b617",
+    "configAvailable": false,
+    "fields": {},
+    "architectures": [],
+    "description": "从框架官方目录发现；公开配置读取需要访问权限，本次不凭名称补填参数。"
+  }
+]

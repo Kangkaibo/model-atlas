@@ -1,0 +1,29 @@
+name: 模型资料新增 / 纠错
+description: 提交官方出处、参数范围和具体版本
+title: "[模型资料] "
+body:
+  - type: input
+    id: model
+    attributes:
+      label: 精确模型仓库 / API标识
+    validations:
+      required: true
+  - type: textarea
+    id: facts
+    attributes:
+      label: 要新增或纠正的字段
+      description: 区分总参数、激活参数、专家数、精度、推测解码及框架版本。
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: 官方URL与原文位置
+      description: 优先作者官方卡、配置、报告；指出固定提交或发布日期。
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 参数范围 / 推导限制
+      description: 是否包含视觉、MTP、草稿、N-gram？哪些字段仍未披露？

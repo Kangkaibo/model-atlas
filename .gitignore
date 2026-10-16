@@ -1,0 +1,14 @@
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+.openai/
+.sites-*/
+.obsidian/
+artifacts/
+updates/observed-state.json
+*.log
+.DS_Store
+Thumbs.db
