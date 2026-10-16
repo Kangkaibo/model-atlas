@@ -1,6 +1,14 @@
-# GitHub部署
+# 在线使用与部署
 
-## 在线网站
+## 访客直接查询
+
+本项目已上线：[打开模型档案网站](https://kangkaibo.github.io/model-atlas/#catalog)。访客只需要浏览器，无需下载仓库、安装依赖、登录GitHub或自行部署。
+
+从GitHub仓库首页顶部的“在线查询”链接即可进入。查询、筛选、对比和查看官方出处都在网站内完成；浏览器地址栏中的查询链接可以直接分享。
+
+以下部署步骤仅用于维护者建立自己的副本，普通访客不需要操作。
+
+## 维护者部署自己的副本
 
 将本项目放到自己的GitHub仓库，默认分支使用`main`。在仓库`Settings → Pages → Build and deployment → Source`选择`GitHub Actions`，然后在Actions里运行`Deploy Pages`或推送一次main。
 

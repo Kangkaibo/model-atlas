@@ -2,9 +2,19 @@
 
 A source-linked reference for LLM specifications and inference-framework support. [中文](README.md)
 
+## Use online — no installation
+
+**[Open Model Atlas →](https://kangkaibo.github.io/model-atlas/#catalog)**
+
+Anyone can query the hosted website in a browser without cloning the repository, installing software, signing in to GitHub, or deploying anything locally.
+
+[Model specifications](https://kangkaibo.github.io/model-atlas/#catalog) · [SGLang / vLLM evidence](https://kangkaibo.github.io/model-atlas/#framework) · [Coverage and pending records](https://kangkaibo.github.io/model-atlas/#coverage)
+
+Share the website link, or copy the browser URL after searching and filtering to share the same query. GitHub Pages hosts the website; visitors use the same link after updates are published.
+
 The current snapshot includes 115 specification records and 701 framework model/variant references. A framework reference is not a fully verified specification record. Facts were reviewed on 2026-10-16; monitoring dates are separate.
 
-Download or clone this repository and open `dist/index.html`. The Chinese-language interface works offline; source links require Internet access. Search, filters, comparison, local favorites, and CSV/JSON export are included.
+The Chinese-language interface includes search, filters, comparison, browser-local favorites, and CSV/JSON export. An optional offline copy is available by downloading the repository ZIP and opening `dist/index.html`; source links require Internet access.
 
 For development: Node.js 22+ and Python 3.10+, no third-party runtime dependencies.
 

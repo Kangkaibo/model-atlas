@@ -2,6 +2,20 @@
 
 逐字段保留官方出处的大模型技术资料库：查询参数，也核对数字的口径。
 
+## 在线查询 · 点击即用
+
+**[立即打开模型档案网站 →](https://kangkaibo.github.io/model-atlas/#catalog)**
+
+任何人都可以直接在浏览器中使用，无需下载项目、安装软件、登录GitHub或在本地部署。
+
+| 查询内容 | 在线入口 |
+| --- | --- |
+| 参数量、激活参数、MoE专家、量化与推测解码 | [打开模型目录](https://kangkaibo.github.io/model-atlas/#catalog) |
+| SGLang / vLLM支持与官方证据 | [打开框架支持索引](https://kangkaibo.github.io/model-atlas/#framework) |
+| 已发现、尚待核验的模型与变体 | [打开覆盖检查](https://kangkaibo.github.io/model-atlas/#coverage) |
+
+分享上面的在线链接，别人就能查询。搜索和筛选后，也可以复制浏览器地址栏中的链接，分享同一查询条件。
+
 [English](README.en.md) · [数据口径](docs/DATA_POLICY.md) · [更新机制](docs/MAINTENANCE.md) · [部署说明](docs/DEPLOYMENT.md) · [参与贡献](CONTRIBUTING.md)
 
 ## 当前内容
@@ -15,11 +29,11 @@
 
 - **覆盖检查 / 待核验**：分页遍历33个发布账号，发现2,695个生成类仓库；与框架引用对照后，另列2,876个待审模型/变体。它们包含历史版本、量化和草稿，不计为参数档案。[补漏报告](docs/COVERAGE_AUDIT.md)
 
-## 直接使用
+## 数据下载与离线使用（可选）
 
-下载仓库 ZIP 并解压，或克隆本仓库，然后用浏览器打开 [`dist/index.html`](dist/index.html)。不需要安装第三方依赖；查看外部来源需要联网。收藏保存在当前浏览器。
+日常查询直接使用[在线网站](https://kangkaibo.github.io/model-atlas/#catalog)。网站由GitHub Pages托管，维护者发布更新后，访客访问同一链接即可看到更新。收藏保存在当前浏览器。
 
-在线访问：[模型档案](https://kangkaibo.github.io/model-atlas/)。
+需要离线副本时，可下载仓库ZIP并解压，然后打开 `dist/index.html`；查看外部来源仍需联网。只有修改代码或维护数据才需要下面的开发步骤。
 
 数据文件可直接使用：
 
