@@ -213,13 +213,17 @@ def run(client, catalog, policy, baseline, now, discover=True, workers=4, covera
     if discover:
         known = {m["repo"].lower() for m in catalog["models"]} | {x["repo"].lower() for x in catalog["frameworkIndex"]["entries"] if x.get("repo")}
         since = baseline.get("observedAt", policy["discoverySince"])
-        for author in policy["authors"]:
+        def discover_author(author):
             url = "https://huggingface.co/api/models?" + urllib.parse.urlencode({"author": author, "sort": "createdAt", "direction": -1, "limit": policy.get("discoveryLimitPerAuthor", 20), "full": "true"})
             try:
-                candidates = new_models(client.get(url, True), known, since)
-                report["changes"].extend(candidates)
+                return new_models(client.get(url, True), known, since), None
             except Exception as exc:
-                report["errors"].append({"target": "author:" + author, "error": f"HTTP {exc.code}" if isinstance(exc, urllib.error.HTTPError) else type(exc).__name__})
+                return [], {"target": "author:" + author, "error": f"HTTP {exc.code}" if isinstance(exc, urllib.error.HTTPError) else type(exc).__name__}
+        with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:
+            for candidates, error in pool.map(discover_author, policy['authors']):
+                report['changes'].extend(candidates)
+                if error:
+                    report['errors'].append(error)
         # A separate full inventory catches historical omissions: creation-date discovery cannot.
         from audit_coverage import audit
         previous = load(ROOT / 'data/coverage-audit.json', {})

@@ -1,5 +1,6 @@
 import importlib.util
 import unittest
+from unittest.mock import patch
 import urllib.error
 from pathlib import Path
 
@@ -76,6 +77,17 @@ class SourcesTest(unittest.TestCase):
         text='[New](https://docs.sglang.io/cookbook/autoregressive/Vendor/New.md)'
         _,_,change=M.inspect_document(FakeClient({url:text}),url,{'sha256':'old','recipePages':[]})
         self.assertEqual(change['newRecipePages'],['https://docs.sglang.io/cookbook/autoregressive/Vendor/New'])
+
+    def test_coverage_discovery_reports_old_unreviewed_models(self):
+        url='https://huggingface.co/api/models?author=X&sort=createdAt&direction=-1&limit=20&full=true'
+        client=FakeClient({url:[{'id':'X/Old','createdAt':'2024-01-01'}]})
+        inventory={'inventories':[{'publisher':'X','entries':[{'repo':'X/Old','url':'https://huggingface.co/X/Old'}]}],'errors':[]}
+        catalog={'models':[],'frameworkIndex':{'entries':[]}}
+        policy={'documents':[],'authors':['X'],'discoverySince':'2026-10-15'}
+        with patch('audit_coverage.audit',return_value=inventory),patch.object(M,'load',return_value={'inventories':[]}):
+            report,_=M.run(client,catalog,policy,{},'2026-10-16',True,1)
+        self.assertEqual([x['kind'] for x in report['changes']],['coverage_gap_candidate'])
+        self.assertEqual(report['changes'][0]['repo'],'X/Old')
 
 
 if __name__=='__main__':unittest.main()
