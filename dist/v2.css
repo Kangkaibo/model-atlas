@@ -5,3 +5,9 @@
 .nav[data-view="framework"]{font-size:12px;gap:8px;white-space:nowrap}.nav[data-view="framework"]>span{width:18px;font-size:18px}.nav[data-view="framework"] b{font-size:10px;padding:2px 4px}.index-table td{text-align:left}
 
 #project-links{margin-bottom:12px;font-size:11px}
+.nav[data-view="coverage"]{font-size:12px;gap:8px;white-space:nowrap}.nav[data-view="coverage"] b{font-size:10px;padding:2px 4px}
+#search-guidance{margin-top:18px}
+#coverage-view .index-table td small{display:block;margin-top:5px}
+#coverage-view .model-name{overflow-wrap:anywhere}
+#coverage-view .filters{flex-wrap:wrap}
+#coverage-view button:disabled{opacity:.35;cursor:default}

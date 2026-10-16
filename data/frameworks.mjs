@@ -1,6 +1,7 @@
 import {readFileSync} from 'node:fs';
 const read=name=>JSON.parse(readFileSync(new URL(name,import.meta.url),'utf8'));
 export const frameworkIndex=read('./framework-index.json');
+for(const entry of frameworkIndex.entries)for(const evidence of entry.evidence)evidence.checked??=frameworkIndex.checked;
 const expansion=read('./framework-expansion.json'), glm=read('./glm-expansion.json'), inspected=read('./inspected-configs.json'), extra=read('./extra-parameter-facts.json');
 export function addFrameworkModels({models,sources,source,f,u,na,checked}){
  const register=(url,title,vendor,kind='官方模型卡',sha)=>{

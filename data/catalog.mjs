@@ -114,7 +114,7 @@ export const fieldDefinitions={
  total:{label:'总参数 / 标注范围',unit:'B',description:'采用作者公布口径，范围可能是主模型或语言部分，必须同时读范围说明。带“推导”的值依据官方等结构关系或组件计算，不能当作作者直接公布的完整检查点总量。B = 10⁹，T = 10¹²。'},
  active:{label:'激活参数 / token',unit:'B',description:'作者公布的每 token 激活参数，不是权重驻留大小，也不能直接换算显存。Dense 模型未单列时保留不适用。'},
  arch:{label:'模型架构',description:'MoE（混合专家）或 Dense（稠密）；不能根据名称或参数量自行猜测。'},
- routed:{label:'路由专家 / 层',description:'单个 MoE 层的路由专家池，不是全网络所有层专家总和，也不包含单独列出的共享专家。'},
+ routed:{label:'路由专家 / 范围',description:'默认指单个 MoE 层的路由专家池，不含单列的共享专家。异构块分别列数值；Mobius 等全局共享池须注明范围，不能与每层数量直接比较。'},
  selected:{label:'每 token 路由激活',description:'每个 token 在单个 MoE 层选中的路由专家数量；共享专家另列。'},
  shared:{label:'共享专家 / 层',description:'单个 MoE 层始终参与的共享专家。0 必须有证据；缺少某个配置键不能自动解释为 0。'},
  weight:{label:'原始仓库发布精度',description:'当前记录对应仓库的权重精度。dtype 声明不覆盖 quantization_config，混合精度应逐模块理解。'},

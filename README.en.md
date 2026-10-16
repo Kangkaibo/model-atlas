@@ -2,7 +2,7 @@
 
 A source-linked reference for LLM specifications and inference-framework support. [中文](README.md)
 
-The current snapshot includes 88 specification records and 697 framework model/variant references. A framework reference is not a fully verified specification record. Facts were reviewed on 2026-10-15; monitoring dates are separate.
+The current snapshot includes 115 specification records and 701 framework model/variant references. A framework reference is not a fully verified specification record. Facts were reviewed on 2026-10-16; monitoring dates are separate.
 
 Download or clone this repository and open `dist/index.html`. The Chinese-language interface works offline; source links require Internet access. Search, filters, comparison, local favorites, and CSV/JSON export are included.
 
@@ -22,3 +22,5 @@ GitHub workflows provide CI, Pages deployment, weekly official-source inspection
 See [data policy](docs/DATA_POLICY.md), [maintenance](docs/MAINTENANCE.md), [deployment](docs/DEPLOYMENT.md), and [contributing](CONTRIBUTING.md).
 
 Original code and documentation: MIT. Third-party source documents and model weights retain their own rights and licenses.
+
+Coverage audit: 33 publisher namespaces, 2,695 generation-tagged repositories, including older releases. Pending candidates are searchable separately and are never counted as reviewed parameter records. See [the coverage report](docs/COVERAGE_AUDIT.md).

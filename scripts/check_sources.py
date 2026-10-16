@@ -180,7 +180,7 @@ def markdown(report):
     return "\n".join(lines)
 
 
-def run(client, catalog, policy, baseline, now, discover=True, workers=4):
+def run(client, catalog, policy, baseline, now, discover=True, workers=4, coverage_output=None):
     current = {"schemaVersion": 1, "observedAt": now, "repos": {}, "documents": {}}
     report = {"schemaVersion": 1, "checkedAt": now, "changes": [], "errors": [], "baselined": [], "successfulTargets": 0}
     repos = sorted(set(m["repo"] for m in catalog["models"] if m["access"] == "weights"))
@@ -220,6 +220,19 @@ def run(client, catalog, policy, baseline, now, discover=True, workers=4):
                 report["changes"].extend(candidates)
             except Exception as exc:
                 report["errors"].append({"target": "author:" + author, "error": f"HTTP {exc.code}" if isinstance(exc, urllib.error.HTTPError) else type(exc).__name__})
+        # A separate full inventory catches historical omissions: creation-date discovery cannot.
+        from audit_coverage import audit
+        previous = load(ROOT / 'data/coverage-audit.json', {})
+        coverage = audit(policy, previous, workers)
+        if coverage_output:
+            save(coverage_output, coverage)
+        reviewed = {m['repo'].lower() for m in catalog['models']}
+        seen = {x['repo'].lower() for inv in previous.get('inventories', []) for x in inv['entries']}
+        for inv in coverage['inventories']:
+            for item in inv['entries']:
+                if item['repo'].lower() not in reviewed | seen:
+                    report['changes'].append({'kind': 'coverage_gap_candidate', 'repo': item['repo'], 'url': item['url'], 'note': 'Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim.'})
+        report['errors'].extend({'target': 'coverage:' + x['target'], 'error': x['error']} for x in coverage['errors'])
     report["changes"].sort(key=lambda x: (x["kind"], x.get("repo", x["url"])))
     report["fingerprint"] = digest({"changes": report["changes"], "errors": sorted(report["errors"], key=lambda x: x["target"])})
     return report, current
@@ -236,7 +249,7 @@ def main():
     catalog, policy = load(ROOT / "dist/data.json"), load(ROOT / "data/upstreams.json")
     baseline = load(args.baseline, {})
     now = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
-    report, current = run(OfficialClient(policy["hosts"]), catalog, policy, baseline, now, not args.no_discovery, max(1, min(args.workers, 8)))
+    report, current = run(OfficialClient(policy["hosts"]), catalog, policy, baseline, now, not args.no_discovery, max(1, min(args.workers, 8)), args.output / 'coverage-audit.json')
     save(args.output / "pending.json", report)
     save(args.output / "observed-state.json", current)
     (args.output / "report.md").write_text(markdown(report), encoding="utf-8")

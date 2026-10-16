@@ -47,6 +47,8 @@ def main():
     git('config','user.name','github-actions[bot]')
     git('config','user.email','41898282+github-actions[bot]@users.noreply.github.com')
     git('add','--','data/watch-state.json','updates/pending.json','updates/report.md')
+    if (ROOT/'updates/coverage-audit.json').exists():
+        git('add','--','updates/coverage-audit.json')
     git('commit','-m','chore: propose official source review')
     git('push','origin','HEAD:refs/heads/'+branch)
     body=(ROOT/'updates/report.md').read_text(encoding='utf-8')[:55000]+'\n\n'+marker+'\n\n此 PR 不自动修改已核验参数。请先核对来源，必要时补充 data/ 事实与构建产物，再合入。监测对照时间与事实核验日期不同。'
