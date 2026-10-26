@@ -1,215 +1,737 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-16T01:13:18Z",
+  "checkedAt": "2026-10-26T05:53:36Z",
   "changes": [
     {
+      "kind": "coverage_gap_candidate",
+      "repo": "InternScience/Sage-A1.5",
+      "url": "https://huggingface.co/InternScience/Sage-A1.5",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "InternScience/Sage-A1.5-F16-GGUF",
+      "url": "https://huggingface.co/InternScience/Sage-A1.5-F16-GGUF",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "InternScience/Sage-A1.5-FP8",
+      "url": "https://huggingface.co/InternScience/Sage-A1.5-FP8",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "InternScience/Sage-A1.5-Q4_K_M-GGUF",
+      "url": "https://huggingface.co/InternScience/Sage-A1.5-Q4_K_M-GGUF",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "InternScience/Sage-A1.5-Q6_K-GGUF",
+      "url": "https://huggingface.co/InternScience/Sage-A1.5-Q6_K-GGUF",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "InternScience/Sage-A1.5-Q8_0-GGUF",
+      "url": "https://huggingface.co/InternScience/Sage-A1.5-Q8_0-GGUF",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "LiquidAI/LFM2.5-24B-A2B-DSpark",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-DSpark",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "LiquidAI/LFM2.5-24B-A2B-DSpark-GGUF",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-DSpark-GGUF",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "MiniMaxAI/MiniMax-M3.1-Flash",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "inclusionAI/Ling-3.0-flash-Sante",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-Sante",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "inclusionAI/Ling-3.0-flash-UBTree",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-UBTree",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "inclusionAI/Ling-3.0-tiny-UBTree",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-tiny-UBTree",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "inclusionAI/Ming-3.0-asr-tiny",
+      "url": "https://huggingface.co/inclusionAI/Ming-3.0-asr-tiny",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "inclusionAI/Ming-3.0-tts-0.5B",
+      "url": "https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "nvidia/Flora-Captioner",
+      "url": "https://huggingface.co/nvidia/Flora-Captioner",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "nvidia/Flora-Rewarder",
+      "url": "https://huggingface.co/nvidia/Flora-Rewarder",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "nvidia/GLM-5.3-Flash-FP4-Local",
+      "url": "https://huggingface.co/nvidia/GLM-5.3-Flash-FP4-Local",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-DFlash-NVFP4",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-DFlash-NVFP4",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "nvidia/Nemotron-3.5-Parse",
+      "url": "https://huggingface.co/nvidia/Nemotron-3.5-Parse",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "perplexity-ai/pplx-computer-qwen-3-8-27b-mlx-20260824",
+      "url": "https://huggingface.co/perplexity-ai/pplx-computer-qwen-3-8-27b-mlx-20260824",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "tencent/Hy-Memory-30B-A3B",
+      "url": "https://huggingface.co/tencent/Hy-Memory-30B-A3B",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "tencent/Hy-Memory-30B-A3B-FP8",
+      "url": "https://huggingface.co/tencent/Hy-Memory-30B-A3B-FP8",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "tencent/Hy-Memory-30B-A3B-GGUF",
+      "url": "https://huggingface.co/tencent/Hy-Memory-30B-A3B-GGUF",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "tencent/WeVisOne-VL-2B",
+      "url": "https://huggingface.co/tencent/WeVisOne-VL-2B",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "tencent/WeVisOne-VL-4B",
+      "url": "https://huggingface.co/tencent/WeVisOne-VL-4B",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
+      "kind": "coverage_gap_candidate",
+      "repo": "tencent/Youtu-LLM-A7B-Base",
+      "url": "https://huggingface.co/tencent/Youtu-LLM-A7B-Base",
+      "note": "Full paginated author inventory found an unreviewed repository, regardless of its creation date. A candidate is not a verified independent model or parameter claim."
+    },
+    {
       "kind": "new_model_candidate",
-      "repo": "nvidia/Nemotron-3.5-Rerank-8B-BF16",
-      "createdAt": "2026-10-15T08:42:42.000Z",
-      "url": "https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16",
+      "repo": "InternScience/Sage-A1.5-F16-GGUF",
+      "createdAt": "2026-10-21T05:01:24.000Z",
+      "url": "https://huggingface.co/InternScience/Sage-A1.5-F16-GGUF",
       "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "InternScience/Sage-A1.5-FP8",
+      "createdAt": "2026-10-21T04:59:09.000Z",
+      "url": "https://huggingface.co/InternScience/Sage-A1.5-FP8",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "InternScience/Sage-A1.5-Q4_K_M-GGUF",
+      "createdAt": "2026-10-21T04:44:23.000Z",
+      "url": "https://huggingface.co/InternScience/Sage-A1.5-Q4_K_M-GGUF",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "InternScience/Sage-A1.5-Q6_K-GGUF",
+      "createdAt": "2026-10-22T09:52:23.000Z",
+      "url": "https://huggingface.co/InternScience/Sage-A1.5-Q6_K-GGUF",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "InternScience/Sage-A1.5-Q8_0-GGUF",
+      "createdAt": "2026-10-21T04:46:06.000Z",
+      "url": "https://huggingface.co/InternScience/Sage-A1.5-Q8_0-GGUF",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "LiquidAI/LFM2.5-24B-A2B-DSpark",
+      "createdAt": "2026-10-19T22:39:26.000Z",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-DSpark",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "LiquidAI/LFM2.5-24B-A2B-DSpark-GGUF",
+      "createdAt": "2026-10-20T21:58:26.000Z",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-DSpark-GGUF",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "MiniMaxAI/MiniMax-M3.1-Flash",
+      "createdAt": "2026-10-17T06:37:50.000Z",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "createdAt": "2026-10-17T02:40:38.000Z",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "ibm-granite/granite-switch-4.1-30b-GGUF",
+      "createdAt": "2026-10-22T22:00:51.000Z",
+      "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-30b-GGUF",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "ibm-granite/granite-switch-4.1-8b-GGUF",
+      "createdAt": "2026-10-22T22:00:51.000Z",
+      "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-8b-GGUF",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "inclusionAI/LBS-27B",
+      "createdAt": "2026-10-26T05:36:52.000Z",
+      "url": "https://huggingface.co/inclusionAI/LBS-27B",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "inclusionAI/Ling-3.0-flash-Sante",
+      "createdAt": "2026-10-19T17:30:04.000Z",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-Sante",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "inclusionAI/Ling-3.0-tiny-UBTree",
+      "createdAt": "2026-10-21T13:49:29.000Z",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-tiny-UBTree",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "internlm/Atria-Dawn",
+      "createdAt": "2026-10-23T03:21:40.000Z",
+      "url": "https://huggingface.co/internlm/Atria-Dawn",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "internlm/Atria-Dawn-FP8",
+      "createdAt": "2026-10-23T01:23:32.000Z",
+      "url": "https://huggingface.co/internlm/Atria-Dawn-FP8",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "nvidia/Cosmos3-H-Dreams",
+      "createdAt": "2026-10-19T12:35:12.000Z",
+      "url": "https://huggingface.co/nvidia/Cosmos3-H-Dreams",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "nvidia/Cosmos3-H-Embodied-Nano",
+      "createdAt": "2026-10-19T12:45:34.000Z",
+      "url": "https://huggingface.co/nvidia/Cosmos3-H-Embodied-Nano",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "nvidia/InternVideo2-CLIP-anomaly-detection",
+      "createdAt": "2026-10-22T18:23:57.000Z",
+      "url": "https://huggingface.co/nvidia/InternVideo2-CLIP-anomaly-detection",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "nvidia/Muse-Spark-Open-816B-A42B-DFlash2",
+      "createdAt": "2026-10-16T04:40:26.000Z",
+      "url": "https://huggingface.co/nvidia/Muse-Spark-Open-816B-A42B-DFlash2",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+      "createdAt": "2026-10-16T18:25:29.000Z",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF",
+      "createdAt": "2026-10-16T16:25:01.000Z",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8",
+      "createdAt": "2026-10-16T18:26:53.000Z",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
+      "createdAt": "2026-10-16T18:30:41.000Z",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "nvidia/cosmos3-nano-libero10-sdg-export-D2_s43",
+      "createdAt": "2026-10-19T12:33:39.000Z",
+      "url": "https://huggingface.co/nvidia/cosmos3-nano-libero10-sdg-export-D2_s43",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "nvidia/cosmos3-nano-libero10-sdg-export-S2_s43",
+      "createdAt": "2026-10-19T03:38:29.000Z",
+      "url": "https://huggingface.co/nvidia/cosmos3-nano-libero10-sdg-export-S2_s43",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "nvidia/cosmos3-nano-libero10-sdg-export-S5_2_s43",
+      "createdAt": "2026-10-19T21:19:46.000Z",
+      "url": "https://huggingface.co/nvidia/cosmos3-nano-libero10-sdg-export-S5_2_s43",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "perplexity-ai/pplx-decider-flash-gguf-v1.2",
+      "createdAt": "2026-10-18T06:26:47.000Z",
+      "url": "https://huggingface.co/perplexity-ai/pplx-decider-flash-gguf-v1.2",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "tencent/Hy-Memory-30B-A3B-FP8",
+      "createdAt": "2026-10-16T07:57:25.000Z",
+      "url": "https://huggingface.co/tencent/Hy-Memory-30B-A3B-FP8",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "tencent/Hy-Memory-30B-A3B-GGUF",
+      "createdAt": "2026-10-19T07:52:21.000Z",
+      "url": "https://huggingface.co/tencent/Hy-Memory-30B-A3B-GGUF",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "tencent/Hy-Nomas",
+      "createdAt": "2026-10-21T02:17:37.000Z",
+      "url": "https://huggingface.co/tencent/Hy-Nomas",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "tencent/Hy-Nomas-Diffusers",
+      "createdAt": "2026-10-24T05:45:20.000Z",
+      "url": "https://huggingface.co/tencent/Hy-Nomas-Diffusers",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "tencent/Qwen3-8B-DSpine-b16",
+      "createdAt": "2026-10-16T14:52:38.000Z",
+      "url": "https://huggingface.co/tencent/Qwen3-8B-DSpine-b16",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "tencent/WeVisOne-VL-2B",
+      "createdAt": "2026-10-22T09:47:50.000Z",
+      "url": "https://huggingface.co/tencent/WeVisOne-VL-2B",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "new_model_candidate",
+      "repo": "tencent/WeVisOne-VL-4B",
+      "createdAt": "2026-10-22T09:48:14.000Z",
+      "url": "https://huggingface.co/tencent/WeVisOne-VL-4B",
+      "note": "Listed under a monitored author account; not yet verified as an independent model, quantization or draft module."
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-OCR",
+      "before": "04db4cd337c43d2438cf27b236fe9e20330a39ebf08ee237f91f9bf91879d034",
+      "after": "1811e29e54f5bb5df9153cccd1d4b5f3cc59d43d014ee91a70302668d71ba700",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed."
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-R1",
+      "before": "dd6ce357f24c3784e6d1bcba8ffea39c989ef0541dc128bd4dbc11f15faa44ca",
+      "after": "00b504ea1a02a4f86760ca444ae6ec1e20e5dc395f33c7dbfcb1030bfa35c2f0",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed."
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V3",
+      "before": "e1de1333e957163f75b1238f601353a0a8931f259629a2701063c5ae092c973a",
+      "after": "b222e2286a3b9a81ad559b3435ff8f8a25d4741ee9ef3428f582f5f6595bb3aa",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed."
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V3_1",
+      "before": "1c36f1e1a7a9ecd93b8b2808b743aa3d9250a780c5df97c35a04760abdc8513d",
+      "after": "5b7fbee5324ca4f3ffb8d3e56a77f3305a42ccb9a56e45e6e05014d31adae5f5",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed."
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V4",
+      "before": "06143a22576eb442492de5cce429da9e9252cb5400427587684b64f0f104bcbd",
+      "after": "5e00cc4518c98c08301cf07cb415a319df3347d2f50b71be2b743001ef56a971",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed."
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V4_1",
+      "before": "6de5aa19b013a02e581526441ced54a511b2e80b0491a18bfb5fa8bed89039b8",
+      "after": "42bf507c28b7c3dc7b4cefc2fea616d4f978afc879dda3157e1699778e43d5d6",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed."
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/Ernie/Ernie4.5",
+      "before": "1cdadaa8722d395f62ff3258a9542bc705382582b91a83ba5153d9b5f59546dd",
+      "after": "fae7ca526b250c33e9e55567694539215fb4c532ae2a267cdc8b50f27990e8ae",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed."
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.2",
+      "before": "2912a4e763fd42cc6b6997d730ecc0d110fb15b0596a1fe1baacf620893a159c",
+      "after": "beed81999fa52cf76b50277913c2e297f790bf688e3b53347cfc69781e2c1ce8",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed."
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.3",
+      "before": "3e19f185c2d25ccb511ecbe79ea85a26ba18656af7af4051b2e12269168d97a1",
+      "after": "7fb05cc6ac38f8fd6cb5ffa7849eeabacf664f545c7e4435392b7a470a489de6",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed."
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.3-Flash",
+      "before": "3af69409e358cb218b4654128a1ebec14e6490b8d2ca9e400ec7c8d50f5b6f5f",
+      "after": "059acde6a0fa7b8cb0730efab6c15ff7de98ad3653559a006df1eaa8902cd25c",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed."
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/Google/Gemma4",
+      "before": "23348f9a7c942590bd5fb2db19afb99ed54d1b6fc4abca2691f5c52fe936525f",
+      "after": "5fde789ab787f8f83cd4de69555d1bb09b5bfff007eb54eeda804cefd86bd28e",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed."
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.1-flash",
+      "before": "ae1bf27c16ccf2b55410b2a6c9051d0efdab13263abc950f65b4727a78b4da31",
+      "after": "39272b52812209d55254788aae66e7fa0bcd5ec3e22c6a88dd1c34fe677f25ab",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed."
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M2.5",
+      "before": "c212e0fc57047938329e3156c275b4165e5496501873b7a75dec6cf5695a28ef",
+      "after": "c4d49bfceca08deefce1783d6ace357450db775ecd7d9c88ce7b3769597b2464",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed."
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K2.7-Code",
+      "before": "3ebe81d6c0bb8ca5a720d9cc7a01f11c0a5b95e84222a34ed760926d6c3ecd48",
+      "after": "9414e80ac1a29358acf8a0071cc6bc86ae6e59c7918e583b39a440d2fcada572",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed."
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K3",
+      "before": "68bc68d310ef276c97af32aead2d68783d93f883f9b12311a08f94138fb6d0b4",
+      "after": "fa2289e32bfb608f1f1b6f717797de23b5017f0d5f1802fe899421f50014fbea",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed."
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/OpenAI/GPT-OSS",
+      "before": "5df1a7fcffb853c116430490a1b31814488141e659611016aca78ab4670db76f",
+      "after": "0c76a64187ced2d4aded8c47e839236c4177abf58861e489fa0d850e14b25c40",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed."
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/OpenBMB/MiniCPM-V-4_7",
+      "before": "22b7029eb470914a0d1259460f59b1738a7b63ff52c5df30cd27c8ad3d841c97",
+      "after": "12c0ce7c7f580c5a3b06642d674171c8c047a132cbb660c932c3e564661831db",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed."
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3-Next",
+      "before": "9a781b638e301763b1928ff1bcc2b012f39313eeb3386a23879bef8881b4d741",
+      "after": "7b8765391fe91804087018d1a1ebab49cbcadccf47b514adede2f0ff891a52a5",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed."
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.5",
+      "before": "509b22575c31435160d121eeee645d437acfb1feea244a477e904f91fd5a0f27",
+      "after": "d4a39ecbf5656080885d509cd6a7557a2e0eda562952c4f09f7840d3e097f610",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed."
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.6",
+      "before": "a2757983de71ad815f0aab0f44d9ab36446758bb027ad8c5335a507eb7677e0e",
+      "after": "62131f11db8e7d7a34bcc80d246a7e7315165020f1f8e9c111824068be2a0475",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed."
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-Flash-Next",
+      "before": "814645e780dbc0d652907b0e412dd3a4556f5f49f77b44bab52f601f07134151",
+      "after": "cc252dd56472b3da6ea1e3e9b74b705c484ab608b0d466beb2ab4002614547c6",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed."
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/intro",
+      "before": "734f0e08b82144bf503b6586f30686d4da93c3907b691ffef22c862ef63a8d67",
+      "after": "05d7d08a0a07904f3117a647806ed6ec7bc9e3de085e61011686a0d8fc2ce497",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed."
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.sglang.io/llms.txt",
+      "before": "c1f0ee084fb38517ab2d2672ce00488d8f2f1449909b34c5d78bfbcdd1bf4d39",
+      "after": "7d1028592001831f28cfc6a38584fbe7b4f9673cebd3daa5e29475a553dd0504",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed.",
+      "newRecipePages": [
+        "https://docs.sglang.io/cookbook/autoregressive/DeepReinforce/Ornith-1.5",
+        "https://docs.sglang.io/cookbook/autoregressive/Kev/kev",
+        "https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M3.1",
+        "https://docs.sglang.io/cookbook/autoregressive/Recursive/Flint",
+        "https://docs.sglang.io/cookbook/autoregressive/Reflection/Beam-1_0"
+      ]
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.vllm.ai/en/latest/models/supported_models/",
+      "before": "003db2ec649813dfaaf5cde5af6db6c4731595a755739e12d3a568ffbbb5a2ce",
+      "after": "785632065f68fd52a4fcbb1399d392364eb3587025902835cb7c75f02fe0081e",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed."
+    },
+    {
+      "kind": "official_document_changed",
+      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "before": "e89e4766d8a80df88141eff88ee2ef9f98b692a1aa9a672cb57b0abf2aa4998f",
+      "after": "01fe6403a5d33de958c9bb9d0393e5702f680deb4e190dcd2190895722341636",
+      "note": "Official document content changed. Re-read the original page; no support claim has been changed."
+    },
+    {
+      "kind": "repository_changed",
+      "repo": "Cloudflare/clef",
+      "oldRevision": "0b331204bb13fbd2ca93a64df1956f5b55478ce5",
+      "newRevision": "a30162b99d68a481d8bd75d38df069a0cf83df40",
+      "url": "https://huggingface.co/Cloudflare/clef",
+      "configSource": "https://huggingface.co/Cloudflare/clef/raw/a30162b99d68a481d8bd75d38df069a0cf83df40/config.json",
+      "configChanges": {},
+      "configAccess": "read",
+      "note": "New commit, configuration change or access change; inaccessible configurations are not treated as deleted fields. Author parameter claims, component scope and serving support still need review."
+    },
+    {
+      "kind": "repository_changed",
+      "repo": "Cloudflare/clef-flash",
+      "oldRevision": "8b2e5fd17c09fd49bc2880b805d5323ec7ff4ff3",
+      "newRevision": "f0b7d3cd65296abfe459e6c228b618f5d8b26d2f",
+      "url": "https://huggingface.co/Cloudflare/clef-flash",
+      "configSource": "https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/config.json",
+      "configChanges": {},
+      "configAccess": "read",
+      "note": "New commit, configuration change or access change; inaccessible configurations are not treated as deleted fields. Author parameter claims, component scope and serving support still need review."
+    },
+    {
+      "kind": "repository_changed",
+      "repo": "IFM/Jais-3-375B-A23B",
+      "oldRevision": "33a16f6738ce5e9a6e9a45848bc5d9e8fe682a37",
+      "newRevision": "69a96a885e93367c508c0428d01b5c38d23bdd1d",
+      "url": "https://huggingface.co/IFM/Jais-3-375B-A23B",
+      "configSource": "https://huggingface.co/IFM/Jais-3-375B-A23B/raw/69a96a885e93367c508c0428d01b5c38d23bdd1d/config.json",
+      "configChanges": {},
+      "configAccess": "read",
+      "note": "New commit, configuration change or access change; inaccessible configurations are not treated as deleted fields. Author parameter claims, component scope and serving support still need review."
+    },
+    {
+      "kind": "repository_changed",
+      "repo": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "oldRevision": "5254448103b6254fc646dacbca1cbbf20e9216c1",
+      "newRevision": "314113f8a7dadb388215396ba5fbee2c610a04d6",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      "configSource": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/314113f8a7dadb388215396ba5fbee2c610a04d6/config.json",
+      "configChanges": {},
+      "configAccess": "read",
+      "note": "New commit, configuration change or access change; inaccessible configurations are not treated as deleted fields. Author parameter claims, component scope and serving support still need review."
+    },
+    {
+      "kind": "repository_changed",
+      "repo": "inclusionAI/Ling-3.1-flash",
+      "oldRevision": "a4ccd6b45c002ddb236f9cb77d52cc427482bf19",
+      "newRevision": "e5623f6e4c34e9f2ca40bec867b9210db42ac76c",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.1-flash",
+      "configSource": "https://huggingface.co/inclusionAI/Ling-3.1-flash/raw/e5623f6e4c34e9f2ca40bec867b9210db42ac76c/config.json",
+      "configChanges": {},
+      "configAccess": "read",
+      "note": "New commit, configuration change or access change; inaccessible configurations are not treated as deleted fields. Author parameter claims, component scope and serving support still need review."
+    },
+    {
+      "kind": "repository_changed",
+      "repo": "meta-models/Muse-Glimmer-30B",
+      "oldRevision": "a4e59da52a7bc87ae7251dd5545c0dd437c44b68",
+      "newRevision": "cec94fcfd6512f2cfe708138c32533b346ea4f69",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "configSource": "https://huggingface.co/meta-models/Muse-Glimmer-30B/raw/cec94fcfd6512f2cfe708138c32533b346ea4f69/config.json",
+      "configChanges": {},
+      "configAccess": "read",
+      "note": "New commit, configuration change or access change; inaccessible configurations are not treated as deleted fields. Author parameter claims, component scope and serving support still need review."
     }
   ],
   "errors": [],
   "baselined": [
-    "Cloudflare/clef",
-    "Cloudflare/clef-flash",
-    "FlashLabs/Chroma-4B",
-    "IFM/Jais-3-375B-A23B",
-    "IFM/K2-Horizon-375B-A23B",
-    "IQuestLab/IQuest-Q1",
-    "LiquidAI/LFM2.5-8B-A1B",
-    "MiniMaxAI/MiniMax-M2",
-    "MiniMaxAI/MiniMax-M2.5",
-    "MiniMaxAI/MiniMax-M3",
-    "OpenGVLab/InternVL3_5-30B-A3B",
-    "Qwen/Qwen3-235B-A22B",
-    "Qwen/Qwen3-30B-A3B",
-    "Qwen/Qwen3-32B",
-    "Qwen/Qwen3-Next-80B-A3B-Instruct",
-    "Qwen/Qwen3.5-122B-A10B",
-    "Qwen/Qwen3.5-27B",
-    "Qwen/Qwen3.5-35B-A3B",
-    "Qwen/Qwen3.5-397B-A17B",
-    "Qwen/Qwen3.6-27B",
-    "Qwen/Qwen3.6-35B-A3B",
-    "Qwen/Qwen3.8-2.4T-A95B",
-    "Qwen/Qwen3.8-Flash-NEXT",
-    "XiaomiMiMo/MiMo-V2.6-Flash-RL",
-    "XiaomiMiMo/MiMo-V2.6-Pro-RL",
-    "ai-sage/GigaChat3.5-432B-A28B",
-    "baidu/ERNIE-4.5-300B-A47B-PT",
-    "deepreinforce-ai/Ornith-1.0-397B",
-    "deepseek-ai/DeepSeek-R1",
-    "deepseek-ai/DeepSeek-V3",
-    "deepseek-ai/DeepSeek-V3.2",
-    "deepseek-ai/DeepSeek-V4-Flash",
-    "deepseek-ai/DeepSeek-V4-Flash-0731",
-    "deepseek-ai/DeepSeek-V4-Flash-DSpark",
-    "deepseek-ai/DeepSeek-V4-Pro",
-    "deepseek-ai/DeepSeek-V4-Pro-0813",
-    "deepseek-ai/DeepSeek-V4-Pro-DSpark",
-    "deepseek-ai/DeepSeek-V4.1-Flash",
-    "dots-studio/dots3-note-prev",
-    "google/gemma-4-26B-A4B-it",
-    "google/gemma-4-31B-it",
-    "ibm-granite/granite-4.2-30b",
-    "inclusionAI/Ling-1T",
-    "inclusionAI/Ling-3.1-flash",
-    "internlm/Intern-S1",
-    "internlm/Intern-S1-Pro",
-    "internlm/Intern-S2-Preview",
-    "internlm/internlm2_5-20b-chat",
-    "internlm/internlm3-8b-instruct",
-    "meituan-longcat/LongCat-2.0-FP8",
-    "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
-    "meta-llama/Llama-4-Scout-17B-16E-Instruct",
-    "meta-models/Muse-Glimmer-30B",
-    "mistralai/Mistral-Small-4-119B-2603",
-    "moonshotai/Kimi-K2.5",
-    "moonshotai/Kimi-K2.6",
-    "moonshotai/Kimi-K3",
-    "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
-    "openai/gpt-oss-120b",
-    "openai/gpt-oss-20b",
-    "openbmb/MiniCPM5-2B",
-    "perplexity-ai/pplx-decider-v1.1-27b",
-    "poolside/Laguna-XS.2",
-    "stepfun-ai/Step-3.7-Flash",
-    "stepfun-ai/Step-5-Preview",
-    "tencent/Hunyuan-A13B-Instruct",
-    "tencent/Hy4-preview",
-    "thinkingmachines/Inkling",
-    "thinkingmachines/Inkling-Small",
-    "zai-org/GLM-4.5",
-    "zai-org/GLM-4.5-Air",
-    "zai-org/GLM-4.6",
-    "zai-org/GLM-4.6V",
-    "zai-org/GLM-4.6V-Flash",
-    "zai-org/GLM-4.7",
-    "zai-org/GLM-4.7-Flash",
-    "zai-org/GLM-5",
-    "zai-org/GLM-5.1",
-    "zai-org/GLM-5.2",
-    "zai-org/GLM-5.3",
-    "zai-org/GLM-5.3-Flash",
-    "https://docs.sglang.io/cookbook/autoregressive/Baidu/PaddleOCR-VL",
-    "https://docs.sglang.io/cookbook/autoregressive/Baidu/Unlimited-OCR",
-    "https://docs.sglang.io/cookbook/autoregressive/Cloudflare/clef",
-    "https://docs.sglang.io/cookbook/autoregressive/DeepReinforce/Ornith-1.0",
-    "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-Math-V2",
-    "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-OCR",
-    "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-OCR-2",
-    "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-R1",
-    "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V3",
-    "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V3_1",
-    "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V3_2",
-    "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V4",
-    "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V4_1",
-    "https://docs.sglang.io/cookbook/autoregressive/Ernie/Ernie4.5",
-    "https://docs.sglang.io/cookbook/autoregressive/Ernie/Ernie4.5-VL",
-    "https://docs.sglang.io/cookbook/autoregressive/FlashLabs/Chroma1.0",
-    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.5",
-    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.5V",
-    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.6",
-    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.6V",
-    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.7",
-    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.7-Flash",
-    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5",
-    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.1",
-    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.2",
-    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.3",
-    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.3-Flash",
-    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-Glyph",
-    "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-OCR",
-    "https://docs.sglang.io/cookbook/autoregressive/GigaChat/GigaChat3.5",
-    "https://docs.sglang.io/cookbook/autoregressive/GigaChat/GigaChat3.5-Reasoning",
-    "https://docs.sglang.io/cookbook/autoregressive/Google/DiffusionGemma",
-    "https://docs.sglang.io/cookbook/autoregressive/Google/EmbeddingGemma",
-    "https://docs.sglang.io/cookbook/autoregressive/Google/EmbeddingGemma2",
-    "https://docs.sglang.io/cookbook/autoregressive/Google/Gemma4",
-    "https://docs.sglang.io/cookbook/autoregressive/IBM/Granite-4.2",
-    "https://docs.sglang.io/cookbook/autoregressive/IFM/Jais-3",
-    "https://docs.sglang.io/cookbook/autoregressive/IFM/K2-Horizon",
-    "https://docs.sglang.io/cookbook/autoregressive/IQuestLab/IQuest-Q1",
-    "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/LLaDA-2.1",
-    "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-2.5-1T",
-    "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-2.6",
-    "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.0-flash",
-    "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.0-flash-VL",
-    "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.0-tiny",
-    "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.1-flash",
-    "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ring-2.5-1T",
-    "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ring-2.6-1T",
-    "https://docs.sglang.io/cookbook/autoregressive/InternLM/Intern-S1",
-    "https://docs.sglang.io/cookbook/autoregressive/InternLM/Intern-S2-Mobius",
-    "https://docs.sglang.io/cookbook/autoregressive/InternLM/Intern-S2-Preview",
-    "https://docs.sglang.io/cookbook/autoregressive/InternVL/InternVL3.5",
-    "https://docs.sglang.io/cookbook/autoregressive/Jina/Jina-reranker-m0",
-    "https://docs.sglang.io/cookbook/autoregressive/LiquidAI/LFM2.5",
-    "https://docs.sglang.io/cookbook/autoregressive/Meituan/LongCat-2.0",
-    "https://docs.sglang.io/cookbook/autoregressive/Meta/Llama3.1",
-    "https://docs.sglang.io/cookbook/autoregressive/Meta/Llama3.3-70B",
-    "https://docs.sglang.io/cookbook/autoregressive/Meta/Llama4",
-    "https://docs.sglang.io/cookbook/autoregressive/Meta/MuseGlimmer",
-    "https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M2",
-    "https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M2.5",
-    "https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M2.7",
-    "https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M3",
-    "https://docs.sglang.io/cookbook/autoregressive/Mistral/Devstral-2",
-    "https://docs.sglang.io/cookbook/autoregressive/Mistral/Ministral-3",
-    "https://docs.sglang.io/cookbook/autoregressive/Mistral/Mistral-Medium-3.5",
-    "https://docs.sglang.io/cookbook/autoregressive/Mistral/Mistral-Small-4",
-    "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K2",
-    "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K2.5",
-    "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K2.6",
-    "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K2.7-Code",
-    "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K3",
-    "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-Linear",
-    "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3-Nano",
-    "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3-Nano-Omni",
-    "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3-Super",
-    "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3-Ultra",
-    "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3.5-Lightning",
-    "https://docs.sglang.io/cookbook/autoregressive/OpenAI/GPT-OSS",
-    "https://docs.sglang.io/cookbook/autoregressive/OpenBMB/MiniCPM-V-4_6",
-    "https://docs.sglang.io/cookbook/autoregressive/OpenBMB/MiniCPM-V-4_7",
-    "https://docs.sglang.io/cookbook/autoregressive/OpenBMB/MiniCPM5-2B",
-    "https://docs.sglang.io/cookbook/autoregressive/Perplexity/PPLX-Decider-v1-27B",
-    "https://docs.sglang.io/cookbook/autoregressive/Perplexity/PPLX-Decider-v1.1-27B",
-    "https://docs.sglang.io/cookbook/autoregressive/Poolside/Laguna-M.1",
-    "https://docs.sglang.io/cookbook/autoregressive/Poolside/Laguna-S-2.1",
-    "https://docs.sglang.io/cookbook/autoregressive/Poolside/Laguna-XS-2.1",
-    "https://docs.sglang.io/cookbook/autoregressive/Poolside/Laguna-XS.2",
-    "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen2.5-VL",
-    "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3",
-    "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3-Coder",
-    "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3-Coder-Next",
-    "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3-Next",
-    "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3-VL",
-    "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.5",
-    "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.6",
-    "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8",
-    "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-27B",
-    "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-Flash-Next",
-    "https://docs.sglang.io/cookbook/autoregressive/RedNote/Dots3-Note",
-    "https://docs.sglang.io/cookbook/autoregressive/StepFun/Step-3.7-Flash",
-    "https://docs.sglang.io/cookbook/autoregressive/StepFun/Step-5-Preview",
-    "https://docs.sglang.io/cookbook/autoregressive/StepFun/Step3-VL-10B",
-    "https://docs.sglang.io/cookbook/autoregressive/StepFun/Step3.5",
-    "https://docs.sglang.io/cookbook/autoregressive/Tencent/Hunyuan3-Preview",
-    "https://docs.sglang.io/cookbook/autoregressive/Tencent/Hy3",
-    "https://docs.sglang.io/cookbook/autoregressive/Tencent/Hy4-Preview",
-    "https://docs.sglang.io/cookbook/autoregressive/ThinkingMachines/Inkling",
-    "https://docs.sglang.io/cookbook/autoregressive/ThinkingMachines/Inkling-Small",
-    "https://docs.sglang.io/cookbook/autoregressive/Xiaomi/MiMo-V2-Flash",
-    "https://docs.sglang.io/cookbook/autoregressive/Xiaomi/MiMo-V2.5",
-    "https://docs.sglang.io/cookbook/autoregressive/Xiaomi/MiMo-V2.6",
-    "https://docs.sglang.io/cookbook/autoregressive/intro",
-    "https://docs.sglang.io/llms.txt",
-    "https://docs.vllm.ai/en/latest/models/supported_models/",
-    "https://docs.z.ai/guides/vlm/glm-5.3-flash",
-    "https://recipes.vllm.ai/zai-org/GLM-5.2"
+    "InternScience/Agents-A1",
+    "InternScience/Agents-A1-4B",
+    "LiquidAI/LFM2.5-24B-A2B",
+    "MiniMaxAI/MiniMax-M2.1",
+    "MiniMaxAI/MiniMax-M2.7",
+    "Qwen/Qwen3-Coder-Next",
+    "Qwen/Qwen3.8-27B",
+    "XiaomiMiMo/MiMo-V2-Flash",
+    "XiaomiMiMo/MiMo-V2.5",
+    "XiaomiMiMo/MiMo-V2.5-Pro",
+    "baidu/ERNIE-4.5-VL-424B-A47B-PT",
+    "deepseek-ai/DeepSeek-V3.1-Terminus",
+    "deepseek-ai/DeepSeek-V3.2-Speciale",
+    "ibm-granite/granite-switch-4.1-30b",
+    "internlm/Atria-Dawn-Preview",
+    "internlm/Atria-Dawn-Preview-FP8",
+    "internlm/Intern-S2-397B",
+    "internlm/Intern-S2-397B-FP8",
+    "internlm/Intern-S2-Mobius",
+    "internlm/Intern-S2-Preview-397B",
+    "internlm/Intern-S2-Preview-397B-FP8",
+    "moonshotai/Kimi-K2.7-Code",
+    "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16",
+    "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+    "openbmb/MiniCPM-V-4.7-35B-A3B",
+    "stepfun-ai/Step-3.5-Flash",
+    "zai-org/GLM-OCR",
+    "https://docs.sglang.io/cookbook/autoregressive/Meta/MuseSparkOpen",
+    "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3.5-Super"
   ],
-  "fingerprint": "ed0184e7322ee98f280874c3022ac37dd1f2d509cbe609b9867bc05f78c617d3"
+  "successfulTargets": 227,
+  "fingerprint": "3e7072fa9726e08d7557711408be31ff457cd5265dcb9739b690af754a4a438c"
 }
