@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "observedAt": "2026-10-16T01:13:18Z",
+  "observedAt": "2026-11-16T07:47:33Z",
   "repos": {
     "Cloudflare/clef": {
-      "sha": "0b331204bb13fbd2ca93a64df1956f5b55478ce5",
+      "sha": "171287b2571042abec9e7b99752aee58216b0ed0",
       "config": {
         "layers": {
           "value": 64,
@@ -30,7 +30,7 @@
       }
     },
     "Cloudflare/clef-flash": {
-      "sha": "8b2e5fd17c09fd49bc2880b805d5323ec7ff4ff3",
+      "sha": "22b75507981345858dd152fbd9a6f8c0c4068b0a",
       "config": {
         "layers": {
           "value": 32,
@@ -61,7 +61,7 @@
       "config_access": "HTTP 401; configuration not inspected"
     },
     "IFM/Jais-3-375B-A23B": {
-      "sha": "33a16f6738ce5e9a6e9a45848bc5d9e8fe682a37",
+      "sha": "f51d0a4dd93ed0d5cbb9ed58749aa519bd091bc9",
       "config": {
         "routed": {
           "value": 192,
@@ -96,7 +96,7 @@
       }
     },
     "IFM/K2-Horizon-375B-A23B": {
-      "sha": "78272deca7adc2f90d154288b5161172283c80b3",
+      "sha": "bb3bfb4b532488c05e84a090301f8259c68b319c",
       "config": {
         "routed": {
           "value": 192,
@@ -165,8 +165,101 @@
         }
       }
     },
+    "InternScience/Agents-A1": {
+      "sha": "e4a30b76e439b5093ac4c14efa6017718781d48f",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "text_config.num_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "layers": {
+          "value": 40,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "text_config.mtp_num_hidden_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "Qwen3_5MoeForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "InternScience/Agents-A1-4B": {
+      "sha": "945c40a4aa6f534d434a353207b8d42ecf7a5293",
+      "config": {
+        "layers": {
+          "value": 32,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "text_config.mtp_num_hidden_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "Qwen3_5ForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "LiquidAI/LFM2.5-24B-A2B": {
+      "sha": "3dc4cd09c9a2a99e1e819693e79d3aba5e9bb4f2",
+      "config": {
+        "routed": {
+          "value": 64,
+          "locator": "num_experts"
+        },
+        "selected": {
+          "value": 4,
+          "locator": "num_experts_per_tok"
+        },
+        "layers": {
+          "value": 40,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 131072,
+          "locator": "max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "dtype"
+        },
+        "architectures": {
+          "value": [
+            "Lfm2MoeForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
     "LiquidAI/LFM2.5-8B-A1B": {
-      "sha": "5dd22602c2e9f6a097b1de4c4efe0658b605015c",
+      "sha": "dd83f5cb02aa2938b66bba9a9998d38d0517c1f3",
       "config": {
         "routed": {
           "value": 32,
@@ -197,7 +290,46 @@
       }
     },
     "MiniMaxAI/MiniMax-M2": {
-      "sha": "757303d492a50514c312788b5247a4f696a4c6a3",
+      "sha": "04312f0cfbdeefb912575595b7c045512a29293c",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "num_local_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "layers": {
+          "value": 62,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 196608,
+          "locator": "max_position_embeddings"
+        },
+        "architectures": {
+          "value": [
+            "MiniMaxM2ForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "float8_e4m3fn",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "MiniMaxAI/MiniMax-M2.1": {
+      "sha": "917dbb7d0761e24d8623c0a5d97624550181c8e6",
       "config": {
         "routed": {
           "value": 256,
@@ -236,7 +368,7 @@
       }
     },
     "MiniMaxAI/MiniMax-M2.5": {
-      "sha": "f710177d938eff80b684d42c5aa84b382612f21f",
+      "sha": "2515a3ea0afec1dd22d0c7794b3a91557804d195",
       "config": {
         "routed": {
           "value": 256,
@@ -274,8 +406,51 @@
         }
       }
     },
+    "MiniMaxAI/MiniMax-M2.7": {
+      "sha": "0a6536713b0b03f3be97494e5cf8d22f668a3164",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "num_local_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "layers": {
+          "value": 62,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 204800,
+          "locator": "max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "dtype"
+        },
+        "architectures": {
+          "value": [
+            "MiniMaxM2ForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "float8_e4m3fn",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
     "MiniMaxAI/MiniMax-M3": {
-      "sha": "f0e1c1e04d40177e4673a22097036854f536e9c0",
+      "sha": "d95e30cb912fe3021bb9c2ba66a8ce60b6c937a9",
       "config": {
         "routed": {
           "value": 128,
@@ -420,6 +595,37 @@
         "architectures": {
           "value": [
             "Qwen3ForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "Qwen/Qwen3-Coder-Next": {
+      "sha": "a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb",
+      "config": {
+        "routed": {
+          "value": 512,
+          "locator": "num_experts"
+        },
+        "selected": {
+          "value": 10,
+          "locator": "num_experts_per_tok"
+        },
+        "layers": {
+          "value": 48,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "Qwen3NextForCausalLM"
           ],
           "locator": "architectures"
         }
@@ -589,7 +795,7 @@
       }
     },
     "Qwen/Qwen3.6-27B": {
-      "sha": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+      "sha": "8f33b98937c6031bb49e713dee3e8e185aafd26f",
       "config": {
         "layers": {
           "value": 64,
@@ -616,7 +822,7 @@
       }
     },
     "Qwen/Qwen3.6-35B-A3B": {
-      "sha": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+      "sha": "345d467b117d1fd5eda9b879a5988de9ae5f47a7",
       "config": {
         "routed": {
           "value": 256,
@@ -651,7 +857,7 @@
       }
     },
     "Qwen/Qwen3.8-2.4T-A95B": {
-      "sha": "207bd685a7e3696cfaff12ded7c6a7ea0f88c996",
+      "sha": "4f885e51d6bbfee5866446d56d3f96f336c39723",
       "config": {
         "routed": {
           "value": 512,
@@ -685,8 +891,35 @@
         }
       }
     },
+    "Qwen/Qwen3.8-27B": {
+      "sha": "37561816e66b5b9153b1b64c10968c18c1e6f4a0",
+      "config": {
+        "layers": {
+          "value": 64,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "text_config.mtp_num_hidden_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "Qwen3_5ForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
     "Qwen/Qwen3.8-Flash-NEXT": {
-      "sha": "de4b8e4d43b917e7706784d8bb445c9af86a3540",
+      "sha": "812d96e10a0dd82b69d749e68693698cf6c36daa",
       "config": {
         "routed": {
           "value": 512,
@@ -720,8 +953,137 @@
         }
       }
     },
+    "XiaomiMiMo/MiMo-V2-Flash": {
+      "sha": "8b60b288e8325b7890fcdfe32bbb1d172c591a2d",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "layers": {
+          "value": 48,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "MiMoV2FlashForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "XiaomiMiMo/MiMo-V2.5": {
+      "sha": "d6bf9db68673d1f903a53d8da417b293fdc97d1f",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "layers": {
+          "value": 48,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 1048576,
+          "locator": "max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "dtype"
+        },
+        "architectures": {
+          "value": [
+            "MiMoV2ForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "XiaomiMiMo/MiMo-V2.5-Pro": {
+      "sha": "98e90df48208087a2eb974866a736a20f8122d2a",
+      "config": {
+        "routed": {
+          "value": 384,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "layers": {
+          "value": 70,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 1048576,
+          "locator": "max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "MiMoV2ForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
     "XiaomiMiMo/MiMo-V2.6-Flash-RL": {
-      "sha": "dcd3fd83fb181622fbc606fbb1709901982a62c2",
+      "sha": "f657ba2f7d24c9adc5730675baaa2d34de878a49",
       "config": {
         "routed": {
           "value": 256,
@@ -768,7 +1130,7 @@
       }
     },
     "XiaomiMiMo/MiMo-V2.6-Pro-RL": {
-      "sha": "b61f21852680ee02a29e946e18cf8697f4844061",
+      "sha": "a066ba0057192126bd5d255f37138265fc1a435e",
       "config": {
         "routed": {
           "value": 384,
@@ -887,6 +1249,36 @@
         "architectures": {
           "value": [
             "Ernie4_5_MoeForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "baidu/ERNIE-4.5-VL-424B-A47B-PT": {
+      "sha": "a3d5a8439d67c9a69003a1f7aac0961c6f1bc20d",
+      "config": {
+        "routed": {
+          "value": [
+            64,
+            64
+          ],
+          "locator": "moe_num_experts"
+        },
+        "layers": {
+          "value": 54,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 131072,
+          "locator": "max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "Ernie4_5_VLMoeForConditionalGeneration"
           ],
           "locator": "architectures"
         }
@@ -1029,8 +1421,110 @@
         }
       }
     },
+    "deepseek-ai/DeepSeek-V3.1-Terminus": {
+      "sha": "19510d6dc61f79dbd925bd51ee8a9081c509a4b6",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 61,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 163840,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "DeepseekV3ForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
     "deepseek-ai/DeepSeek-V3.2": {
       "sha": "a7e62ac04ecb2c0a54d736dc46601c5606cf10a6",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 61,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 163840,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "DeepseekV32ForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "deepseek-ai/DeepSeek-V3.2-Speciale": {
+      "sha": "c562883eda916fd699a44bbf1f4987a53b96008b",
       "config": {
         "routed": {
           "value": 256,
@@ -1387,7 +1881,7 @@
       }
     },
     "deepseek-ai/DeepSeek-V4.1-Flash": {
-      "sha": "5254448103b6254fc646dacbca1cbbf20e9216c1",
+      "sha": "314113f8a7dadb388215396ba5fbee2c610a04d6",
       "config": {
         "routed": {
           "value": 384,
@@ -1540,6 +2034,37 @@
         }
       }
     },
+    "ibm-granite/granite-switch-4.1-30b": {
+      "sha": "eb206725d03c0f1c409ce3aa512afe325fdf8731",
+      "config": {
+        "routed": {
+          "value": 0,
+          "locator": "num_local_experts"
+        },
+        "selected": {
+          "value": 2,
+          "locator": "num_experts_per_tok"
+        },
+        "layers": {
+          "value": 66,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 131072,
+          "locator": "max_position_embeddings"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "dtype"
+        },
+        "architectures": {
+          "value": [
+            "GraniteSwitchForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
     "inclusionAI/Ling-1T": {
       "sha": "9fd8c406bbd60bdad34dcd8be6af6f1896d7e8da",
       "config": {
@@ -1576,7 +2101,7 @@
       }
     },
     "inclusionAI/Ling-3.1-flash": {
-      "sha": "a4ccd6b45c002ddb236f9cb77d52cc427482bf19",
+      "sha": "dde57b1c6a365aa0e0a33e15cecce0f2be96f5a3",
       "config": {
         "routed": {
           "value": 512,
@@ -1609,6 +2134,96 @@
         "architectures": {
           "value": [
             "BailingMoeV3ForCausalLM"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "internlm/Atria-Dawn-Preview": {
+      "sha": "311a9b8c6c0e8dd4b00b2d7baff7a926c3415e78",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 78,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 1048576,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "dtype"
+        },
+        "architectures": {
+          "value": [
+            "GlmMoeDsaForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "internlm/Atria-Dawn-Preview-FP8": {
+      "sha": "4a4079f9a6874246da447625b4a76d55d71c2d35",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "n_shared_experts"
+        },
+        "layers": {
+          "value": 78,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 1048576,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "dtype"
+        },
+        "architectures": {
+          "value": [
+            "GlmMoeDsaForCausalLM"
           ],
           "locator": "architectures"
         },
@@ -1700,6 +2315,123 @@
         }
       }
     },
+    "internlm/Intern-S2-397B": {
+      "sha": "85c1f58844e68836ec02245183cfa671de20977a",
+      "config": {
+        "routed": {
+          "value": 512,
+          "locator": "text_config.num_experts"
+        },
+        "selected": {
+          "value": 10,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "layers": {
+          "value": 60,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "text_config.mtp_num_hidden_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "Qwen3_5MoeForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "internlm/Intern-S2-397B-FP8": {
+      "sha": "31b460c8ebb8bdda6f1d77651cfad7ab811910e3",
+      "config": {
+        "routed": {
+          "value": 512,
+          "locator": "text_config.num_experts"
+        },
+        "selected": {
+          "value": 10,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "layers": {
+          "value": 60,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "text_config.mtp_num_hidden_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "Qwen3_5MoeForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
+    "internlm/Intern-S2-Mobius": {
+      "sha": "1b23c974ac860b182c61732299ae4fc432a8cf54",
+      "config": {
+        "routed": {
+          "value": 2560,
+          "locator": "text_config.num_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "layers": {
+          "value": 40,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "text_config.mtp_num_hidden_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "InternS2MobiusForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
     "internlm/Intern-S2-Preview": {
       "sha": "4f57cab513689b089019fce4ad24e26520df183c",
       "config": {
@@ -1732,6 +2464,88 @@
             "InternS2PreviewForConditionalGeneration"
           ],
           "locator": "architectures"
+        }
+      }
+    },
+    "internlm/Intern-S2-Preview-397B": {
+      "sha": "f4ed28782e23ad9fb4e4895b9069dcd889f5e2a1",
+      "config": {
+        "routed": {
+          "value": 512,
+          "locator": "text_config.num_experts"
+        },
+        "selected": {
+          "value": 10,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "layers": {
+          "value": 60,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "text_config.mtp_num_hidden_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "InternS2PreviewForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "internlm/Intern-S2-Preview-397B-FP8": {
+      "sha": "b9b98067e5a0cea541b9e4a2739c0aa7a5ddb667",
+      "config": {
+        "routed": {
+          "value": 512,
+          "locator": "text_config.num_experts"
+        },
+        "selected": {
+          "value": 10,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "layers": {
+          "value": 60,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "text_config.mtp_num_hidden_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "InternS2PreviewForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "fp8",
+            "fmt": "e4m3",
+            "activation_scheme": "dynamic",
+            "weight_block_size": [
+              128,
+              128
+            ]
+          },
+          "locator": "quantization_config"
         }
       }
     },
@@ -1829,7 +2643,7 @@
       "config_access": "HTTP 401; configuration not inspected"
     },
     "meta-models/Muse-Glimmer-30B": {
-      "sha": "a4e59da52a7bc87ae7251dd5545c0dd437c44b68",
+      "sha": "cec94fcfd6512f2cfe708138c32533b346ea4f69",
       "config": {
         "layers": {
           "value": 52,
@@ -1976,6 +2790,51 @@
         }
       }
     },
+    "moonshotai/Kimi-K2.7-Code": {
+      "sha": "74797c9c62378b951a1f6fcf5c4631024e9b8bef",
+      "config": {
+        "routed": {
+          "value": 384,
+          "locator": "text_config.n_routed_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "text_config.n_shared_experts"
+        },
+        "layers": {
+          "value": 61,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 0,
+          "locator": "text_config.num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "KimiK25ForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        },
+        "quantization": {
+          "value": {
+            "quant_method": "compressed-tensors"
+          },
+          "locator": "quantization_config"
+        }
+      }
+    },
     "moonshotai/Kimi-K3": {
       "sha": "f831ab66814297da540d832a5235f8e904f29d06",
       "config": {
@@ -2017,6 +2876,37 @@
         }
       }
     },
+    "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16": {
+      "sha": "e09a4cedb1787db1760375ee5539f222cae0c672",
+      "config": {
+        "routed": {
+          "value": 512,
+          "locator": "llm_config.num_experts"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "llm_config.n_shared_experts"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "llm_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 0,
+          "locator": "llm_config.num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "llm_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "NemotronH_Omni_Reasoning_V3"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
     "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16": {
       "sha": "a9904d24bcc1d289a1950fa9d2b978c47cf903b9",
       "config": {
@@ -2051,6 +2941,41 @@
         "architectures": {
           "value": [
             "NemotronHForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16": {
+      "sha": "fb0ee0bc6b3f70342afd8d84cb80dbadbaa8a1fe",
+      "config": {
+        "routed": {
+          "value": 512,
+          "locator": "llm_config.n_routed_experts"
+        },
+        "selected": {
+          "value": 22,
+          "locator": "llm_config.num_experts_per_tok"
+        },
+        "shared": {
+          "value": 1,
+          "locator": "llm_config.n_shared_experts"
+        },
+        "context": {
+          "value": 1048576,
+          "locator": "llm_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "llm_config.num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "llm_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "NemotronH_Omni_Reasoning_V3"
           ],
           "locator": "architectures"
         }
@@ -2122,8 +3047,39 @@
         }
       }
     },
+    "openbmb/MiniCPM-V-4.7-35B-A3B": {
+      "sha": "98e79ba972b586ac6146d3505771ce1467e199ba",
+      "config": {
+        "routed": {
+          "value": 256,
+          "locator": "text_config.num_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "text_config.num_experts_per_tok"
+        },
+        "layers": {
+          "value": 40,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "text_config.mtp_num_hidden_layers"
+        },
+        "architectures": {
+          "value": [
+            "MiniCPMV4_7ForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
     "openbmb/MiniCPM5-2B": {
-      "sha": "f97400052a43d642bbc6e9975e2397e3ae6a6b52",
+      "sha": "42433e90dad95123ab87729fd7011e7110629556",
       "config": {
         "layers": {
           "value": 42,
@@ -2198,6 +3154,41 @@
         "architectures": {
           "value": [
             "LagunaForCausalLM"
+          ],
+          "locator": "architectures"
+        }
+      }
+    },
+    "stepfun-ai/Step-3.5-Flash": {
+      "sha": "ab446a3de5e171ea341227e24bb1f090e1b771f7",
+      "config": {
+        "routed": {
+          "value": 288,
+          "locator": "moe_num_experts"
+        },
+        "selected": {
+          "value": 8,
+          "locator": "moe_top_k"
+        },
+        "layers": {
+          "value": 45,
+          "locator": "num_hidden_layers"
+        },
+        "context": {
+          "value": 262144,
+          "locator": "max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 3,
+          "locator": "num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "torch_dtype"
+        },
+        "architectures": {
+          "value": [
+            "Step3p5ForCausalLM"
           ],
           "locator": "architectures"
         }
@@ -2896,355 +3887,393 @@
           "locator": "quantization_config"
         }
       }
+    },
+    "zai-org/GLM-OCR": {
+      "sha": "2e85a62840ccac27daa451df36c736c4636b8628",
+      "config": {
+        "layers": {
+          "value": 16,
+          "locator": "text_config.num_hidden_layers"
+        },
+        "context": {
+          "value": 131072,
+          "locator": "text_config.max_position_embeddings"
+        },
+        "mtp_layers": {
+          "value": 1,
+          "locator": "text_config.num_nextn_predict_layers"
+        },
+        "dtype": {
+          "value": "bfloat16",
+          "locator": "text_config.dtype"
+        },
+        "architectures": {
+          "value": [
+            "GlmOcrForConditionalGeneration"
+          ],
+          "locator": "architectures"
+        }
+      }
     }
   },
   "documents": {
     "https://docs.sglang.io/cookbook/autoregressive/Baidu/PaddleOCR-VL": {
-      "sha256": "c092fa05b5cfabbd541e17b9255f63ab04ece61c523458980c37eac5186b61ba"
+      "sha256": "c555e13be92df43b1579ba553b76e442ef85ed6cc4079dd9fb3c04eba6624a6f"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Baidu/Unlimited-OCR": {
-      "sha256": "8bfa959330d6d1de8e277bdac7a79714f994cb569705f69c5335bbf223c076ae"
+      "sha256": "fd9d5f57eb485440479bf472706b192b78cb79219a8266f8ccae99aada1e5783"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Cloudflare/clef": {
-      "sha256": "298205742caa030c54c5e9d605a99d937f6fdcf45a037ada4c710d37b66df883"
+      "sha256": "4aec67c86b74af8235e82474df5fda65fb8a5d14641b452fec9bc147d6a543e8"
     },
     "https://docs.sglang.io/cookbook/autoregressive/DeepReinforce/Ornith-1.0": {
-      "sha256": "cb10b3e7d60faeace0fecd4cd2f6930f9e967d81f56ffe9f35b1eed4e1384f4a"
+      "sha256": "72a737306a09a4d072e8f1bfe9f57369564c27e331f6dd75f6a5d4c0ebfd14a7"
     },
     "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-Math-V2": {
-      "sha256": "1788d227c79df34fe2456ac6f3e841e5d9b9576c560388b86213c37b17a5fb0c"
+      "sha256": "7b1aaaf571359544a665263642a8cd4af04de933aff00a88e6cd4a17f43ca9ec"
     },
     "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-OCR": {
-      "sha256": "04db4cd337c43d2438cf27b236fe9e20330a39ebf08ee237f91f9bf91879d034"
+      "sha256": "a2232f5507e8a264793c486e67965db4f922a3d6827d518b67b5c50300cd9a0a"
     },
     "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-OCR-2": {
-      "sha256": "d67aacc0b2d858d961c3cfab03c44c56e36e661d83cbb03cbd54a78aeeb0f306"
+      "sha256": "d713d21579d043feba8e6e7e490102bb3e7bcf6d45f80e4b0c75f6d57191ae8f"
     },
     "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-R1": {
-      "sha256": "dd6ce357f24c3784e6d1bcba8ffea39c989ef0541dc128bd4dbc11f15faa44ca"
+      "sha256": "e9140ce9bf98ea770ac75f3e8332e3a5d5856cc065298b3b6e2bef7bd2056258"
     },
     "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V3": {
-      "sha256": "e1de1333e957163f75b1238f601353a0a8931f259629a2701063c5ae092c973a"
+      "sha256": "06bae4949ac3ea54bc8c091a728f747bad3341b5e59a84d6b357a4260d3e697d"
     },
     "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V3_1": {
-      "sha256": "1c36f1e1a7a9ecd93b8b2808b743aa3d9250a780c5df97c35a04760abdc8513d"
+      "sha256": "f11c0dd4f5ac3ecdec2ee891163ccc3c1db8c8626eda77ebadd2efe38a1fbf2a"
     },
     "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V3_2": {
-      "sha256": "d454052c8c804dd37146790615e00a67a89961b323067f02fccf3abe8bd389a3"
+      "sha256": "7322992df5d70c3ef4269b344f8f57edbddb6a0d25a51f0efcac84afb623662b"
     },
     "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V4": {
-      "sha256": "06143a22576eb442492de5cce429da9e9252cb5400427587684b64f0f104bcbd"
+      "sha256": "19e7c22a3aba8858f662da8b9a8c10444b02ecde0a5d871abb1bcf54d4bfcfcd"
     },
     "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V4_1": {
-      "sha256": "6de5aa19b013a02e581526441ced54a511b2e80b0491a18bfb5fa8bed89039b8"
+      "sha256": "54d7bb63ef0944bb315298a09bac499b8e89391ea1ed94d37426b7d164ce0eb9"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Ernie/Ernie4.5": {
-      "sha256": "1cdadaa8722d395f62ff3258a9542bc705382582b91a83ba5153d9b5f59546dd"
+      "sha256": "016da7831e3ca23ee3a286f2c6870a68a8cc03f186b120e472d9e5c846998fa9"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Ernie/Ernie4.5-VL": {
-      "sha256": "962125159516416e46158d411a61f3ce6238b7bfc5ece3b55f6ab55e6fb9a3b4"
+      "sha256": "7c7c92b2a3ca2745bc147d50543ab57a61b6a6a5c2929dc8c01631d194d189f5"
     },
     "https://docs.sglang.io/cookbook/autoregressive/FlashLabs/Chroma1.0": {
-      "sha256": "f318b34e848dee572ca0505e4cad6321e89db5bd989eaf5d2ae96a4736603cd0"
+      "sha256": "5ac9001a46f85eec319932aa42b3014045396044d704febc2cf4faf8c769635f"
     },
     "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.5": {
-      "sha256": "19eeab20b177219959e6d61aa35379f8e9bafe83ced94e43241458a61c82fb01"
+      "sha256": "6abe6402247a07629c08cc2f1606326bf1444480280490378d32f1cb0fa822dd"
     },
     "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.5V": {
-      "sha256": "ed27ec11a3fcacdf99e4bdd14a660791cc1146b4238bf5e4e950eac9404eb14b"
+      "sha256": "1217bea214977a008acc2f386800fa93252c518739b5f9a2a3e9c6e921c63e3f"
     },
     "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.6": {
-      "sha256": "c5aff474001aaf3dad1b8e0da7210c7a5f7bd681638ef2c33bdd129635f4a45b"
+      "sha256": "d2a4d10c8a4a221b6b0446957efb8a49df8a22933e17a0e3f38cba5ecd38081c"
     },
     "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.6V": {
-      "sha256": "84ff544fa4ddc7c77450670d8598def7915ef0227e532c9193f0617e71b0c7a5"
+      "sha256": "825aa5bfccd30f67e6a3ccb0550154a0087055bfcf8df2adfd669111283f9487"
     },
     "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.7": {
-      "sha256": "b3f041a7dc0a6b9764fbabd2f3eeef2f11644abd1e1b4f8760fabe07e6fa5aee"
+      "sha256": "7fe821227a7ac68cb88d805ff3879812fe600d8dac293c7d93d83f1b66c8936d"
     },
     "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.7-Flash": {
-      "sha256": "1579af2dffc547f7ae0f841752a38f5667046d27a96e476dd64460e954799636"
+      "sha256": "b82c83e9edbf53c5c4024f0d1a088b17b36a7f94ba682189b9ab932d2632091e"
     },
     "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5": {
-      "sha256": "7d091775c4df8d8024cc33b33d19befa0e0211dd7a98f8b77a4d144392236faa"
+      "sha256": "e025ea94fae24a5bdc228b2f6beee9bfda432d692be9cf762d346183267a5f1c"
     },
     "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.1": {
-      "sha256": "b01e4782a3016268a5bfbfbc6adc99c369d55075bdddb1b93e052b30f19e7610"
+      "sha256": "e801fb92331689526630831654bb605ce8319175f89a9748a3bf93c48eef3a90"
     },
     "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.2": {
-      "sha256": "2912a4e763fd42cc6b6997d730ecc0d110fb15b0596a1fe1baacf620893a159c"
+      "sha256": "994440309ff264bb47b3b96bbf6a88fb680e708c0bc9202d421b0d40cb585e17"
     },
     "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.3": {
-      "sha256": "3e19f185c2d25ccb511ecbe79ea85a26ba18656af7af4051b2e12269168d97a1"
+      "sha256": "ac72c421fdfd4ff5d47720a0d571121650c66f30880fc8d960d76d9cb21da469"
     },
     "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.3-Flash": {
-      "sha256": "3af69409e358cb218b4654128a1ebec14e6490b8d2ca9e400ec7c8d50f5b6f5f"
+      "sha256": "2925576a2c234aef9a26b2cf1ecfd245d274d33a7a808c331228227623c98096"
     },
     "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-Glyph": {
-      "sha256": "7a74b03a52d493de9bcedbbe7d8387bd1f507eaed8e5d19d12cbf61b79fe0f48"
+      "sha256": "185c1c943774621ea0d9b8be6b6f2b85eb9f23a7d774d31b7a6588e808b51416"
     },
     "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-OCR": {
-      "sha256": "78dd7faa4c89cd729e7c0f4d66650dec1f8ea5ec4301db213f72525fdbe5bb74"
+      "sha256": "83bb8d3ef1b29bf9bc2500a34112672779744764f1a817da69182805ec55bb64"
     },
     "https://docs.sglang.io/cookbook/autoregressive/GigaChat/GigaChat3.5": {
-      "sha256": "ecc9df395deb2b216e58eb74ec56b7f93d277fe38e7071657cf51539f6671be0"
+      "sha256": "04b054d893277516d94d508b009c2b045e699def3381d85e04a01648685f237b"
     },
     "https://docs.sglang.io/cookbook/autoregressive/GigaChat/GigaChat3.5-Reasoning": {
-      "sha256": "c9a23e2701da41e3e364a91d045d2b6c2cbb319558212f11f277658e865d2c77"
+      "sha256": "bb0adc5bea240b04cbe2516820fdae6d8ac3aea031b8e66f9bf490052608cd97"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Google/DiffusionGemma": {
-      "sha256": "022283a91bddda75eaa577a31bb41c1d054b764606a2f3609f0416a209887d8f"
+      "sha256": "6ccb71e87a740f996ff3131912b00ac7393e0bec84a54faa7ba26999a855e75b"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Google/EmbeddingGemma": {
-      "sha256": "8d8d4e9ef5c2f54e3783524047f26afbda76fd0f81f600fc34b4b37dab508b9a"
+      "sha256": "47160d04c7f2242f8d684cc508e949ac7d7592948588f6169adeea2793723875"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Google/EmbeddingGemma2": {
-      "sha256": "55211a4de95d57d07b4ac5d5a7c38be0f494506ae41ff4c089d8192509c92ddc"
+      "sha256": "5a8233d5fa0b3ba5555bcf722eb9a6aff46adc78ae43bd5c1ae154bcdec19c33"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Google/Gemma4": {
-      "sha256": "23348f9a7c942590bd5fb2db19afb99ed54d1b6fc4abca2691f5c52fe936525f"
+      "sha256": "1673033a62c30f27a9305b97b904df3e3b7a9408d275439dfd2a1d6050373355"
     },
     "https://docs.sglang.io/cookbook/autoregressive/IBM/Granite-4.2": {
-      "sha256": "33f53e4d10f6e2d2b0b77f8b126e9fc49156c254aedfe5c5faf60d5f4b3b9528"
+      "sha256": "159cafed9607413aaac80b46f87b9a349f60e685a1e2df5fc6c093cf9d6d75d4"
     },
     "https://docs.sglang.io/cookbook/autoregressive/IFM/Jais-3": {
-      "sha256": "814eda5471d616f9e7374b34a8375e4dfa64a9d764aff04cbf2953e8a305ac7e"
+      "sha256": "f6c9598eda7d3123b2d24cad4f761ecb411ac00ac74461ef751ecab45884fcdc"
     },
     "https://docs.sglang.io/cookbook/autoregressive/IFM/K2-Horizon": {
-      "sha256": "063354c06a175d47b4d803bfa28c4a317adabe218f5c47c0e0e798f0524fc5f9"
+      "sha256": "dfcbdb5e57b482d28f3753593262ae7b6dd7f97d25ebd3559956e168a3b759e8"
     },
     "https://docs.sglang.io/cookbook/autoregressive/IQuestLab/IQuest-Q1": {
-      "sha256": "709ed1db8dab6583b8100676c42820fdc185bf867fe00a776a1814b34e3f9dbe"
+      "sha256": "488957065ff56a251377b9ae509776fb46e35632cb60fc8c024e2d739b37d547"
     },
     "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/LLaDA-2.1": {
-      "sha256": "ed9d56d2ae07a9bc1c16aaa95aada5ef6d49c7b765817f7c7e8af6b7b1144bf6"
+      "sha256": "31d383e15c735fa3dab9ddffc6af2d29a7e80d8ba89ebbf24438d40ff71287be"
     },
     "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-2.5-1T": {
-      "sha256": "f250d5902891c932825dd5a659a666c1b24e8aded0e511e3585be9457b358725"
+      "sha256": "af14496808e542d0317ab793191b4cf8b78448f885173e596566cf63052997e1"
     },
     "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-2.6": {
-      "sha256": "7029dc7802272e70e69754f19edafaa5d59766a7b84471d0e92997d6fe11f888"
+      "sha256": "d97d5ece2a5fe8a7a9b1e87923ce8d761ed6be0f73d94091bf5c653135cc5612"
     },
     "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.0-flash": {
-      "sha256": "fe40066fd3fcaab13a2d07d2705fabf835a3433062ba3cbef17fbf84ed4dac54"
+      "sha256": "08e850986a754e30058993cfe0c0eab6f3dc702b19b39c392b75651a6aa1d77c"
     },
     "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.0-flash-VL": {
-      "sha256": "14ac21126f85e1e31a94583862b6b4497d96aefdfbb22643e56f18e1c534bafa"
+      "sha256": "e2709ed766b823ba1f7d20d7dca6602fe5ce59caea1d42150bee822ff51b8e00"
     },
     "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.0-tiny": {
-      "sha256": "1c2fb4bc2361bf5c5e6d6e4a66246860a65857908d9d988de201bf2954d650bb"
+      "sha256": "a03cd3a9a8b64ec9e87dbf9b0d94b971f5ef1fc0bef704360cdce34f96e7dbf0"
     },
     "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.1-flash": {
-      "sha256": "ae1bf27c16ccf2b55410b2a6c9051d0efdab13263abc950f65b4727a78b4da31"
+      "sha256": "b6152e82949cf23f8a1f21f9ad46659397de2d3584da489aefc1be8ace09432d"
     },
     "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ring-2.5-1T": {
-      "sha256": "a70646b68802e66d778c160a436b7b0bac5ab6f19551bedc005a4e29ec4cb414"
+      "sha256": "258ba42381bdc22e0dd05e648ffd21c62da291ee8a77b4aeabbafbccbdb76dc6"
     },
     "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ring-2.6-1T": {
-      "sha256": "8c7339149c6aca3755cb03d4e8447742c5e0bca332ba4cbb80fa3f5b13c5c7a0"
+      "sha256": "9e175b6676825a5489381cc7b44f1e66e41beb407583626c2e8182f096a32b04"
     },
     "https://docs.sglang.io/cookbook/autoregressive/InternLM/Intern-S1": {
-      "sha256": "5834e69e07089c464c98d0b9c618f54a0388f74f2fd79a4e80fa6a5bb7e15ffd"
+      "sha256": "8500e448bc533e0ad44026cf73c3bdded258505796fc6cac3af7cf3d4a87adab"
     },
     "https://docs.sglang.io/cookbook/autoregressive/InternLM/Intern-S2-Mobius": {
-      "sha256": "23c8f059575c5916c60ed722b6c0adbf5f50b6d2110c0bad0a6ebdab03642b52"
+      "sha256": "152a4648c59982a0a69723668d08282c735d340db5ee4bbffb231066985f1c52"
     },
     "https://docs.sglang.io/cookbook/autoregressive/InternLM/Intern-S2-Preview": {
-      "sha256": "986223b59dc6428dfcf7d91ca114a57c5ed126d7f8610d2bc084b9738c1ec0a3"
+      "sha256": "76f27219c0e20641b24cec491fb88c3ebb148662c1861ddadaf22d9ba7fa3b4a"
     },
     "https://docs.sglang.io/cookbook/autoregressive/InternVL/InternVL3.5": {
-      "sha256": "1d7de1fc8232af5feac86f8ee54b6a68ba0d79c57ef563b448d95baa8891252d"
+      "sha256": "7d4464e088ea6555c765980fbc12257aa5fa9227403f4c96d46545fcc093c7ae"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Jina/Jina-reranker-m0": {
-      "sha256": "a650ca847d30889bbe90584f14724b72c95ede223db34500ca6696b72a361faf"
+      "sha256": "94fd3d96a969a81fc525c8f04e71c825523e67b0a33eb3aaa452fdd32c341fc8"
     },
     "https://docs.sglang.io/cookbook/autoregressive/LiquidAI/LFM2.5": {
-      "sha256": "915c291befcfed66c323312fea529469a4073b5523aa1d9e496c7ee815dbd72a"
+      "sha256": "abe58cdd32deb2c3ebb70f5aa4946b7a15e8082b1c2e9954eec99966cf2d9c82"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Meituan/LongCat-2.0": {
-      "sha256": "5c4ffb5763b1492fbfbb2746ffaeff47cf112f7cc35bd437c91f9348d60d9bd9"
+      "sha256": "3114676a39e82be79a022e782e26565ac10b74ce0837a5b7817a9b9f0817d4f3"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Meta/Llama3.1": {
-      "sha256": "e060b261ff6a7ebc26b695c8f3cb53e6e63248c8c05791ff4059adb43f5e9157"
+      "sha256": "629a940363881addeaa907de1033f70194273920b7e04e856d4346e41a53e321"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Meta/Llama3.3-70B": {
-      "sha256": "b7e6cc747ed9648866953ca01fbf99948eae859a3e81b88b6df23e709dc3bdec"
+      "sha256": "730f857a41609ee95053f1e334dde4b5e432d46f318e068413bacd874af54538"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Meta/Llama4": {
-      "sha256": "a6c250b0c23f1549561f5ed4d8ee1874482e303a1394039cdd37531b8d41a03c"
+      "sha256": "14bdaeca1c28146aca69b36fd05700230148bd8c295a47bde201d4ee96c9c515"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Meta/MuseGlimmer": {
-      "sha256": "ad8ed80d5c6acfd78fe5b4a9871504a0c6b03573094f26458d33a51337b10671"
+      "sha256": "650fe5d4e75f64a684dd2caa09ad7fa33506e0e731784b0775a88e0f6bde3919"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/Meta/MuseSparkOpen": {
+      "sha256": "f6ad81a1cb340b1e78fe36642c4598968220c9fd27f1ac445f31fe4128ab94e3"
     },
     "https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M2": {
-      "sha256": "d2ce1b2f98a735a9332840978032192390722b694d8f2f210f474843f5cc440b"
+      "sha256": "57b908e169a548531ee635f2f0a3fdea55a640a42ee492fa09b9f21b2de410bb"
     },
     "https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M2.5": {
-      "sha256": "c212e0fc57047938329e3156c275b4165e5496501873b7a75dec6cf5695a28ef"
+      "sha256": "40cc072b74c047415398b901114a9778642be6130111ca6f14e9ed2a1ea492e4"
     },
     "https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M2.7": {
-      "sha256": "c8aa057c8bcfa377951bec2c6c3686f7c75ebc936ac92731f62509da8e827a23"
+      "sha256": "914b1420a96592ceff86d3a636ddc6750cd55d9c201b2c2b41a4d5ce8ce3713a"
     },
     "https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M3": {
-      "sha256": "9cc1e69ccea11021c3a6f3d515a9492c81373f0b9feae812ee5dab58f3377b32"
+      "sha256": "e1ca53329d0bdebe7de53b699fcb9fa3105b99eac06edf0d8a9c1bddcc9156b2"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Mistral/Devstral-2": {
-      "sha256": "390b38ad7da571fa9a94d6b5d60c51a63ffb2b64438317626ab78bba9cd88c89"
+      "sha256": "65e9e245b2b3e8554488aaf2717947d73904f48b826a1bf160afaf2c044bc827"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Mistral/Ministral-3": {
-      "sha256": "b73cae83b7a8c67d1d5e226244737e7ae8f1211f13d7a492942b9736cf7897f0"
+      "sha256": "f40cea8ddacad8f9c7c1565ea1404f66e794873fc1154f3f28fbcf82e91a4731"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Mistral/Mistral-Medium-3.5": {
-      "sha256": "4aa01404fc3346767bb88d3df4426ce3e4312c6d21ab27b6501122ab673ca675"
+      "sha256": "bac5b867868ff91ea948046c3a51d9d7cb97e07fec0a17c0b923947349a70eeb"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Mistral/Mistral-Small-4": {
-      "sha256": "1b63d4e4c706d582b719579f90f8e49bf28743478959e4351f9dbf28fdc9698a"
+      "sha256": "1c1ef442e4e3a7eb90c9e16fc0944a182961dab10378f5af93347f195522cb0c"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K2": {
-      "sha256": "63255b28fd3f00b13572559e2d1aefbd7f1aa28f97cb291783720c728a890ed9"
+      "sha256": "7a1e4885f7f2e0d616dce7d8bffc70dec78a1c813e9027ddec01b9b463c64d3e"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K2.5": {
-      "sha256": "935ee2220e7f0571b57c323c38ed19f4937e6432e852c8a0d47f1ed877e7f597"
+      "sha256": "06a7ee200d85d6bc33abe609a4d78560bdca5052c7335c58249da1ea3fca3896"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K2.6": {
-      "sha256": "f1fd35356149135694a1a48dd7197a35732919772574255d311b7058b22a47cc"
+      "sha256": "0d44aa166d696e9d85a349bdd72bc7c2955dd038072083a883fc93d60229bcbc"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K2.7-Code": {
-      "sha256": "3ebe81d6c0bb8ca5a720d9cc7a01f11c0a5b95e84222a34ed760926d6c3ecd48"
+      "sha256": "424972472448740308808caed245cfa047b31f348d6d389dcd2d904eed4809ca"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K3": {
-      "sha256": "68bc68d310ef276c97af32aead2d68783d93f883f9b12311a08f94138fb6d0b4"
+      "sha256": "1480e278bc10e0190bc29e7f8f2658d6caacccb85212cc54f6605c6e601c1608"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-Linear": {
-      "sha256": "137f606cd5e87f55ec647495086d54fab17c33d56ca816e2c12d19ba478ccc0d"
+      "sha256": "61db232587052d31f7ff44b0ef6881674927917796604207dedf8e96ea0ea364"
     },
     "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3-Nano": {
-      "sha256": "56bbeab6427637a55081d94f17c9608c8003130d1633afb548099311c260029f"
+      "sha256": "e27b2725af96c49d7502af39aeb56df1acc4cb52baa87e8535ed2936a636cf61"
     },
     "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3-Nano-Omni": {
-      "sha256": "2c1952a3e1feb7b583dadad0eb4d63826faa6cf7f32e8a76e8d3dbaa3d704ba2"
+      "sha256": "d09bec7f24d8bd7afb106316320c94b3684083070e93389aede8842ec91ca4cb"
     },
     "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3-Super": {
-      "sha256": "d77508326983f12fa1e8ab4387cfc8eea752c781d33d33e3e7cc887ba8525e90"
+      "sha256": "c2f06ac615345ec3efa9d04ea08ecb8b46ed16ecc34403a8dace6f6b6d30e262"
     },
     "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3-Ultra": {
-      "sha256": "c31aa8d4abee9c426988169a4b787cb15aafbf149413aaeb11ce442067a11491"
+      "sha256": "d001b5489072f0b25f0771200aa2fe3ad4acc1f4a9219f276ebe89d8e78d9a08"
     },
     "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3.5-Lightning": {
-      "sha256": "1eee47def99f52dd1c91e91a8bf08311de20279daa2e937db02e52e40a5b6795"
+      "sha256": "3e506c0d36174778ce65d1f951ef00b5a730f3d3ba8198ba63e7dcab90b47fbb"
+    },
+    "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3.5-Super": {
+      "sha256": "9a4a99495c15c33dfa5b86ac8d26161c66003dc6942a97610cd7658dfcbfeeac"
     },
     "https://docs.sglang.io/cookbook/autoregressive/OpenAI/GPT-OSS": {
-      "sha256": "5df1a7fcffb853c116430490a1b31814488141e659611016aca78ab4670db76f"
+      "sha256": "1924f42936da815b0e4057cb883fda83e82cd9eb73e26bb1ff5d6a4f026ee963"
     },
     "https://docs.sglang.io/cookbook/autoregressive/OpenBMB/MiniCPM-V-4_6": {
-      "sha256": "ba36cfd4cd521ab6b3ab2b3c92d39cbd0c0c17c02f21493a7d19832e2c2dcaaf"
+      "sha256": "b68b2d4c739a52f05dc854b2b605ae61f3b57bacb7a2cc08a9fe907c7f82b2d8"
     },
     "https://docs.sglang.io/cookbook/autoregressive/OpenBMB/MiniCPM-V-4_7": {
-      "sha256": "22b7029eb470914a0d1259460f59b1738a7b63ff52c5df30cd27c8ad3d841c97"
+      "sha256": "799b90d47e6289dbb95d8a4e29e3accb86be879d3bf8c0ceb4e722ee8e5f9770"
     },
     "https://docs.sglang.io/cookbook/autoregressive/OpenBMB/MiniCPM5-2B": {
-      "sha256": "33cc5c70848c96f4cd18c7d724bc5410d88a490dde7121117917a60594c2cff5"
+      "sha256": "ce500b64e895b2aca9bbeac380fcdcb1913bbd216d893c1f4fabd770e3173b88"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Perplexity/PPLX-Decider-v1-27B": {
-      "sha256": "e1133da2ccb315e2bd076a269c129cad91741f803300bc1acb456f8d4df39807"
+      "sha256": "84ad5e7f9a889c354e929e89bdd712d9d8f107068bc50f43b5c752cbfe2157b9"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Perplexity/PPLX-Decider-v1.1-27B": {
-      "sha256": "6c1857b43604cb0e65835e48e8d958dbaedebca71e8ee6c2457989a31337ed7f"
+      "sha256": "2618dac7c1104fe37539209ee48a25fbaad3fcfa45a9640755018238b203f62f"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Poolside/Laguna-M.1": {
-      "sha256": "ad878e20a07c0c12e0c39da713ec1a37f5f4ef45a7c77f394e5b6d2fcce5aebb"
+      "sha256": "13269747e544aa0c4b247b7ad06661e2304d0cd39a9cb69e3b41845b83826c47"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Poolside/Laguna-S-2.1": {
-      "sha256": "141772bd87ac268f9a6195617696338418d144e69148fb28fe5d9ce1613cf5c8"
+      "sha256": "b01039743c13177151ad0a6b6493c3c14cf4fef5efe290098d052f8ed35f941f"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Poolside/Laguna-XS-2.1": {
-      "sha256": "98c1349c0ea45948a5e53c2a0547b7cea90527f2b4a71b51d2e1f652b1ae9071"
+      "sha256": "5a2fea2f46389120fb0e0755c4ee71db4694df33b35c8123786c693fe359c063"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Poolside/Laguna-XS.2": {
-      "sha256": "499c334bcd4e9b62715ebc785e0346ff46475fb073822f2d1b6a96feb0fab9df"
+      "sha256": "3eff17a486bf1f0f94db879723752db33f84c0a9a3999a19b1829ee7b11ab3b7"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen2.5-VL": {
-      "sha256": "d616327b4c521d843af20cf4aeb6e8a34779c6afd51e2f2bf66afb9fb3750007"
+      "sha256": "94d21f5a48719bcee5c1fba45eadae1a82bc9e4dee3ffd42088c791a256df409"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3": {
-      "sha256": "36ee2b23ef174ce742b479edb627144f19db7cc19a827eee32f5a5f0876e150c"
+      "sha256": "a290c3a932f4a11bb9f4b8994b189c1131fd6fa0122b362ebc6d161a8b48d14e"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3-Coder": {
-      "sha256": "94a70313c9ed6103d27a68640482a896198c082dd3b0ffe4d16b03c7403fd95e"
+      "sha256": "124e4c7cd64fa94eb7c85b03ffa7fbde9026ad5669349eb372e9e0bea024416f"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3-Coder-Next": {
-      "sha256": "40b93b31d2cd535ec6101670668eaad2fc7c5e4b215376249c6e1e986a6ca5ca"
+      "sha256": "0433566dfb8a600294a7c06139770dc8c7591cea10fe8248f5663f7087d81b79"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3-Next": {
-      "sha256": "9a781b638e301763b1928ff1bcc2b012f39313eeb3386a23879bef8881b4d741"
+      "sha256": "1959d340af7a359107782523bbd6b2cbfdac7a7129f3d0b406c033648fbe0476"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3-VL": {
-      "sha256": "83b8b928028be1041e54ac2394bb33e5b65a58bfc5808a5c13cf4971191a6e3e"
+      "sha256": "e5b23899385f9eee47010191fb7109cc5f83c0f22fbc3461e704cba24c74937c"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.5": {
-      "sha256": "509b22575c31435160d121eeee645d437acfb1feea244a477e904f91fd5a0f27"
+      "sha256": "bcaaa64e1fed2fa7900b0ec17a6329e254c69b9b9bf49325d43f3085a22d82ba"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.6": {
-      "sha256": "a2757983de71ad815f0aab0f44d9ab36446758bb027ad8c5335a507eb7677e0e"
+      "sha256": "41519c8f14b43e6835539cd521286339f096aba4deef50f90c7c0db881819508"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8": {
-      "sha256": "10d177ac5670db1ed266328be1ea5368a1ca8e23e386c0c4659967ee7669fb93"
+      "sha256": "0f6879ed4dac005621b41738d039d4930e377d6d8fe16c13e248f7fcdc7aca74"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-27B": {
-      "sha256": "0c07ddd3e988b838e28b8200a30e4503a925ccc8c5a6b818162a725e9f23dedd"
+      "sha256": "f1cc8554a2fe620e190b593d00edad5eb4033ddc5949fb6748436a0d484113de"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-Flash-Next": {
-      "sha256": "814645e780dbc0d652907b0e412dd3a4556f5f49f77b44bab52f601f07134151"
+      "sha256": "8bdcdfe98c84e2b61f439aa68c04617a1751e55fb362c8d0e13e29303128c4ac"
     },
     "https://docs.sglang.io/cookbook/autoregressive/RedNote/Dots3-Note": {
-      "sha256": "941df6b8b07ed12ae462aa499f61d1084493c1330724ebab0e05e6b78a07d5c3"
+      "sha256": "d5f63eac5d0a10c502bf23cd6eb13bd21c1c10eefe2aa097c93965bcf635ba6d"
     },
     "https://docs.sglang.io/cookbook/autoregressive/StepFun/Step-3.7-Flash": {
-      "sha256": "bb7e93f1fae5f81e40db45e0908f3a84eda8e267892e0a6f652b86a2e7382011"
+      "sha256": "453398e67240e94928324c8c3b70afc59a69ae69504d52d6ce6feac31a3417c1"
     },
     "https://docs.sglang.io/cookbook/autoregressive/StepFun/Step-5-Preview": {
-      "sha256": "5379f6fb82abfec07eed440426a9a8ce6454e232fb41ed2d807ce90c096ebd2a"
+      "sha256": "760551e770faf5505fc8755decb19665a82d3b2aabe3f159533a7c89d5305c73"
     },
     "https://docs.sglang.io/cookbook/autoregressive/StepFun/Step3-VL-10B": {
-      "sha256": "15a9315bbe753cfe306b775d506babb9c2e4476c1fcc03c0638d6cbf17714166"
+      "sha256": "00f2467d8b43da4add9684dc5980ac1bea643b6ded3c0023e93adfe5697721e7"
     },
     "https://docs.sglang.io/cookbook/autoregressive/StepFun/Step3.5": {
-      "sha256": "e95d9f4c5d46a6b40f198dfd55e932dc38429714f088bccc04977623e17a3781"
+      "sha256": "708aa780060a029566ee7090e1fe05f4a631b59408868ec86e236a6c990592f4"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Tencent/Hunyuan3-Preview": {
-      "sha256": "f58c6118d3d4b1b102365386a09890c7044e82f6c3aec8a30a70d7a6dbd93db3"
+      "sha256": "74488274d7adf43f94fe968b23e89fb2ab8d427603b6875cd0744b639fb4c8f6"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Tencent/Hy3": {
-      "sha256": "b023db358adac1f8d3cd924b85c06990f172dce013643583cbb0cb580d0261af"
+      "sha256": "8db14fe1afac3ccbbc69648a1e29de11e65410b7f99ddaa588a5737b586e8732"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Tencent/Hy4-Preview": {
-      "sha256": "d39355ddb28085e21c63f528b86a0dc49cbf44deb39e7985411eeeb5f969c6a6"
+      "sha256": "556295308ab398e6508cdccf90af150a75641f06818a2b56edd7cd877133afbd"
     },
     "https://docs.sglang.io/cookbook/autoregressive/ThinkingMachines/Inkling": {
-      "sha256": "7a7f2c927c8ec85e3511084996715f4e43184fb1ddcd9d2488c09758c482c312"
+      "sha256": "7b5dbb780b63ea0f3b6e3f94a4969e2570a1c048dd7836083d1d702f8cf6bbf7"
     },
     "https://docs.sglang.io/cookbook/autoregressive/ThinkingMachines/Inkling-Small": {
-      "sha256": "6190ce428b6e5fc67ddbcffd9871bd6594c773b25b7df10d9f679a6c56d9bb9e"
+      "sha256": "1df272d5981eefb4782fe178751a60cb6e6849d525fbd2b5fe7df054a4bd8d16"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Xiaomi/MiMo-V2-Flash": {
-      "sha256": "cfdb99318cf44f6755ced525867151c95e676d456802731b8880a461ae600081"
+      "sha256": "14ef124a4bd1b0e074f2f67ec79f0265bda11624d894bf3dc5f56bdb33d1bb35"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Xiaomi/MiMo-V2.5": {
-      "sha256": "1ecc9699169ed64de8051c5c1b3782b3d6cea0a0f1f49119eff030ca132f65a2"
+      "sha256": "b8688d83e1c7f9fcb4cb5cf1033b4341d94386aa3b8acc6efe73373936b4241c"
     },
     "https://docs.sglang.io/cookbook/autoregressive/Xiaomi/MiMo-V2.6": {
-      "sha256": "c895e342d89a37be40f66c2c9ecf7d80862dd83f837cc3db41afed8395c65650"
+      "sha256": "134715d641fffb5507a0607c21de7b5075513d4d4c94c54b525940adfffd05c5"
     },
     "https://docs.sglang.io/cookbook/autoregressive/intro": {
-      "sha256": "734f0e08b82144bf503b6586f30686d4da93c3907b691ffef22c862ef63a8d67"
+      "sha256": "83ba49506891e2ecaaaf505d06ec0282b299d95f5fda4f8af982a0adda5b5cc7"
     },
     "https://docs.sglang.io/llms.txt": {
-      "sha256": "c1f0ee084fb38517ab2d2672ce00488d8f2f1449909b34c5d78bfbcdd1bf4d39",
+      "sha256": "4bc03ee8739b728aa849856f2e9cba3fe154b7c24664808d9e8be84cb58e30da",
       "recipePages": [
+        "https://docs.sglang.io/cookbook/autoregressive/Baidu/ERNIE-5.5-Flash",
+        "https://docs.sglang.io/cookbook/autoregressive/Baidu/Ernie4.5",
+        "https://docs.sglang.io/cookbook/autoregressive/Baidu/Ernie4.5-VL",
         "https://docs.sglang.io/cookbook/autoregressive/Baidu/PaddleOCR-VL",
         "https://docs.sglang.io/cookbook/autoregressive/Baidu/Unlimited-OCR",
+        "https://docs.sglang.io/cookbook/autoregressive/Baidu/Unlimited-OCR-2",
         "https://docs.sglang.io/cookbook/autoregressive/Cloudflare/clef",
         "https://docs.sglang.io/cookbook/autoregressive/DeepReinforce/Ornith-1.0",
+        "https://docs.sglang.io/cookbook/autoregressive/DeepReinforce/Ornith-1.5",
         "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-Math-V2",
         "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-OCR",
         "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-OCR-2",
@@ -3254,8 +4283,6 @@
         "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V3_2",
         "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V4",
         "https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V4_1",
-        "https://docs.sglang.io/cookbook/autoregressive/Ernie/Ernie4.5",
-        "https://docs.sglang.io/cookbook/autoregressive/Ernie/Ernie4.5-VL",
         "https://docs.sglang.io/cookbook/autoregressive/FlashLabs/Chroma1.0",
         "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.5",
         "https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-4.5V",
@@ -3294,7 +4321,9 @@
         "https://docs.sglang.io/cookbook/autoregressive/InternLM/Intern-S2-Preview",
         "https://docs.sglang.io/cookbook/autoregressive/InternVL/InternVL3.5",
         "https://docs.sglang.io/cookbook/autoregressive/Jina/Jina-reranker-m0",
+        "https://docs.sglang.io/cookbook/autoregressive/Kev/kev",
         "https://docs.sglang.io/cookbook/autoregressive/LiquidAI/LFM2.5",
+        "https://docs.sglang.io/cookbook/autoregressive/LiquidAI/LFM3",
         "https://docs.sglang.io/cookbook/autoregressive/Meituan/LongCat-2.0",
         "https://docs.sglang.io/cookbook/autoregressive/Meta/Llama3.1",
         "https://docs.sglang.io/cookbook/autoregressive/Meta/Llama3.3-70B",
@@ -3305,8 +4334,10 @@
         "https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M2.5",
         "https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M2.7",
         "https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M3",
+        "https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M3.1",
         "https://docs.sglang.io/cookbook/autoregressive/Mistral/Devstral-2",
         "https://docs.sglang.io/cookbook/autoregressive/Mistral/Ministral-3",
+        "https://docs.sglang.io/cookbook/autoregressive/Mistral/Mistral-Large-4",
         "https://docs.sglang.io/cookbook/autoregressive/Mistral/Mistral-Medium-3.5",
         "https://docs.sglang.io/cookbook/autoregressive/Mistral/Mistral-Small-4",
         "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K2",
@@ -3314,6 +4345,7 @@
         "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K2.6",
         "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K2.7-Code",
         "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K3",
+        "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-K3.1-Pro",
         "https://docs.sglang.io/cookbook/autoregressive/Moonshotai/Kimi-Linear",
         "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3-Nano",
         "https://docs.sglang.io/cookbook/autoregressive/NVIDIA/Nemotron3-Nano-Omni",
@@ -3342,7 +4374,9 @@
         "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8",
         "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-27B",
         "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-Flash-Next",
+        "https://docs.sglang.io/cookbook/autoregressive/Recursive/Flint",
         "https://docs.sglang.io/cookbook/autoregressive/RedNote/Dots3-Note",
+        "https://docs.sglang.io/cookbook/autoregressive/Reflection/Beam-1_0",
         "https://docs.sglang.io/cookbook/autoregressive/StepFun/Step-3.7-Flash",
         "https://docs.sglang.io/cookbook/autoregressive/StepFun/Step-5-Preview",
         "https://docs.sglang.io/cookbook/autoregressive/StepFun/Step3-VL-10B",
@@ -3351,6 +4385,7 @@
         "https://docs.sglang.io/cookbook/autoregressive/Tencent/Hy3",
         "https://docs.sglang.io/cookbook/autoregressive/Tencent/Hy4-Preview",
         "https://docs.sglang.io/cookbook/autoregressive/ThinkingMachines/Inkling",
+        "https://docs.sglang.io/cookbook/autoregressive/ThinkingMachines/Inkling-2-Small",
         "https://docs.sglang.io/cookbook/autoregressive/ThinkingMachines/Inkling-Small",
         "https://docs.sglang.io/cookbook/autoregressive/Xiaomi/MiMo-V2-Flash",
         "https://docs.sglang.io/cookbook/autoregressive/Xiaomi/MiMo-V2.5",
@@ -3359,13 +4394,13 @@
       ]
     },
     "https://docs.vllm.ai/en/latest/models/supported_models/": {
-      "sha256": "003db2ec649813dfaaf5cde5af6db6c4731595a755739e12d3a568ffbbb5a2ce"
+      "sha256": "89b013319088e720ab1d6874cf0a310df8a46d904998f20b80b49663e3878be1"
     },
     "https://docs.z.ai/guides/vlm/glm-5.3-flash": {
-      "sha256": "e89e4766d8a80df88141eff88ee2ef9f98b692a1aa9a672cb57b0abf2aa4998f"
+      "sha256": "c242d374f6e295c555eb31c40bbf730d398ddd713c895c21284a9e8a649d648d"
     },
     "https://recipes.vllm.ai/zai-org/GLM-5.2": {
-      "sha256": "5281812ffc7a34f6a9f86c71114be16362c71b18f893a7db37aa00500d7ee649"
+      "sha256": "7b3e05aca569799b60cd302fc498312f6268d66cd07c58d4b71ab5b636772b43"
     }
   }
 }
